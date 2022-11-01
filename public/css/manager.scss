@@ -1,0 +1,148 @@
+#manager_body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	.manager_wrapper {
+		width: 1200px;
+		height: 700px;
+		background-color: #eeeeee;
+		display: flex;
+		align-items: center;
+		.main_menu_wrapper {
+			width: 200px;
+			height: 100%;
+			background: #d9d9d9;
+			display: flex;
+			flex-direction: column;
+			.menu {
+				box-sizing: border-box;
+				width: 201px;
+				height: 70px;
+				background: #8e8e8e;
+				border: 1px solid #000000;
+			}
+		}
+		.main_display {
+			width: calc(100% - 200px);
+			height: 100%;
+			header {
+				box-sizing: border-box;
+				width: 100%;
+				height: 190px;
+				display: flex;
+				justify-content: space-between;
+				padding: 40px 50px;
+				.login_info {
+					width: 228px;
+					height: 98px;
+					background: #d9d9d9;
+				}
+				.logout {
+					width: 172px;
+					height: 64px;
+					background: #d9d9d9;
+					border-radius: 40px;
+				}
+			}
+			.contents {
+				width: 100%;
+				height: calc(100% - 190px);
+				.contents_header {
+					width: 100%;
+					height: 45px;
+					display: flex;
+					align-items: center;
+					padding-left: 55px;
+					.title {
+						font-style: normal;
+						font-size: 20px;
+						color: #000000;
+					}
+					.notification {
+						width: 30px;
+						height: 30px;
+						border-radius: 15px;
+						background: #d9d9d9;
+						margin-left: 15px;
+						text-align: center;
+						padding-top: 5px;
+					}
+					.search {
+						width: 504px;
+						height: 35px;
+						margin-left: 15px;
+						margin-right: 25px;
+					}
+					.regist,
+					.delete {
+						width: 87px;
+						height: 27px;
+						background: #d9d9d9;
+						border-radius: 8px;
+						margin-right: 15px;
+					}
+				}
+
+				.board {
+					width: 693px;
+					height: 408px;
+					background: #ffffff;
+					margin: 15px 0 0 55px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 10px 0;
+					box-sizing: border-box;
+					.message {
+						width: 669px;
+						height: 38px;
+						background: #d9d9d9;
+						margin-bottom: 10px;
+					}
+				}
+
+				.board.notice {
+					width: 870px;
+					padding-top: 0;
+					border: 2px solid black;
+					.table_header,
+					.table_row {
+						width: 100%;
+						height: 48px;
+						display: flex;
+						.table_col {
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+
+						.table_col.class {
+							width: 79px;
+						}
+						.table_col.title {
+							width: 372px;
+						}
+						.table_col.writer {
+							width: 122px;
+						}
+						.table_col.views {
+							width: 122px;
+						}
+						.table_col.date {
+							width: 176px;
+						}
+					}
+					.table_header {
+						border-bottom: 1px solid rgb(33, 33, 33);
+					}
+					.table_row {
+						border-bottom: 1px solid rgb(218, 218, 218);
+					}
+				}
+			}
+		}
+	}
+}

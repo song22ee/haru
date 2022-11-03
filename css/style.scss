@@ -201,6 +201,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(227, 255, 255);
+	img {
+		height: 500px;
+		width: auto;
+	}
 }
 .recommend_main_wrapper {
 	width: 100%;

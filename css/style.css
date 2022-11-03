@@ -184,6 +184,10 @@ body .main_wrapper .view_more_wrapper .view_more_btn {
   align-items: center;
   background-color: rgb(227, 255, 255);
 }
+.banner_main img {
+  height: 500px;
+  width: auto;
+}
 
 .recommend_main_wrapper {
   width: 100%;

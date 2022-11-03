@@ -108,7 +108,7 @@
         </div>
         <span class="join_us_title">JOIN US</span>
         <div class="join_box">
-            <form name="member_form" method="post" action="" class="member_form">
+            <form name="member_form" method="post" action="member_insert.php" class="member_form">
                 <div class="member_form_col">
                     <div class="ref">필수입력</div>
                     <div class="member_form_row row1">
@@ -146,7 +146,7 @@
                         <div class="form">
                             <div class="col1">휴대전화</div>
                             <div class="col2">
-                                <input type="text" name="name">
+                                <input type="text" name="phone">
                             </div>
                             <div class="col3">
                                 <a href="#"><button class="get_code">인증번호 받기</button></a>
@@ -159,7 +159,7 @@
                         <div class="form">
                             <div class="col1">생년월일</div>
                             <div class="col2">
-                                <input type="text" name="name">
+                                <input type="text" name="birth">
                             </div>
                         </div>
                         <div class="form email">
@@ -171,7 +171,7 @@
                         <div class="form">
                             <div class="col1">추천인아이디</div>
                             <div class="col2">
-                                <input type="text" name="name">
+                                <input type="text" name="refferer">
                             </div>
                         </div>
                     </div>
@@ -188,15 +188,15 @@
                     <div class="form">
                         <div class="col1">이메일 수신여부</div>
                         <div class="col2">
-                            <input type="radio" name="email" checked>예
-                            <input type="radio" name="email">아니오
+                            <input type="radio" name="email_receive" checked>예
+                            <input type="radio" name="email_receive">아니오
                         </div>
                     </div>
                 </div>
             </form>
         </div>
         <section>
-            <button class="button_join">가입</button>
+            <button class="button_join" onclick="check_input()">가입</button>
             <button class="button_cancel">취소</button>
         </section>
 
@@ -258,7 +258,8 @@
 
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script src="../js/hot_issue.js"></script>
+    <script src="js/hot_issue.js"></script>
+    <script src="js/sign_up.js"></script>
 </body>
 
 </html>

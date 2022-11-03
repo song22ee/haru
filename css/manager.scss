@@ -10,18 +10,31 @@
 		background-color: #eeeeee;
 		display: flex;
 		align-items: center;
+		border: solid;
+		border-width: 0.5px;
 		.main_menu_wrapper {
 			width: 200px;
 			height: 100%;
-			background: #d9d9d9;
+			background: #eeeeee;
 			display: flex;
 			flex-direction: column;
+			border-right: solid;
+			border-width: 0.5px;
 			.menu {
+				display: flex;
 				box-sizing: border-box;
-				width: 201px;
+				width: 200px;
 				height: 70px;
-				background: #8e8e8e;
-				border: 1px solid #000000;
+				background: rgb(174, 222, 222);
+				border-bottom: 1px solid #000000;
+				border-right: solid;
+				border-width: 0.5px;
+				justify-content: center;
+				align-items: center;
+				font-size: 17.5px;
+			}
+			.menu:nth-child(1) {
+				background: rgb(15, 162, 162);
 			}
 		}
 		.main_display {
@@ -35,15 +48,28 @@
 				justify-content: space-between;
 				padding: 40px 50px;
 				.login_info {
+					display: flex;
+					flex-direction: column;
 					width: 228px;
 					height: 98px;
-					background: #d9d9d9;
+					justify-content: center;
+					align-items: flex-start;
+					padding-left: 35px;
+					background: rgb(174, 222, 222);
+					border: solid;
+					border-width: 0.5px;
+					.on_dep {
+						margin-top: 7px;
+					}
 				}
 				.logout {
 					width: 172px;
 					height: 64px;
-					background: #d9d9d9;
+					font-size: 16px;
+					color: #dbdbdb;
+					background: rgb(0, 117, 117);
 					border-radius: 40px;
+					border: none;
 				}
 			}
 			.contents {
@@ -64,7 +90,9 @@
 						width: 30px;
 						height: 30px;
 						border-radius: 15px;
-						background: #d9d9d9;
+						background: rgb(255, 217, 29);
+						border: solid;
+						border-width: 0.5px;
 						margin-left: 15px;
 						text-align: center;
 						padding-top: 5px;
@@ -96,10 +124,21 @@
 					padding: 10px 0;
 					box-sizing: border-box;
 					.message {
+						display: flex;
 						width: 669px;
 						height: 38px;
-						background: #d9d9d9;
-						margin-bottom: 10px;
+						background: rgb(174, 222, 222);
+						// margin-bottom: 10px;
+						border: solid;
+						border-width: 0.5px;
+						align-items: center;
+						margin: 0.7px;
+					}
+					.message:nth-child(2) {
+						background: rgb(94, 172, 255);
+					}
+					.message:nth-child(4), .message:nth-child(5), .message:nth-child(6) {
+						background: rgb(255, 165, 47);
 					}
 				}
 
@@ -143,6 +182,16 @@
 					}
 				}
 			}
+		}
+	}
+	.manager_wrapper.home{
+		.menu:nth-child(1){
+			background-color: #000000;
+		}
+	}
+	.manager_wrapper.notice{
+		.menu:nth-child(2){
+			background-color: #000000;
 		}
 	}
 }

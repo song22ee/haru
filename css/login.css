@@ -233,31 +233,25 @@ main .find_wrapper {
   margin-bottom: 3%;
   justify-content: center;
 }
-
 main .find_wrapper ul {
   margin-top: 20px;
   /* color: rgb(207, 207, 207); */
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: auto;
   box-sizing: border-box;
 }
-
 main .find_wrapper ul a {
-  padding: 10px;
-  background-color: #03c75a;
   box-sizing: border-box;
 }
-
 main .find_wrapper ul li {
   /* padding-right: 10px; */
   border-right: 1px solid rgb(78, 78, 78);
   box-sizing: border-box;
-  padding: 5px;
 }
-
-main .find_wrapper ul li:last-child {
-  /* padding-right: 0; */
-  /* border: none; */
-  padding-right: 0;
+main .find_wrapper ul li span {
+  padding: 10px;
+}
+main .find_wrapper ul .none_border {
+  border: none;
 }/*# sourceMappingURL=login.css.map */

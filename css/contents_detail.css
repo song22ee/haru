@@ -1,6 +1,7 @@
 .main_wrapper.contents_detail {
   width: 1080px;
   height: 1000px;
+  padding-top: 20px;
 }
 .main_wrapper.contents_detail .top {
   width: 100%;
@@ -36,7 +37,7 @@
 }
 .main_wrapper.contents_detail .top .top_right .contents_infos {
   width: 180px;
-  height: 200px;
+  height: 130px;
   font-size: 18px;
 }
 .main_wrapper.contents_detail .top .top_right .contents_infos .row {
@@ -85,7 +86,7 @@
 }
 .main_wrapper.contents_detail .top .top_right .total_price_wrapper {
   width: 100%;
-  height: 90px;
+  height: 40px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -107,6 +108,17 @@
 .main_wrapper.contents_detail .top .top_right .buttons.purchase {
   width: 100%;
   height: 90px;
-  background-color: #ff4f4f;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.purchase .purchase {
+  width: 280px;
+  background-color: #ff7d7d;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.purchase .cart {
+  width: 120px;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.purchase .like {
+  width: 120px;
 }/*# sourceMappingURL=contents_detail.css.map */

@@ -136,8 +136,13 @@ a {
 
 span {
 	font-family: 'Noto Sans';
+	font-size: 17px;
 }
 
 div {
 	box-sizing: border-box;
+}
+
+button {
+	border: none;
 }

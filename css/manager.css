@@ -11,20 +11,33 @@
   background-color: #eeeeee;
   display: flex;
   align-items: center;
+  border: solid;
+  border-width: 0.5px;
 }
 #manager_body .manager_wrapper .main_menu_wrapper {
   width: 200px;
   height: 100%;
-  background: #d9d9d9;
+  background: #eeeeee;
   display: flex;
   flex-direction: column;
+  border-right: solid;
+  border-width: 0.5px;
 }
 #manager_body .manager_wrapper .main_menu_wrapper .menu {
+  display: flex;
   box-sizing: border-box;
-  width: 201px;
+  width: 200px;
   height: 70px;
-  background: #8e8e8e;
-  border: 1px solid #000000;
+  background: rgb(174, 222, 222);
+  border-bottom: 1px solid #000000;
+  border-right: solid;
+  border-width: 0.5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17.5px;
+}
+#manager_body .manager_wrapper .main_menu_wrapper .menu:nth-child(1) {
+  background: rgb(15, 162, 162);
 }
 #manager_body .manager_wrapper .main_display {
   width: calc(100% - 200px);
@@ -39,15 +52,28 @@
   padding: 40px 50px;
 }
 #manager_body .manager_wrapper .main_display header .login_info {
+  display: flex;
+  flex-direction: column;
   width: 228px;
   height: 98px;
-  background: #d9d9d9;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 35px;
+  background: rgb(174, 222, 222);
+  border: solid;
+  border-width: 0.5px;
+}
+#manager_body .manager_wrapper .main_display header .login_info .on_dep {
+  margin-top: 7px;
 }
 #manager_body .manager_wrapper .main_display header .logout {
   width: 172px;
   height: 64px;
-  background: #d9d9d9;
+  font-size: 16px;
+  color: #dbdbdb;
+  background: rgb(0, 117, 117);
   border-radius: 40px;
+  border: none;
 }
 #manager_body .manager_wrapper .main_display .contents {
   width: 100%;
@@ -69,7 +95,9 @@
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  background: #d9d9d9;
+  background: rgb(255, 217, 29);
+  border: solid;
+  border-width: 0.5px;
   margin-left: 15px;
   text-align: center;
   padding-top: 5px;
@@ -100,10 +128,20 @@
   box-sizing: border-box;
 }
 #manager_body .manager_wrapper .main_display .contents .board .message {
+  display: flex;
   width: 669px;
   height: 38px;
-  background: #d9d9d9;
-  margin-bottom: 10px;
+  background: rgb(174, 222, 222);
+  border: solid;
+  border-width: 0.5px;
+  align-items: center;
+  margin: 0.7px;
+}
+#manager_body .manager_wrapper .main_display .contents .board .message:nth-child(2) {
+  background: rgb(94, 172, 255);
+}
+#manager_body .manager_wrapper .main_display .contents .board .message:nth-child(4), #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(5), #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(6) {
+  background: rgb(255, 165, 47);
 }
 #manager_body .manager_wrapper .main_display .contents .board.notice {
   width: 870px;
@@ -148,4 +186,10 @@
 }
 #manager_body .manager_wrapper .main_display .contents .board.notice .table_row {
   border-bottom: 1px solid rgb(218, 218, 218);
+}
+#manager_body .manager_wrapper.home .menu:nth-child(1) {
+  background-color: #000000;
+}
+#manager_body .manager_wrapper.notice .menu:nth-child(2) {
+  background-color: #000000;
 }/*# sourceMappingURL=manager.css.map */

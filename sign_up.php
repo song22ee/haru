@@ -21,7 +21,7 @@
                     <a href="#"><span>고객센터</span></a>
                 </li>
                 <li class="util_nav03">
-                    <a href="#"><span>로그인</span></a>
+                    <a href="login_php"><span>로그인</span></a>
                 </li>
             </ul>
             <div class="main_nav">
@@ -259,7 +259,7 @@
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
-    <script src="js/sign_up.js"></script>
+    <script src="js/member.js"></script>
 </body>
 
 </html>

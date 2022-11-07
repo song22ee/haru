@@ -15,20 +15,23 @@
         <header>
             <ul class="util_nav">
                 <li class="util_nav01">
-                    <a href="#"><span>회원가입</span></a>
+                    <a href="sign_up.php"><span>회원가입</span></a>
                 </li>
                 <li class="util_nav02">
                     <a href="#"><span>고객센터</span></a>
                 </li>
                 <li class="util_nav03">
-                    <a href="#"><span>로그인</span></a>
+                    <a href="login.html"><span>로그인</span></a>
                 </li>
             </ul>
             <div class="main_nav">
-                <div class="logo_wrapper">
-                    <!-- <img class="logo" src="" alt=""> -->
-                    <span class="logo">simple haru</span>
-                </div>
+                <a href="main.html" class="logo_link_index">
+                    <div class="logo_wrapper">
+                        <!-- <img class="logo" src="" alt=""> -->
+                        <span class="logo">simple haru</span>
+                    </div>
+                </a>
+
                 <!--검색창-->
                 <div class="search_wrapper">
                     <fieldset class="field-container">
@@ -118,33 +121,38 @@
                 </div>
             </a>
         </div>
-        <div class="ID_wrapper">
-            <fieldset class="ID_field-container">
-                <input type="text" placeholder="아이디를 입력하세요." class="ID_field_text" />
-            </fieldset>
-        </div>
-        <div class="FW_wrapper">
-            <fieldset class="FW_field-container">
-                <input type="text" placeholder="비밀번호를 입력하세요." class="FW_field_text" />
-            </fieldset>
-        </div>
-        <div class="login_keep_wrapper">
-            <div class="ID_keep_check">
-                <input type="checkbox" class="input_ID_keep">
-                <lavel for="ID_keep" class="ID_keep_text"> 아이디 저장 </lavel>
+
+        <form name="login_form" action="member_login.php">
+            <div class="ID_wrapper">
+                <fieldset class="ID_field-container">
+                    <input type="text" placeholder="아이디를 입력하세요." class="ID_field_text" name="id" />
+                </fieldset>
             </div>
-            <div class="all_keep_check">
-                <input type="checkbox" class="input_all_keep">
-                <lavel for="all_keep" class="all_keep_text"> 로그인 상태 유지 </lavel>
+            <div class="FW_wrapper">
+                <fieldset class="FW_field-container">
+                    <input type="text" placeholder="비밀번호를 입력하세요." class="FW_field_text" name="pass" />
+                </fieldset>
             </div>
-        </div>
-        <div class="finish_login_wrapper">
-            <a href="">
-                <div class="finish_login">
-                    <span class="finish_login_title"> 로그인 </span>
+            <div class="login_keep_wrapper">
+                <div class="ID_keep_check">
+                    <input type="checkbox" class="input_ID_keep">
+                    <lavel for="ID_keep" class="ID_keep_text"> 아이디 저장 </lavel>
                 </div>
-            </a>
-        </div>
+                <div class="all_keep_check">
+                    <input type="checkbox" class="input_all_keep">
+                    <lavel for="all_keep" class="all_keep_text"> 로그인 상태 유지 </lavel>
+                </div>
+            </div>
+            <div class="finish_login_wrapper">
+                <button class="finish_login" onclick="login()">
+                    <span class="finish_login_title"> 로그인 </span>
+                </button>
+            </div>
+        </form>
+
+
+
+
         <div class="find_wrapper">
             <ul>
                 <a href="sign_up.php">
@@ -223,6 +231,7 @@
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="../js/hot_issue.js"></script>
+    <script src="js/member.js"></script>
 </body>
 
 </html>

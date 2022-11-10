@@ -108,7 +108,7 @@
         </div>
         <span class="join_us_title">JOIN US</span>
         <div class="join_box">
-            <form name="member_form" method="post" action="member_insert.php" class="member_form">
+            <form name="member_form" method="POST" action="member_insert.php" class="member_form">
                 <div class="member_form_col">
                     <div class="ref">필수입력</div>
                     <div class="member_form_row row1">

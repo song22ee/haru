@@ -1,0 +1,28 @@
+//https://wickedmagica.tistory.com/16
+$row=db_select("select * from contents");
+$test=$row["content_name"];
+echo $test;
+
+<!-- <script>
+    <?php 
+        // echo "var value= '$test';"; 
+    ?>
+    console.log(value);
+    
+    
+</script> -->
+<?php echo "<script>alert('삭제되었습니다');</script>"; ?>
+
+<?php 
+echo 
+"<script>console.log('script')";
+?>
+
+const p = document.querySelectorAll('.content_name');
+const d = p[0].innerHTML;
+console.log(d);
+d=<?php 
+echo 'var value= '$test';'; 
+?>
+
+</script>";

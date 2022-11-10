@@ -63,9 +63,9 @@
 					}
 				}
 				.logout {
-					width: 172px;
-					height: 64px;
-					font-size: 16px;
+					width: 111px;
+					height: 43px;
+					font-size: 15px;
 					color: #dbdbdb;
 					background: rgb(0, 117, 117);
 					border-radius: 40px;
@@ -75,6 +75,8 @@
 			.contents {
 				width: 100%;
 				height: calc(100% - 190px);
+				display: flex;
+				flex-direction: column;
 				.contents_header {
 					width: 100%;
 					height: 45px;
@@ -97,32 +99,81 @@
 						text-align: center;
 						padding-top: 5px;
 					}
+					.order_wrapper, .registration, .check, .ascending_order, .descending_order {
+						font-size: 13px;
+						box-sizing: border-box;
+						justify-content: center;
+						align-items: center;
+						display: flex;
+						.order_one {
+							.registration {
+								width: 71px;
+								height: 28px;
+								border-radius: 8px;
+								border: solid;
+								border-width: 0.5px;
+							}
+							.check {
+								width: 71px;
+								height: 28px;
+								border-radius: 8px;
+								border: solid;
+								border-width: 0.5px;
+							}
+						}
+						.order_two {
+							.ascending_order {
+								width: 71px;
+								height: 28px;
+								border-radius: 8px;
+								border: solid;
+								border-width: 0.5px;
+							}
+							.descending_order {
+								width: 71px;
+								height: 28px;
+								border-radius: 8px;
+								border: solid;
+								border-width: 0.5px;
+							}
+						}
+					}
 					.search {
 						width: 504px;
 						height: 35px;
 						margin-left: 15px;
-						margin-right: 25px;
+						margin-right: 15px;
 					}
-					.regist,
+					.regist {
+						width: 87px;
+						height: 27px;
+						background: rgb(255, 217, 29);
+						border-radius: 8px;
+						border: solid;
+						border-width: 0.5px;
+						margin-right: 10px;
+					}
 					.delete {
 						width: 87px;
 						height: 27px;
 						background: #d9d9d9;
 						border-radius: 8px;
-						margin-right: 15px;
+						border: solid;
+						border-width: 0.5px;
+						margin-right: 10px;
 					}
 				}
 
 				.board {
 					width: 693px;
 					height: 408px;
-					background: #ffffff;
 					margin: 15px 0 0 55px;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 					padding: 10px 0;
 					box-sizing: border-box;
+					background: #ffffff;
 					.message {
 						display: flex;
 						width: 669px;
@@ -181,17 +232,56 @@
 						border-bottom: 1px solid rgb(218, 218, 218);
 					}
 				}
+				.board.product {
+					width: 870px;
+					padding-top: 0;
+					border: 2px solid black;
+					.table_header,
+					.table_row {
+						width: 100%;
+						height: 48px;
+						display: flex;
+						.table_col {
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+
+						.table_col.class {
+							width: 100px;
+						}
+						.table_col.title {
+							width: 351px;
+						}
+						.table_col.writer {
+							width: 122px;
+						}
+						.table_col.views {
+							width: 122px;
+						}
+						.table_col.date {
+							width: 176px;
+						}
+					}
+					.table_header {
+						border-bottom: 1px solid rgb(33, 33, 33);
+					}
+					.table_row {
+						border-bottom: 1px solid rgb(218, 218, 218);
+					}
+				}
 			}
 		}
 	}
-	.manager_wrapper.home{
-		.menu:nth-child(1){
-			background-color: #000000;
-		}
-	}
-	.manager_wrapper.notice{
-		.menu:nth-child(2){
-			background-color: #000000;
-		}
-	}
+	// .manager_wrapper.home{
+	// 	.menu:nth-child(1){
+	// 		background-color: #000000;
+	// 	}
+	// }
+	// .manager_wrapper.notice{
+	// 	.menu:nth-child(2){
+	// 		background-color: #000000;
+	// 	}
+	// }
 }

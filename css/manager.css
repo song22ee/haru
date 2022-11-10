@@ -67,9 +67,9 @@
   margin-top: 7px;
 }
 #manager_body .manager_wrapper .main_display header .logout {
-  width: 172px;
-  height: 64px;
-  font-size: 16px;
+  width: 111px;
+  height: 43px;
+  font-size: 15px;
   color: #dbdbdb;
   background: rgb(0, 117, 117);
   border-radius: 40px;
@@ -78,6 +78,8 @@
 #manager_body .manager_wrapper .main_display .contents {
   width: 100%;
   height: calc(100% - 190px);
+  display: flex;
+  flex-direction: column;
 }
 #manager_body .manager_wrapper .main_display .contents .contents_header {
   width: 100%;
@@ -102,30 +104,75 @@
   text-align: center;
   padding-top: 5px;
 }
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper, #manager_body .manager_wrapper .main_display .contents .contents_header .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .check, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order {
+  font-size: 13px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one .registration {
+  width: 71px;
+  height: 28px;
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one .check {
+  width: 71px;
+  height: 28px;
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two .ascending_order {
+  width: 71px;
+  height: 28px;
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two .descending_order {
+  width: 71px;
+  height: 28px;
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+}
 #manager_body .manager_wrapper .main_display .contents .contents_header .search {
   width: 504px;
   height: 35px;
   margin-left: 15px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .regist,
+#manager_body .manager_wrapper .main_display .contents .contents_header .regist {
+  width: 87px;
+  height: 27px;
+  background: rgb(255, 217, 29);
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+  margin-right: 10px;
+}
 #manager_body .manager_wrapper .main_display .contents .contents_header .delete {
   width: 87px;
   height: 27px;
   background: #d9d9d9;
   border-radius: 8px;
-  margin-right: 15px;
+  border: solid;
+  border-width: 0.5px;
+  margin-right: 10px;
 }
 #manager_body .manager_wrapper .main_display .contents .board {
   width: 693px;
   height: 408px;
-  background: #ffffff;
   margin: 15px 0 0 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
   box-sizing: border-box;
+  background: #ffffff;
 }
 #manager_body .manager_wrapper .main_display .contents .board .message {
   display: flex;
@@ -187,9 +234,47 @@
 #manager_body .manager_wrapper .main_display .contents .board.notice .table_row {
   border-bottom: 1px solid rgb(218, 218, 218);
 }
-#manager_body .manager_wrapper.home .menu:nth-child(1) {
-  background-color: #000000;
+#manager_body .manager_wrapper .main_display .contents .board.product {
+  width: 870px;
+  padding-top: 0;
+  border: 2px solid black;
 }
-#manager_body .manager_wrapper.notice .menu:nth-child(2) {
-  background-color: #000000;
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row {
+  width: 100%;
+  height: 48px;
+  display: flex;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.class,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.class {
+  width: 100px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.title,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.title {
+  width: 351px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.writer,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.writer {
+  width: 122px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.views,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.views {
+  width: 122px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.date,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.date {
+  width: 176px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header {
+  border-bottom: 1px solid rgb(33, 33, 33);
+}
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row {
+  border-bottom: 1px solid rgb(218, 218, 218);
 }/*# sourceMappingURL=manager.css.map */

@@ -21,7 +21,7 @@
                     <a href="#"><span>고객센터</span></a>
                 </li>
                 <li class="util_nav03">
-                    <a href="#"><span>로그인</span></a>
+                    <a href="login_php"><span>로그인</span></a>
                 </li>
             </ul>
             <div class="main_nav">
@@ -108,7 +108,7 @@
         </div>
         <span class="join_us_title">JOIN US</span>
         <div class="join_box">
-            <form name="member_form" method="post" action="member_insert.php" class="member_form">
+            <form name="member_form" method="POST" action="member_insert.php" class="member_form">
                 <div class="member_form_col">
                     <div class="ref">필수입력</div>
                     <div class="member_form_row row1">
@@ -259,7 +259,7 @@
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
-    <script src="js/sign_up.js"></script>
+    <script src="js/member.js"></script>
 </body>
 
 </html>

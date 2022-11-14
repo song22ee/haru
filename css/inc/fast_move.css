@@ -4,6 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
 @import url("style.css");
 .fast_move_wrapper {
+  position: fixed;
+  right: 0;
+  top: 300px;
   width: 53px;
   height: 203px;
   background-color: rgb(226, 226, 226);

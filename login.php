@@ -72,9 +72,6 @@
             </div>
         </form>
 
-
-
-
         <div class="find_wrapper">
             <ul>
                 <a href="sign_up.php">

@@ -7,8 +7,3 @@ function login() {
 	console.log('login()');
 	document.login_form.submit();
 }
-
-function detail_go() {
-	console.log('detail_go()');
-	window.location.href = 'contents_detail.php';
-}

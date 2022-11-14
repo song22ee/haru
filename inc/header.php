@@ -78,9 +78,12 @@
                 </div>
             </div>
             <div class="main_menu_wrapper">
-                <div class="main_menu_detail">
+                <a href="view_more_menu.php">
+                    <div class="main_menu_detail">
                     <i class="fas fa-bars fa-2x"></i>
                 </div>
+                </a>
+                
                 <ul class="main_menu_bar">
                     <li class="main_menu01"><a href="">착한기업</a></li>
                     <li class="main_menu02"><a href="">베스트</a></li>

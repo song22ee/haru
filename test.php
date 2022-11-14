@@ -1,16 +1,10 @@
 <?php
-
 require_once("inc/db.php");
+// $content_code=$_GET["content_code"];
+$result = db_select("select * from contents where content_code= ?", array("221113-001"));
+var_dump($result);
 
-$row=db_select("select * from contents");
-var_dump($row);
-$test=$row[0]["content_name"];
-echo $test;
+// echo "<pre>";
+// print_r($rs);
+
 ?>
-
-<?php if("$r[deliv_today]"==="Y"){ ?>
-                                    <i class="fas fa-bolt"></i>
-                                    <span>오늘 출발</span>
-                                <?php
-                            }
-                            ?>

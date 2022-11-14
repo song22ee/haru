@@ -4,6 +4,7 @@
 @import url(view_more_menu.css);
 @import url(sign_up.css);
 @import url(contents_detail.css);
+@import url(inc/deliv.css);
 @import url(login.css);
 @import url(manager.css);
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap");
@@ -262,20 +263,6 @@ body .main_wrapper .view_more_wrapper .view_more_btn {
   width: 220px;
   height: 90px;
   box-sizing: border-box;
-}
-.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .delivery_today_mark_wrapper {
-  display: flex;
-  font-size: 12px;
-}
-.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .delivery_today_mark_wrapper i {
-  margin-right: 10px;
-  color: rgb(227, 137, 20);
-}
-.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .delivery_today_mark_wrapper span {
-  font-family: var(--jua-font);
-  font-weight: 700;
-  font-size: 12px;
-  color: rgb(4, 4, 172);
 }
 .recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .content_name_wrapper {
   width: 100%;

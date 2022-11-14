@@ -6,6 +6,9 @@
 @import url(sign_up.css);
 @import url(contents_detail.css);
 
+//inc
+@import url(inc/deliv.css);
+
 // login
 @import url(login.css);
 
@@ -285,20 +288,7 @@ body {
 				height: 90px;
 				// background-color: bisque;
 				box-sizing: border-box;
-				.delivery_today_mark_wrapper {
-					display: flex;
-					font-size: 12px;
-					i {
-						margin-right: 10px;
-						color: rgb(227, 137, 20);
-					}
-					span {
-						font-family: var(--jua-font);
-						font-weight: 700;
-						font-size: 12px;
-						color: rgb(4, 4, 172);
-					}
-				}
+
 				.content_name_wrapper {
 					width: 100%;
 					height: 30px;

@@ -30,27 +30,30 @@
             <div class="recommend_main_content_wrapper">
                 <ul class="recommend_main_contents">
                     <?php foreach($result as $r){?>
-                    <li class="recommend_main_content" onclick="detail_go()">
-                        <div class="content_img_wrapper"> <img src="<?php echo "$r[content_img]"?>" alt=""></div>
-                        <div class="content_text_wrapper">
-                            
-                            <div class="content_name_wrapper">
-                                <span class="content_name"><?php echo "$r[content_name]"?></span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
-                                <span class="content_price"><?php echo "$r[content_price]"?>원</span>
-                            </div>
-                            <div class="delivery_today_mark_wrapper">
-                                    <?php if("$r[deliv_today]"==="Y"){ ?>
-                                    <i class="fas fa-bolt"></i>
-                                    <span>오늘 출발</span>
-                                <?php
-                            }
-                            ?>
-                            </div>
-                        </div>
-                    </li>
+                        <a href="contents_detail.php?content_code=<?php echo "$r[content_code]"?>">
+                            <li class="recommend_main_content">
+                                <div class="content_img_wrapper"> <img src="<?php echo "$r[content_img]"?>" alt=""/></div>
+                                <div class="content_text_wrapper">
+                                    
+                                    <div class="content_name_wrapper">
+                                        <span class="content_name"><?php echo "$r[content_name]"?></span>
+                                    </div>
+                                    <div class="content_price_wrapper">
+                                        <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
+                                        <span class="content_price"><?php echo "$r[content_price]"?>원</span>
+                                    </div>
+                                    <div class="delivery_today_mark_wrapper">
+                                            <?php if("$r[deliv_today]"==="Y"){ ?>
+                                            <i class="fas fa-bolt"></i>
+                                            <span>오늘 출발</span>
+                                        <?php
+                                    }
+                                    ?>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    
                     <?php }?>
 
                 </ul>

@@ -70,7 +70,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
     <script src="js/member.js"></script>
-    <script src="js/content.js"></script>
     
 </body>
 

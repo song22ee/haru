@@ -1,3 +1,5 @@
+<?php require_once("contents.import.php");?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,218 +29,29 @@
             </div>
             <div class="recommend_main_content_wrapper">
                 <ul class="recommend_main_contents">
+                    <?php foreach($result as $r){?>
                     <li class="recommend_main_content" onclick="detail_go()">
-                        <div class="content_img_wrapper"></div>
+                        <div class="content_img_wrapper"> <img src="<?php echo "$r[content_img]"?>" alt=""></div>
                         <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
+                            
                             <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
+                                <span class="content_name"><?php echo "$r[content_name]"?></span>
                             </div>
                             <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
+                                <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
+                                <span class="content_price"><?php echo "$r[content_price]"?>원</span>
+                            </div>
+                            <div class="delivery_today_mark_wrapper">
+                                    <?php if("$r[deliv_today]"==="Y"){ ?>
+                                    <i class="fas fa-bolt"></i>
+                                    <span>오늘 출발</span>
+                                <?php
+                            }
+                            ?>
                             </div>
                         </div>
                     </li>
-
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recommend_main_content">
-                        <div class="content_img_wrapper"></div>
-                        <div class="content_text_wrapper">
-                            <div class="delivery_today_mark_wrapper">
-                                <i class="fas fa-bolt"></i>
-                                <span>오늘 출발</span>
-                            </div>
-                            <div class="content_name_wrapper">
-                                <span class="content_name">주문 폭주하는 아우터</span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate">40%</span>
-                                <span class="content_price">14,000</span>
-                            </div>
-                        </div>
-                    </li>
-
-
-
+                    <?php }?>
 
                 </ul>
             </div>

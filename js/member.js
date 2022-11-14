@@ -10,5 +10,5 @@ function login() {
 
 function detail_go() {
 	console.log('detail_go()');
-	window.location.href = 'contents_detail.html';
+	window.location.href = 'contents_detail.php';
 }

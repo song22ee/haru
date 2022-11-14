@@ -4,7 +4,7 @@ require_once("inc/db.php");
 $content_code=$_GET["content_code"];
 
 $result = db_select("select * from contents where content_code= ?", array("$content_code"));
-                          
+
 ?>
 
 
@@ -82,6 +82,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
             </section>
         </section>
     </main>
+    <?php require_once("inc/fast_move.php"); ?>
 
     <?php require_once("inc/footer.php"); ?>
 

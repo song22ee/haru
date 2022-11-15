@@ -1,3 +1,13 @@
+<?php
+require_once("inc/db.php");
+
+$content_code=$_GET["content_code"];
+
+$result = db_select("select * from contents where content_code= ?", array("$content_code"));
+                          
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +26,7 @@
     <main class="main_wrapper contents_detail">
         <section class="top">
             <section class="top_left">
-                <div class="main_img"></div>
+                <div class="main_img"><img src="<?php print_r($result[0]["content_img"])?>" alt=""/></div>
                 <div class="imgs">
                     <div class="img"></div>
                     <div class="img"></div>
@@ -26,8 +36,16 @@
             </section>
             <section class="top_right">
                 <div class="contents_infos">
+                    <div class="delivery_today_mark_wrapper">
+                        <?php if($result[0]["deliv_today"]==="Y"){ ?>
+                            <i class="fas fa-bolt"></i>
+                            <span>오늘 출발</span>
+                        <?php
+                        }
+                        ?>
+                    </div>
                     <div class="row">
-                        <span class="content_title">상품이름</span>
+                        <span class="content_title"><?php print_r($result[0]["content_name"])?></span>
                     </div>
                     <div class="row">
                         <div class="stars">
@@ -43,8 +61,8 @@
                         <span class="price_original">70,000</span>
                     </div>
                     <div class="row">
-                        <span class="sale_percent">46%</span>
-                        <span class="price_final">50,600원</span>
+                        <span class="sale_percent"><?php print_r($result[0]["discount_rate"])?>%</span>
+                        <span class="price_final"><?php print_r($result[0]["content_price"])?>원</span>
                     </div>
                 </div>
                 <div class="buttons choice">
@@ -53,7 +71,7 @@
                 </div>
                 <div class="total_price_wrapper">
                     <span class="total_price_title">총 결제 금액 : </span>
-                    <span class="total_price">50,600</span>
+                    <span class="total_price">0원</span>
                 </div>
                 <div class="insert_contents"></div>
                 <div class="buttons purchase">
@@ -70,7 +88,6 @@
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
-    <script src="js/sign_up.js"></script>
 </body>
 
-</html>
+</html> 

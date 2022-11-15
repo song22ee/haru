@@ -30,27 +30,30 @@
             <div class="recommend_main_content_wrapper">
                 <ul class="recommend_main_contents">
                     <?php foreach($result as $r){?>
-                    <li class="recommend_main_content" onclick="detail_go()">
-                        <div class="content_img_wrapper"> <img src="<?php echo "$r[content_img]"?>" alt=""></div>
-                        <div class="content_text_wrapper">
-                            
-                            <div class="content_name_wrapper">
-                                <span class="content_name"><?php echo "$r[content_name]"?></span>
-                            </div>
-                            <div class="content_price_wrapper">
-                                <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
-                                <span class="content_price"><?php echo "$r[content_price]"?>원</span>
-                            </div>
-                            <div class="delivery_today_mark_wrapper">
-                                    <?php if("$r[deliv_today]"==="Y"){ ?>
-                                    <i class="fas fa-bolt"></i>
-                                    <span>오늘 출발</span>
-                                <?php
-                            }
-                            ?>
-                            </div>
-                        </div>
-                    </li>
+                        <a href="contents_detail.php?content_code=<?php echo "$r[content_code]"?>">
+                            <li class="recommend_main_content">
+                                <div class="content_img_wrapper"> <img src="<?php echo "$r[content_img]"?>" alt=""/></div>
+                                <div class="content_text_wrapper">
+                                    
+                                    <div class="content_name_wrapper">
+                                        <span class="content_name"><?php echo "$r[content_name]"?></span>
+                                    </div>
+                                    <div class="content_price_wrapper">
+                                        <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
+                                        <span class="content_price"><?php echo "$r[content_price]"?>원</span>
+                                    </div>
+                                    <div class="delivery_today_mark_wrapper">
+                                            <?php if("$r[deliv_today]"==="Y"){ ?>
+                                            <i class="fas fa-bolt"></i>
+                                            <span>오늘 출발</span>
+                                        <?php
+                                    }
+                                    ?>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    
                     <?php }?>
 
                 </ul>
@@ -61,13 +64,29 @@
         </div>
     </main>
 
+    <div class="fast_move_wrapper">
+        <div class="good_company_link">
+            <span class="good_company_title"> 착한 <br /> 기업 </span>
+        </div>
+        <div class="go_top_screen">
+            <i class="fa-solid fa-caret-up fa-2x"></i>
+        </div>
+        <div class="go_bottom_screen">
+            <i class="fa-solid fa-caret-down fa-2x"></i>
+        </div>
+        <div class="kakao_counseling_link">
+            <img src="https://play-lh.googleusercontent.com/Ob9Ys8yKMeyKzZvl3cB9JNSTui1lJwjSKD60IVYnlvU2DsahysGENJE-txiRIW9_72Vd"
+                alt="">
+        </div>
+    </div>
+
     <?php require_once("inc/footer.php"); ?>
 
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/55083c7425.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
     <script src="js/member.js"></script>
-    <script src="js/content.js"></script>
     
 </body>
 

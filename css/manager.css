@@ -36,9 +36,6 @@
   align-items: center;
   font-size: 17.5px;
 }
-#manager_body .manager_wrapper .main_menu_wrapper .menu:nth-child(1) {
-  background: rgb(15, 162, 162);
-}
 #manager_body .manager_wrapper .main_display {
   width: calc(100% - 200px);
   height: 100%;
@@ -105,41 +102,69 @@
   text-align: center;
   padding-top: 5px;
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper, #manager_body .manager_wrapper .main_display .contents .contents_header .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .check, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order {
   font-size: 13px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one {
   margin-top: 10px;
   margin-right: 3px;
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one .registration, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one .registration {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one .registration,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one .registration,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one .registration,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one .registration,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one .registration {
   width: 71px;
   height: 28px;
   border: solid;
   border-width: 0.5px;
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one .check, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one .check {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_one .check,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_one .check,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check .order_one .check,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_one .check,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_one .check {
   width: 71px;
   height: 28px;
   border: solid;
   border-width: 0.5px;
   background: rgb(164, 225, 255);
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two {
   margin-top: 10px;
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two .ascending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two .ascending_order {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two .ascending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two .ascending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two .ascending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two .ascending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two .ascending_order {
   width: 71px;
   height: 28px;
   border: solid;
   border-width: 0.5px;
   background: rgb(164, 225, 255);
 }
-#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two .descending_order, #manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two .descending_order {
+#manager_body .manager_wrapper .main_display .contents .contents_header .order_wrapper .order_two .descending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .registration .order_two .descending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .check .order_two .descending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .ascending_order .order_two .descending_order,
+#manager_body .manager_wrapper .main_display .contents .contents_header .descending_order .order_two .descending_order {
   width: 71px;
   height: 28px;
   border: solid;
@@ -223,7 +248,9 @@
 #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(2) {
   background: rgb(94, 172, 255);
 }
-#manager_body .manager_wrapper .main_display .contents .board .message:nth-child(4), #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(5), #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(6) {
+#manager_body .manager_wrapper .main_display .contents .board .message:nth-child(4),
+#manager_body .manager_wrapper .main_display .contents .board .message:nth-child(5),
+#manager_body .manager_wrapper .main_display .contents .board .message:nth-child(6) {
   background: rgb(255, 165, 47);
 }
 #manager_body .manager_wrapper .main_display .contents .board.notice {

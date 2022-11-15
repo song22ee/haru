@@ -33,9 +33,6 @@
 				align-items: center;
 				font-size: 17.5px;
 			}
-			.menu:nth-child(1) {
-				background: rgb(15, 162, 162);
-			}
 		}
 		.main_display {
 			width: calc(100% - 200px);
@@ -100,7 +97,11 @@
 						text-align: center;
 						padding-top: 5px;
 					}
-					.order_wrapper, .registration, .check, .ascending_order, .descending_order {
+					.order_wrapper,
+					.registration,
+					.check,
+					.ascending_order,
+					.descending_order {
 						font-size: 13px;
 						box-sizing: border-box;
 						justify-content: center;
@@ -220,7 +221,9 @@
 					.message:nth-child(2) {
 						background: rgb(94, 172, 255);
 					}
-					.message:nth-child(4), .message:nth-child(5), .message:nth-child(6) {
+					.message:nth-child(4),
+					.message:nth-child(5),
+					.message:nth-child(6) {
 						background: rgb(255, 165, 47);
 					}
 				}
@@ -359,6 +362,7 @@
 								margin-right: 5px;
 								margin-bottom: 20px;
 							}
+              
 						}
 						.product_detail {
 							width: 100%;
@@ -444,7 +448,3 @@
 						}
 					}
 				}
-			}
-		}
-	}
-}

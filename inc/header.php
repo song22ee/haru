@@ -54,10 +54,12 @@
                     <i class="far fa-heart fa-1x"></i>
                     <span class="like_nav_title">찜한 상품</span>
                 </div>
-                <div class="cart_nav">
+                <a href="cart.php">
+                    <div class="cart_nav">
                     <i class="fas fa-shopping-bag fa-1x"></i>
                     <span class="cart_nav_title">장바구니</span>
                 </div>
+                </a>
                 <div class="my_page_nav">
                     <i class="far fa-user fa-1x"></i>
                     <span class="my_page_nav_title">마이페이지</span>

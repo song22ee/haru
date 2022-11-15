@@ -322,6 +322,7 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 #manager_body .manager_wrapper .main_registration .title_and_registration .title {
   font-style: normal;
@@ -330,35 +331,119 @@
 }
 #manager_body .manager_wrapper .main_registration .contents {
   width: 100%;
-  height: calc(100% - 70px);
+  height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
 }
-#manager_body .manager_wrapper .main_registration .board.product {
+#manager_body .manager_wrapper .main_registration .scroller {
+  height: 870px;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product {
   width: 870px;
-  height: 575px;
-  margin: 40px 0 0 55px;
+  height: 750px;
+  margin: 0 0 0 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 30px;
   box-sizing: border-box;
   background: #ffffff;
 }
-#manager_body .manager_wrapper .main_registration .board.product .point_img {
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img {
   width: 100%;
   height: 100%;
-  background-color: aqua;
 }
-#manager_body .manager_wrapper .main_registration .board.product .point_img .point_img_contents {
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_title {
+  padding-bottom: 20px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents {
   display: flex;
   width: 100%;
-  height: 100%;
-  background-color: rgb(255, 183, 90);
 }
-#manager_body .manager_wrapper .main_registration .board.product .point_img .point_img_contents .point_img_content {
-  width: 300px;
-  height: 300px;
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents .point_img_content {
+  width: 150px;
+  height: 150px;
   background-color: grey;
   border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_three {
+  width: 350px;
+  background-color: #dbdbdb;
+  margin-right: 10px;
+  padding: 10px 10px;
+  line-height: 43px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_two {
+  width: 350px;
+  height: 90px;
+  background-color: #dbdbdb;
+  padding: 10px 10px;
+  line-height: 35px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_sign_up_col_title {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors .pro_sign_up_color {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(184, 184, 184);
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  font-size: 8px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors .pro_sign_up_color .product_color_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_sign_up_size_title {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_sizes {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_sizes .pro_sign_up_size {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin-right: 5px;
+  font-size: 12px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_sizes .pro_sign_up_size .product_size_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail_explain_title {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
 }/*# sourceMappingURL=manager.css.map */

@@ -13,13 +13,13 @@
     <main class="manager_wrapper home">
         <div class="main_menu_wrapper">
 
-            <a href="manager_home.html">
+            <a href="manager_home.php">
                 <div class="menu" style="background-color:  rgb(15, 162, 162);"> 홈 </div>
             </a>
-            <a href="manager_notice.html">
+            <a href="manager_notice.php">
                 <div class="menu"> 공지사항 관리 </div>
             </a>
-            <a href="manager_product.html">
+            <a href="manager_product.php">
                 <div class="menu"> 상품 관리 </div>
             </a>
             <a href="">

@@ -305,8 +305,9 @@
 #manager_body .manager_wrapper .main_display .contents .board.product .table_header,
 #manager_body .manager_wrapper .main_display .contents .board.product .table_row {
   width: 100%;
-  height: 48px;
+  height: 100px;
   display: flex;
+  justify-content: space-around;
 }
 #manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col,
 #manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col {
@@ -321,19 +322,19 @@
 }
 #manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.title,
 #manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.title {
-  width: 351px;
+  width: 200px;
 }
-#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.writer,
-#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.writer {
-  width: 122px;
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.code,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.code {
+  width: 90px;
 }
-#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.views,
-#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.views {
-  width: 122px;
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.deliv,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.deliv {
+  width: 80px;
 }
 #manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.date,
 #manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.date {
-  width: 176px;
+  width: 100px;
 }
 #manager_body .manager_wrapper .main_display .contents .board.product .table_header {
   border-bottom: 1px solid rgb(33, 33, 33);

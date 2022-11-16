@@ -24,7 +24,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
     <?php require_once("inc/header.php"); ?>
 
     <main class="main_wrapper contents_detail">
-        <section class="top">
+        <form class="top" action="cart_insert.php?content_code=<?php echo "$content_code"?>" name="contents_form" method="POST" >
             <section class="top_left">
                 <div class="main_img"><img src="<?php print_r($result[0]["content_img"])?>" alt=""/></div>
                 <div class="imgs">
@@ -76,11 +76,11 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                 <div class="insert_contents"></div>
                 <div class="buttons purchase">
                     <button class="purchase"><span>구매하기</span></button>
-                    <button class="cart"><span>장바구니</span> </button>
+                    <button class="cart" onclick="cart_insert()"><span>장바구니</span> </button>
                     <button class="like"><span>찜</span></button>
                 </div>
             </section>
-        </section>
+        </form>
     </main>
     <?php require_once("inc/fast_move.php"); ?>
 
@@ -89,6 +89,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html> 

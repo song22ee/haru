@@ -1,4 +1,4 @@
-<?php require_once("contents.import.php");?>
+<?php require_once("cart.import.php");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,25 +34,18 @@
                     <td>배송비</td>
                     <td>합계</td>
                 </tr>
+                <?php foreach($result as $r){?>
+                    <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
                 <tr>
                     <td class="check"><input type="checkbox"></td>
-                    <td><div class="img_wrapper"></div></td>
-                    <td>상품정보</td>
-                    <td>50,500원</td>
+                    <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
+                    <td><?php echo $a[0]['content_name']?></td>
+                    <td><?php echo $a[0]['content_price']?>원</td>
                     <td>1개</td>
-                    <td>50,500원</td>
-                    <td>50,500원</td>
+                    <td>0000원</td>
+                    <td>0000원</td>
                 </tr>
-                <tr>
-                    <td class="check"><input type="checkbox"></td>
-                    <td><div class="img_wrapper"></div></td>
-                    <td>상품정보</td>
-                    <td>50,500원</td>
-                    <td>1개</td>
-                    <td>50,500원</td>
-                    <td>50,500원</td>
-                </tr>
-                
+                <?php } ?>
             </table>
         </section>
         <section class="purchase_buttons">

@@ -42,6 +42,8 @@ if ($is_match_password === false){
 session_start();
 $_SESSION['member_id'] = $member_data[0]['id'];
 
+// var_dump($_SESSION['member_id']);
+
 // 메인페이지로 이동
 header("Location: index.php");
 

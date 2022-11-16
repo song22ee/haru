@@ -11,11 +11,11 @@
 
     // 데이터 저장
     db_insert("insert into cart (content_code , user_id) values (:content_code, :user_id )",
-    array(
-        'content_code' => $content_code,
-        'user_id' => $user_id
-    )
-);
+        array(
+            'content_code' => $content_code,
+            'user_id' => $user_id
+        )
+    );
 
     $prevPage = $_SERVER['HTTP_REFERER'];
     // 변수에 이전페이지 정보를 저장

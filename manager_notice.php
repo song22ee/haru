@@ -12,13 +12,14 @@
 <body id="manager_body">
     <main class="manager_wrapper notice">
         <div class="main_menu_wrapper">
-            <a href="manager_home.html">
-                <div class="menu"> 홈 </div>
+
+            <a href="manager_home.php">
+                <div class="menu" > 홈 </div>
             </a>
-            <a href="manager_notice.html">
+            <a href="manager_notice.php">
                 <div class="menu" style="background-color:  rgb(15, 162, 162);"> 공지사항 관리 </div>
             </a>
-            <a href="manager_product.html">
+            <a href="manager_product.php">
                 <div class="menu"> 상품 관리 </div>
             </a>
             <a href="">
@@ -28,6 +29,7 @@
                 <div class="menu"> 고객 문의 관리 </div>
             </a>
         </div>
+
 
         <div class="main_display">
             <header>

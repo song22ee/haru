@@ -69,7 +69,7 @@
 					border: none;
 					cursor: pointer;
 					&:hover {
-						background: rgb(77,77,77);
+						background: rgb(77, 77, 77);
 						color: #fff;
 					}
 				}
@@ -171,7 +171,7 @@
 						margin-top: 10px;
 						cursor: pointer;
 						&:hover {
-							background: rgb(77,77,77);
+							background: rgb(77, 77, 77);
 							color: #fff;
 						}
 					}
@@ -186,7 +186,7 @@
 						margin-top: 30px;
 						cursor: pointer;
 						&:hover {
-							background: rgb(77,77,77);
+							background: rgb(77, 77, 77);
 							color: #fff;
 						}
 					}
@@ -201,7 +201,7 @@
 						margin-top: 10px;
 						cursor: pointer;
 						&:hover {
-							background: rgb(77,77,77);
+							background: rgb(77, 77, 77);
 							color: #fff;
 						}
 					}
@@ -216,7 +216,7 @@
 						margin-top: 30px;
 						cursor: pointer;
 						&:hover {
-							background: rgb(77,77,77);
+							background: rgb(77, 77, 77);
 							color: #fff;
 						}
 					}
@@ -366,11 +366,11 @@
 					padding: 30px 30px;
 					box-sizing: border-box;
 					background: #ffffff;
-					.point_img{
+					.point_img {
 						width: 100%;
 						height: 100%;
 						// background-color: aqua;
-	
+
 						.point_title {
 							padding-bottom: 20px;
 						}
@@ -378,7 +378,7 @@
 							display: flex;
 							width: 100%;
 							// background-color: rgb(255, 183, 90);
-							.point_img_content{
+							.point_img_content {
 								width: 150px;
 								height: 150px;
 								background-color: rgb(255, 255, 255);
@@ -410,7 +410,7 @@
 						}
 						.product_detail {
 							width: 100%;
-							height: 150px;
+							height: 200px;
 							// background-color: rgb(255, 249, 127);
 							display: flex;
 							// line-height: 20px;
@@ -421,8 +421,24 @@
 								padding: 10px;
 								line-height: 43px;
 								border: 1px solid #000000;
+								.product_code {
+									font-size: 14px;
+
+									.text_product_code {
+										border: 0;
+										background-color: rgb(174, 222, 222);
+										border-bottom: solid;
+										border-width: 0.5px;
+										min-width: 190px;
+										margin-left: 10px;
+										outline: none;
+										padding-bottom: 3px;
+									}
+								}
+
 								.product_name {
 									font-size: 14px;
+
 									.text_product_name {
 										border: 0;
 										background-color: rgb(174, 222, 222);
@@ -463,23 +479,20 @@
 							}
 							.product_board_two {
 								width: 350px;
-								height: 90px;
+								height: 130px;
 								background-color: rgb(174, 222, 222);
 								padding: 10px 10px;
 								line-height: 35px;
 								border: 1px solid #000000;
+								select {
+									width: 150px;
+									padding: 5px;
+									background-color: rgb(174, 222, 222);
+									border: 1px solid #999;
+									border-radius: 0px;
+								}
 								.product_category {
 									font-size: 14px;
-									select {
-										width: 150px;
-										padding: 5px;
-										background: url(file:///C:/Users/jsaop/Downloads/caret-down-solid.svg) no-repeat 95% 50%; 
-										border: 1px solid #999; 
-										border-radius: 0px;
-										-webkit-appearance: none;
-										-moz-appearance: none;
-										appearance: none;
-									}
 								}
 								.product_discount_rate {
 									font-size: 14px;
@@ -493,6 +506,9 @@
 										outline: none;
 										padding-bottom: 3px;
 									}
+								}
+								.is_deliv_today {
+									font-size: 14px;
 								}
 							}
 						}
@@ -508,7 +524,7 @@
 							height: 60px;
 							// background-color: rgb(255, 219, 172);
 							padding-left: 10px;
-							.pro_sign_up_color{
+							.pro_sign_up_color {
 								width: 60px;
 								height: 60px;
 								border: 1px solid black;
@@ -556,7 +572,7 @@
 							height: 60px;
 							// background-color: rgb(255, 219, 172);
 							padding-left: 10px;
-							.pro_sign_up_size{
+							.pro_sign_up_size {
 								width: 60px;
 								height: 60px;
 								// background-color: rgb(184, 184, 184);
@@ -597,10 +613,10 @@
 							margin-top: 50px;
 							padding-bottom: 45px;
 							padding-left: 10px;
-							.input-file-button{
+							.input-file-button {
 								margin-left: 25px;
 								padding: 6px 20px;
-								background-color:rgb(174, 222, 222);
+								background-color: rgb(174, 222, 222);
 								color: rgb(0, 0, 0);
 								border: 1px solid black;
 								font-size: 10px;
@@ -615,7 +631,7 @@
 							.input-submit-button {
 								margin-left: 300px;
 								padding: 6px 100px;
-								background-color:rgb(174, 222, 222);
+								background-color: rgb(174, 222, 222);
 								color: rgb(0, 0, 0);
 								border: 1px solid black;
 								font-size: 10px;

@@ -49,6 +49,7 @@
 			width: 100%;
 			height: 40px;
 			background-color: rgb(227, 227, 227);
+			box-sizing: border-box;
 		}
 		tr {
 			display: flex;
@@ -57,6 +58,7 @@
 			width: 100%;
 			height: 150px;
 			border: 1px solid black;
+			box-sizing: border-box;
 			.check {
 				width: 70px;
 			}
@@ -90,7 +92,7 @@
 			width: 100%;
 			height: 40px;
 			background-color: rgb(227, 227, 227);
-			padding: 0 45px 0 30px;
+			padding: 0 45px 0 45px;
 			box-sizing: border-box;
 			.import_text {
 				font-size: 10px;
@@ -101,7 +103,7 @@
 			display: flex;
 			align-items: center;
 			width: 100%;
-			height: 150px;
+			height: 250px;
 			border: 1px solid black;
 			justify-content: space-between;
 			td {
@@ -109,6 +111,123 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+			}
+		}
+	}
+}
+
+.custom_ord_info {
+	width: 100%;
+	height: 450px;
+	background:rgb(227, 227, 227);
+	border: 1px solid black;
+	display: flex;
+	padding: 40px 0 40px 40px;
+	.ord_info {
+		width: 500px;
+		height: 182px;
+		background-color:  rgb(174, 222, 222);
+		line-height: 35px;
+		border: 1px solid #000000;
+		box-sizing: border-box;
+		.custom_info {
+			width: 100%;
+			height: 55px;
+			// background-color: rgb(227, 227, 227);
+			padding-left: 10px;
+			font-size: 15px;
+			// border: 1px solid #000000;
+			padding-top: 5px;
+		}
+		.ord_name {
+			width: 100%;
+			height: 40px;
+			// background-color: rgb(227, 227, 227);
+			box-sizing: border-box;
+			padding-left: 40px;
+			font-size: 13px;
+			// border: 1px solid #000000;
+			.ord_text_info_name {
+				border: 0;
+				// background-color: rgb(174, 222, 222);
+				border-bottom: solid;
+				border-width: 0.5px;
+				min-width: 240px;
+				margin-left: 39px;
+				outline: none;
+				padding-bottom: 3px;
+			}
+		}
+		.ord_email {
+			width: 100%;
+			height: 40px;
+			// background-color: rgb(227, 227, 227);
+			box-sizing: border-box;
+			padding-left: 40px;
+			font-size: 13px;
+			// border: 1px solid #000000;
+			.ord_text_info_email {
+				border: 0;
+				// background-color: rgb(174, 222, 222);
+				border-bottom: solid;
+				border-width: 0.5px;
+				min-width: 190px;
+				margin-left: 25px;
+				outline: none;
+				padding-bottom: 3px;
+			}
+		}
+		.ord_phone_number {
+			width: 100%;
+			height: 45px;
+			// background-color: rgb(227, 227, 227);
+			box-sizing: border-box;
+			padding-left: 40px;
+			font-size: 13px;
+			padding-bottom: 5px;
+			// border: 1px solid #000000;
+			.ord_text_info_number {
+				border: 0;
+				// background-color: rgb(174, 222, 222);
+				border-width: 0.5px;
+				min-width: 80px;
+				margin-left: 12px;
+				outline: none;
+				padding-bottom: 3px;
+				border: 1px solid #000000;
+			}
+			.li {
+				.ord_phone_number_first {
+					display: block;
+					width: 100%;
+					height: 35px;
+					line-height: 35px;
+					font-size: 12px;
+					color: #000;
+					border: 0;
+					border-bottom: solid 1px #9d9d9d;
+					box-sizing: border-box;
+				}
+			}
+			// .ord_phone_number_first {
+			// 	border: 0;
+			// 	// background-color: rgb(174, 222, 222);
+			// 	border-width: 0.5px;
+			// 	min-width: 80px;
+			// 	margin-left: 12px;
+			// 	outline: none;
+			// 	padding-bottom: 3px;
+			// 	border: 1px solid #000000;
+			// }
+			.ord_phone_number_last {
+				// border: 0;
+				// // background-color: rgb(174, 222, 222);
+				// border-width: 0.5px;
+				// min-width: 80px;
+				// margin-left: 12px;
+				// outline: none;
+				// padding-bottom: 3px;
+				// border: 1px solid #000000;
 			}
 		}
 	}

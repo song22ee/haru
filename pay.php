@@ -51,6 +51,58 @@
                     <td class = "import_text"> * 필수 입력 사항 </td>
                 </tr>
             </table>
+            <div class = "custom_ord_info">
+                <div class="ord_info">
+                    <div class="custom_info"> 01. 주문자 정보 </div>
+                    <div class="ord_name"> 이름: <input type="ord_text_name" placeholder="" class="ord_text_info_name" /> </div>
+                    <label class="ord_email" for="email">
+                        이메일:
+                        <input class="ord_text_info_email" type="email" id="ord_email" pattern=".+@globex\.com" size="32" minlength="3" maxlength="64" required />
+                    </label>
+                    <ul class="ord_phone_number">
+                        휴대전화: 
+                        <li>
+                            <select name="" id="" class="ord_text_info_number">
+                                <option value = "010"> 010 </option>
+                                <option value = "010"> 011 </option>
+                                <option value = "010"> 016 </option>
+                                <option value = "010"> 017 </option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="text" maxlength="4" title="휴대전화 앞자리" name="ord_phone_number_first" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" autocomplete="new-password">
+                        </li>
+                        <li>
+                            <input type="text" maxlength="4" title="휴대전화 앞자리" name="ord_phone_number_last" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" autocomplete="new-password">
+                        </li>
+                    </ul>
+                    <!-- <label class="ord_phone_number" for = "telNo">
+                        휴대전화: 
+                        <input class = "ord_text_info_number" type="tel" id="telNo" minlength="10" maxlength="13" /> 
+                    </label> -->
+                </div>
+                <div class="deliv_info">
+                    <div class="delivery_info"> 02. 배송 정보 </div>
+                    <div class = "dest_choose"> 배송지 선택 * </div>
+                    <div class="deliv_name"> 이름: <input type="deliv_text_name" placeholder="" class="deliv_text_info_name" /> </div>
+                    <div class="deliv_address"> 주소: <input type="deliv_text_address" placeholder="" class="deliv_text__info_address" /> </div>
+                    <ul class="deliv_phone_number">
+                        <li>
+                            <select name="" id="" class="deliv_text_info_number">
+                                <option value = "010"> 010 </option>
+                                <option value = "010"> 011 </option>
+                                <option value = "010"> 016 </option>
+                                <option value = "010"> 017 </option>
+                            </select>
+                        </li>
+                    </ul>
+                    <!-- <label class="deliv_phone_number" for = "telNo">
+                        휴대전화: 
+                        <input class = "deliv_text_info_number" type="tel" id="telNo" minlength="10" maxlength="13" /> 
+                    </label> -->
+                    <div class="deliv_message"> 배송 메시지: <input type="deliv_text_message" placeholder="" class="deliv_text_info_message" /> </div>
+                </div>
+            </div>
         </section>
         <section class="order_buttons">
             <button class="order_total"> 주문하기 </button>

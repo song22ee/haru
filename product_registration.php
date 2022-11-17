@@ -41,28 +41,14 @@
                     <form action="contents_insert.php" method="POST">
                         <section class="board product">
                             <div class="point_img">
-                                <div class="point_title"> 대표 이미지 </div>
-                                <div class="point_img_contents">
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"><input type="text" name="product_img" value="img/contents/content10.jpg"></div>
-                                    </div>
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"></div>
-                                    </div>
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"></div>
-                                    </div>
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"></div>
-                                    </div>
+                                <div class="img_insert_header">
+                                    <div class="point_title"> 대표 이미지 </div>
                                     <div class="point_img_content_plus">
-                                        <label class="input-file-button" for="input-file-img">
-                                            <div class="point_img_plus"> + </div>
-                                        </label>
-                                        <input type="file" id="input-file-img" style="display: none;"
-                                            accept=".jpg, .jpeg, .png">
+                                        <label for="image">추가하기</label>
+                                        <input class="point_img_plus" type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple />                                        
                                     </div>
                                 </div>
+                                <div class="point_img_contents"></div>
                                 <div class="product_detail">
                                     <div class="product_board_three">
                                         <div class="product_code"> 상품코드 : <input type="text" name="product_code" class="text_product_code"></div>
@@ -72,21 +58,27 @@
                                     </div>
                                     <div class="product_board_two">
                                         <div class="product_category"> 
-                                            상품 카테고리 :
-                                            <select>
-                                                <option category> 카테고리 </option>
-                                                <option> 아우터 </option>
-                                                <option> 상의 </option>
-                                                <option> 트레이닝 </option>
-                                                <option> 베이직 </option>
-                                                <option> 원피스 </option>
-                                                <option> 스커트 </option>
-                                                <option> 팬츠 </option>
-                                                <option> 가방 </option>
-                                                <option> 신발 </option>
-                                                <option> 액세서리 </option>
+                                            상품 대분류 :
+                                            <select name="category_large" onchange="Category_Change(this)">
+                                                <option category> 선택해주세요. </option>
+                                                <option name="outer" value="outer"> 아우터 </option>
+                                                <option name="top" value="top"> 상의 </option>
+                                                <option name="traning" value=""> 트레이닝 </option>
+                                                <option name="basic" value="basic"> 베이직 </option>
+                                                <option name="one_piece" value="one_piece"> 원피스 </option>
+                                                <option name="skirt" value="skirt"> 스커트 </option>
+                                                <option name="pants" value="pants"> 팬츠 </option>
+                                                <option name="bag" value="bag"> 가방 </option>
+                                                <option name="shoes" value="shoes"> 신발 </option>
+                                                <option name="accessory" value="accessory"> 액세서리 </option>
                                             </select>
-                                    </div>
+                                        </div>
+                                        <div class="product_category"> 
+                                            상품 소분류 :
+                                            <select id="category_small" name="category_small">
+                                                <option>선택해주세요.</option>
+                                            </select>
+                                        </div>
                                         <div class="product_discount_rate"> 할인율 : <input type="text" name="product_discount_rate"class="text_product_discount" /> %</div>
                                         <div class="is_deliv_today"> 오늘배송 :
                                             <select name="is_deliv_today">
@@ -161,6 +153,8 @@
             
         </div>
     </main>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

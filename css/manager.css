@@ -407,41 +407,47 @@
   width: 100%;
   height: 100%;
 }
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_title {
-  padding-bottom: 20px;
-}
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents {
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header {
   display: flex;
-  width: 100%;
+  align-items: center;
+  margin-bottom: 15px;
 }
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents .point_img_content {
-  width: 150px;
-  height: 150px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  margin-right: 5px;
-  margin-bottom: 20px;
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_title {
+  margin-right: 15px;
 }
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents .point_img_content_plus {
-  width: 40px;
-  height: 40px;
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_img_content_plus {
+  display: inline;
   border: 1px solid rgb(160, 160, 160);
   font-size: 15px;
-  margin-top: 55px;
-  margin-left: 20px;
-}
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents .point_img_content_plus .point_img_plus {
-  width: 100%;
-  height: 100%;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgb(174, 222, 222);
   cursor: pointer;
 }
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents .point_img_content_plus .point_img_plus:hover {
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_img_content_plus:hover {
   background: rgb(0, 117, 117);
   color: #fff;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_img_content_plus input {
+  display: none;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents {
+  width: auto;
+  height: 150px;
+  display: flex;
+  background-color: rgb(146, 146, 146);
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 15px;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail {
   width: 100%;
@@ -510,10 +516,10 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_two {
   width: 350px;
-  height: 130px;
   background-color: rgb(174, 222, 222);
-  padding: 10px 10px;
-  line-height: 35px;
+  margin-right: 10px;
+  padding: 10px;
+  line-height: 43px;
   border: 1px solid #000000;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_two select {

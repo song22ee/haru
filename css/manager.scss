@@ -370,44 +370,49 @@
 						width: 100%;
 						height: 100%;
 						// background-color: aqua;
-
-						.point_title {
-							padding-bottom: 20px;
-						}
-						.point_img_contents {
+						.img_insert_header {
 							display: flex;
-							width: 100%;
-							// background-color: rgb(255, 183, 90);
-							.point_img_content {
-								width: 150px;
-								height: 150px;
-								background-color: rgb(255, 255, 255);
-								border: 1px solid black;
-								margin-right: 5px;
-								margin-bottom: 20px;
+							align-items: center;
+							margin-bottom: 15px;
+							.point_title {
+								margin-right: 15px;
 							}
 							.point_img_content_plus {
-								width: 40px;
-								height: 40px;
+								display: inline;
 								border: 1px solid rgb(160, 160, 160);
 								font-size: 15px;
-								margin-top: 55px;
-								margin-left: 20px;
-								.point_img_plus {
-									width: 100%;
-									height: 100%;
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									background: rgb(174, 222, 222);
-									cursor: pointer;
-									&:hover {
-										background: rgb(0, 117, 117);
-										color: #fff;
-									}
+								padding: 5px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								background: rgb(174, 222, 222);
+								cursor: pointer;
+								&:hover {
+									background: rgb(0, 117, 117);
+									color: #fff;
+								}
+								input {
+									display: none;
 								}
 							}
 						}
+
+						.point_img_contents {
+							width: auto;
+							height: 150px;
+							display: flex;
+							background-color: rgb(146, 146, 146);
+							margin-bottom: 25px;
+							box-sizing: border-box;
+							img {
+								width: 150px;
+								height: 150px;
+								border: 1px solid black;
+								object-fit: cover;
+								margin-right: 15px;
+							}
+						}
+
 						.product_detail {
 							width: 100%;
 							height: 200px;
@@ -479,10 +484,10 @@
 							}
 							.product_board_two {
 								width: 350px;
-								height: 130px;
 								background-color: rgb(174, 222, 222);
-								padding: 10px 10px;
-								line-height: 35px;
+								margin-right: 10px;
+								padding: 10px;
+								line-height: 43px;
 								border: 1px solid #000000;
 								select {
 									width: 150px;

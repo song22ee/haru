@@ -70,7 +70,7 @@
                         <div class="hot_issue">
                             <ul id="ticker_01" class="ticker">
                                 <li><span class="rank">1. </span><a href="#">가을신상</a></li>
-                                <li><span class="rank">2. </span><a href="#">아우터</a></li>
+                                <li><span class="rank">2. </span><a href="">아우터</a></li>
                                 <li><span class="rank">3. </span><a href="#">가방신상</a></li>
                                 <li><span class="rank">4. </span><a href="#">코트</a></li>
                             </ul>
@@ -91,7 +91,7 @@
                     <li class="main_menu01"><a href="">착한기업</a></li>
                     <li class="main_menu02"><a href="">베스트</a></li>
                     <li class="main_menu03"><a href="">신상</a></li>
-                    <li class="main_menu04"><a href="">아우터</a></li>
+                    <li class="main_menu04"><a href="outer.php">아우터</a></li>
                     <li class="main_menu05"><a href="">상의</a></li>
                     <li class="main_menu06"><a href="">트레이닝</a></li>
                     <li class="main_menu07"><a href="">베이직</a></li>

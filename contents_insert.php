@@ -16,6 +16,7 @@ $content_img1=$_POST["content_img1"];
 $content_img2=$_POST["content_img2"];
 $content_img3=$_POST["content_img3"];
 $content_img4=$_POST["content_img4"];
+$content_cost=$_POST["product_cost"];
 
 // var_dump($content_code);
 // var_dump($content_img);
@@ -40,11 +41,11 @@ require_once("inc/db.php");
     db_insert("insert into contents 
     (content_code , content_img,deliv_today,content_name,
     discount_rate,content_price,content_color1,content_color2,content_color3,content_color4,
-    category_large,category_small, content_img1, content_img2, content_img3, content_img4) 
+    category_large,category_small, content_img1, content_img2, content_img3, content_img4,content_cost) 
     values 
     (:content_code , :content_img,:deliv_today,:content_name,
     :discount_rate,:content_price,:content_color1,:content_color2,:content_color3,:content_color4,
-    :category_large, :category_small, :content_img1, :content_img2, :content_img3, :content_img4 )",
+    :category_large, :category_small, :content_img1, :content_img2, :content_img3, :content_img4,content_cost )",
         array(
             'content_code' => $content_code,
             'content_img' => $content_img,
@@ -61,7 +62,8 @@ require_once("inc/db.php");
             'content_img1'=>$content_img1,
             'content_img2'=>$content_img2,
             'content_img3'=>$content_img3,
-            'content_img4'=>$content_img4
+            'content_img4'=>$content_img4,
+            'content_cost' => $content_cost
         )
     );
 

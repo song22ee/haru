@@ -58,7 +58,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                         <div class="review_count">999+ 리뷰</div>
                     </div>
                     <div class="row">
-                        <span class="price_original">70,000</span>
+                        <span class="price_original"><?php print_r($result[0]["content_cost"])?></span>
                     </div>
                     <div class="row">
                         <span class="sale_percent"><?php print_r($result[0]["discount_rate"])?>%</span>

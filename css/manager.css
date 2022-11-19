@@ -394,7 +394,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product {
   width: 870px;
-  height: 800px;
+  height: auto;
   margin: 0 0 0 55px;
   display: flex;
   flex-direction: column;
@@ -410,7 +410,8 @@
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 15px 0;
+  font-weight: 700;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_title {
   margin-right: 15px;
@@ -433,21 +434,28 @@
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_img_content_plus input {
   display: none;
 }
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents {
-  width: auto;
-  height: 150px;
-  display: flex;
-  background-color: rgb(146, 146, 146);
-  margin-bottom: 25px;
-  box-sizing: border-box;
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .input_css {
+  width: 300px;
+  height: 25px;
+  border: 0;
+  background-color: rgb(174, 222, 222);
+  min-width: 190px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-bottom: 3px;
 }
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .point_img_contents img {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 15px;
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .input_color_css {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_thumbnail {
+  margin-bottom: 20px;
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_more {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail {
   width: 100%;
@@ -557,22 +565,6 @@
   display: flex;
   width: 100%;
   height: 60px;
-  padding-left: 10px;
-}
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors .pro_sign_up_color {
-  width: 60px;
-  height: 60px;
-  border: 1px solid black;
-  margin-right: 5px;
-  margin-bottom: 20px;
-  font-size: 8px;
-}
-#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors .pro_sign_up_color .product_color_wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors .pro_sign_up_color_plus {
   width: 40px;
@@ -657,7 +649,10 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail_explain_title .input-file-button:hover {
   background: rgb(0, 117, 117);
-  color: #fff;
+  color: rgb(255, 255, 255);
+}
+#manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .submit_wrapper {
+  margin-top: 50px;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .submit_wrapper .input-submit-button {
   margin-left: 300px;
@@ -670,5 +665,5 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .submit_wrapper .input-submit-button:hover {
   background: rgb(0, 117, 117);
-  color: #fff;
+  color: white;
 }/*# sourceMappingURL=manager.css.map */

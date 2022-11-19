@@ -44,18 +44,6 @@ function Category_Change(e) {
 	}
 }
 
-//이미지 업로드시 화면에 바로 띄우기
-function setThumbnail(event) {
-	for (var image of event.target.files) {
-		var reader = new FileReader();
-
-		reader.onload = function (event) {
-			var img = document.createElement('img');
-			img.setAttribute('src', event.target.result);
-			document.querySelector('div.point_img_contents').appendChild(img);
-		};
-
-		console.log(image);
-		reader.readAsDataURL(image);
-	}
+function Test() {
+	// alert(document.querySelector('.content_color1').value);
 }

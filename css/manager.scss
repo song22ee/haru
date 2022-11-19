@@ -358,7 +358,7 @@
 				scroll-snap-type: y mandatory;
 				.board.product {
 					width: 870px;
-					height: 800px;
+					height: auto;
 					margin: 0 0 0 55px;
 					display: flex;
 					flex-direction: column;
@@ -373,7 +373,8 @@
 						.img_insert_header {
 							display: flex;
 							align-items: center;
-							margin-bottom: 15px;
+							margin: 15px 0;
+							font-weight: 700;
 							.point_title {
 								margin-right: 15px;
 							}
@@ -396,21 +397,28 @@
 								}
 							}
 						}
-
-						.point_img_contents {
-							width: auto;
-							height: 150px;
+						.input_css {
+							width: 300px;
+							height: 25px;
+							border: 0;
+							background-color: rgb(174, 222, 222);
+							min-width: 190px;
+							margin-bottom: 10px;
+							outline: none;
+							padding-bottom: 3px;
+						}
+						.input_color_css {
+							width: 60px;
+							height: 60px;
+							margin-right: 10px;
+						}
+						.img_thumbnail {
+							margin-bottom: 20px;
+						}
+						.img_more {
+							margin: 15px 0;
 							display: flex;
-							background-color: rgb(146, 146, 146);
-							margin-bottom: 25px;
-							box-sizing: border-box;
-							img {
-								width: 150px;
-								height: 150px;
-								border: 1px solid black;
-								object-fit: cover;
-								margin-right: 15px;
-							}
+							flex-direction: column;
 						}
 
 						.product_detail {
@@ -528,22 +536,7 @@
 							// height: 100%;
 							height: 60px;
 							// background-color: rgb(255, 219, 172);
-							padding-left: 10px;
-							.pro_sign_up_color {
-								width: 60px;
-								height: 60px;
-								border: 1px solid black;
-								margin-right: 5px;
-								margin-bottom: 20px;
-								font-size: 8px;
-								.product_color_wrapper {
-									width: 100%;
-									height: 100%;
-									display: flex;
-									justify-content: center;
-									align-items: center;
-								}
-							}
+
 							.pro_sign_up_color_plus {
 								width: 40px;
 								height: 40px;
@@ -628,11 +621,13 @@
 								cursor: pointer;
 								&:hover {
 									background: rgb(0, 117, 117);
-									color: #fff;
+									color: rgb(255, 255, 255);
 								}
 							}
 						}
 						.submit_wrapper {
+							margin-top: 50px;
+
 							.input-submit-button {
 								margin-left: 300px;
 								padding: 6px 100px;
@@ -643,7 +638,7 @@
 								cursor: pointer;
 								&:hover {
 									background: rgb(0, 117, 117);
-									color: #fff;
+									color: #ffff;
 								}
 							}
 						}

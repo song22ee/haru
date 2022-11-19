@@ -28,10 +28,10 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
             <section class="top_left">
                 <div class="main_img"><img src="<?php print_r($result[0]["content_img"])?>" alt=""/></div>
                 <div class="imgs">
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
+                    <div class="img"><img src="<?php print_r($result[0]["content_img1"])?>" alt=""/></div>
+                    <div class="img"><img src="<?php print_r($result[0]["content_img2"])?>" alt=""/></div>
+                    <div class="img"><img src="<?php print_r($result[0]["content_img3"])?>" alt=""/></div>
+                    <div class="img"><img src="<?php print_r($result[0]["content_img4"])?>" alt=""/></div>
                 </div>
             </section>
             <section class="top_right">
@@ -66,8 +66,19 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                     </div>
                 </div>
                 <div class="buttons choice">
-                    <button class="choice_color"><span>색상 선택</span></button>
-                    <button class="choice_size"><span>사이즈 선택</span></button>
+                    <span class="choice_title">색상선택</span>
+                    <div class="choice_color">
+                        <div class="color" style="background-color:<?php print_r($result[0]["content_color1"])?>"></div>
+                        <div class="color" style="background-color:<?php print_r($result[0]["content_color2"])?>"></div>
+                        <div class="color" style="background-color:<?php print_r($result[0]["content_color3"])?>"></div>
+                        <div class="color" style="background-color:<?php print_r($result[0]["content_color4"])?>"></div>
+                    </div>
+                </div>
+                <div class="buttons choice">
+                    <span class="choice_title">사이즈선택</span>
+                    <div class="choice_size">
+                        <div class="size">free</div>
+                    </div>
                 </div>
                 <div class="total_price_wrapper">
                     <span class="total_price_title">총 결제 금액 : </span>

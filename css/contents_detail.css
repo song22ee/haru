@@ -36,6 +36,11 @@
   border-radius: 15px;
   background-color: antiquewhite;
 }
+.main_wrapper.contents_detail .top .top_left .imgs .img img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
 .main_wrapper.contents_detail .top .top_right {
   width: 50%;
   height: 100%;
@@ -64,6 +69,8 @@
 }
 .main_wrapper.contents_detail .top .top_right .contents_infos .row .price_original {
   font-size: 12px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 .main_wrapper.contents_detail .top .top_right .contents_infos .row .sale_percent {
   font-size: 25px;
@@ -82,12 +89,38 @@
   display: flex;
   flex-direction: column;
 }
-.main_wrapper.contents_detail .top .top_right .buttons.choice button {
+.main_wrapper.contents_detail .top .top_right .buttons.choice .choice_title {
+  font-weight: 700;
+  color: #6c6c6c;
+  margin: 15px 0;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.choice .choice_color {
   height: 90px;
-  background-color: #cccccc;
   border: none;
   margin-bottom: 15px;
   font-size: 20px;
+  display: flex;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.choice .choice_color .color {
+  height: 90px;
+  width: 90px;
+  background-color: #ffb55e;
+  margin-right: 10px;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.choice .choice_size {
+  height: 90px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 20px;
+  display: flex;
+}
+.main_wrapper.contents_detail .top .top_right .buttons.choice .choice_size .size {
+  height: 90px;
+  width: 90px;
+  background-color: #bcbcbc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_wrapper.contents_detail .top .top_right .total_price_wrapper {
   width: 100%;

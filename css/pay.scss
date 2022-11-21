@@ -33,48 +33,6 @@
 	}
 }
 
-.pay_list {
-	width: 100%;
-	height: auto;
-	table {
-		width: 100%;
-		height: 100%;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		.table_header {
-			width: 100%;
-			height: 40px;
-			background-color: rgb(174, 222, 222);
-			box-sizing: border-box;
-		}
-		tr {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			width: 100%;
-			height: 150px;
-			border: 1px solid black;
-			box-sizing: border-box;
-			.check {
-				width: 70px;
-			}
-			td {
-				width: calc(1100px / 7);
-				height: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				.img_wrapper {
-					width: 130px;
-					height: 130px;
-					border: 1px solid black;
-				}
-			}
-		}
-	}
-}
-
 .order_info {
 	width: 100%;
 	height: auto;
@@ -140,7 +98,7 @@
 			box-sizing: border-box;
 			padding-left: 40px;
 			font-size: 12px;
-			font-weight:bold;
+			font-weight: bold;
 			.ord_text_info_name {
 				border: 0;
 				// background-color: rgb(227, 227, 227);
@@ -163,7 +121,7 @@
 				font-size: 12px;
 				padding-bottom: 5px;
 				display: flex;
-				font-weight:bold;
+				font-weight: bold;
 				.ord_email_write {
 					margin-left: 39px;
 					.info_text_email {
@@ -200,7 +158,7 @@
 				font-size: 12px;
 				padding-bottom: 5px;
 				display: flex;
-				font-weight:bold;
+				font-weight: bold;
 				.ord_text_info_number {
 					// background-color: rgb(227, 227, 227);
 					border-width: 0.5px;
@@ -256,7 +214,7 @@
 			font-size: 12px;
 			display: flex;
 			.choose_imp {
-			color: red;
+				color: red;
 			}
 		}
 		.deliv_name {
@@ -265,7 +223,7 @@
 			box-sizing: border-box;
 			padding-left: 40px;
 			font-size: 12px;
-			font-weight:bold;
+			font-weight: bold;
 			.deliv_text_info_name {
 				border: 0;
 				// background-color: rgb(227, 227, 227);
@@ -286,7 +244,7 @@
 				padding-left: 40px;
 				font-size: 12px;
 				padding-bottom: 5px;
-				font-weight:bold;
+				font-weight: bold;
 			}
 			.deliv_check {
 				margin-left: 52px;
@@ -373,7 +331,7 @@
 				font-size: 12px;
 				padding-bottom: 5px;
 				display: flex;
-				font-weight:bold;
+				font-weight: bold;
 				.deliv_text_info_number {
 					// background-color: rgb(227, 227, 227);
 					border-width: 0.5px;
@@ -414,7 +372,7 @@
 			box-sizing: border-box;
 			padding-left: 40px;
 			font-size: 12px;
-			font-weight:bold;
+			font-weight: bold;
 			.deliv_text_info_message {
 				border: 0;
 				// background-color: rgb(227, 227, 227);

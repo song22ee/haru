@@ -23,7 +23,7 @@
                 <button>전체 상품 삭제하기</button>
             </div>
         </section>
-        <section class="cart_list">
+        <section class="table">
             <table>
                 <tr class="table_header">
                     <td class="check"><input type="checkbox"></td>
@@ -49,9 +49,10 @@
             </table>
         </section>
         <section class="purchase_buttons">
-            <button class="purchase_total">전체 상품 주문하기</button>
+            <button class="purchase_total" >전체 상품 주문하기</button>
             <button>선택 상품 주문하기</button>
         </section>
+        
     </main>
 
     <?php require_once("inc/fast_move.php"); ?>

@@ -32,48 +32,6 @@
   height: 30px;
 }
 
-.pay_list {
-  width: 100%;
-  height: auto;
-}
-.pay_list table {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
-.pay_list table .table_header {
-  width: 100%;
-  height: 40px;
-  background-color: rgb(174, 222, 222);
-  box-sizing: border-box;
-}
-.pay_list table tr {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 150px;
-  border: 1px solid black;
-  box-sizing: border-box;
-}
-.pay_list table tr .check {
-  width: 70px;
-}
-.pay_list table tr td {
-  width: 157.1428571429px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pay_list table tr td .img_wrapper {
-  width: 130px;
-  height: 130px;
-  border: 1px solid black;
-}
-
 .order_info {
   width: 100%;
   height: auto;

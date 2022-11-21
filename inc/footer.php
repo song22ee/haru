@@ -49,5 +49,6 @@
             <ul>
                 <li>COPYRIGHT(c) 2022 HARU ALL RIGHT RESERVED.</li>
             </ul>
+            <a href="manager_home.php" style = "color: white"> 관리자 페이지 </a>
         </div>
     </footer>

@@ -49,7 +49,7 @@
             </table>
         </section>
         <section class="purchase_buttons">
-            <button class="purchase_total" >전체 상품 주문하기</button>
+            <a href="pay.php"><button class="purchase_total" >전체 상품 주문하기</button></a>
             <button>선택 상품 주문하기</button>
         </section>
         

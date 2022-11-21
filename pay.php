@@ -20,7 +20,7 @@
         <section class="pay_header">
             <span class="pay_title"> 주문/결제 </span>
             <div class="back_buttons">
-                <button> < 이전 페이지 </button>
+                <a href="cart.php"><button>< 이전 페이지</button>  </a>
             </div>
         </section>
         <section class="table">
@@ -48,118 +48,122 @@
                 <?php } ?>
             </table>
         </section>
-        <section class = "order_info">
-            <table>
-                <tr class = "table_info">
-                    <td> 주문 정보 </td>
-                    <td class = "import_text"> * 필수 입력 사항 </td>
-                </tr>
-            </table>
-            <div class = "custom_ord_info">
-                <div class="ord_info">
-                    <div class="custom_info"> 01. 주문자 정보 </div>
-                    <div class="ord_name"> 이름: <input type="ord_text_name" maxlength="25" class="ord_text_info_name" /> </div>
-                    <div class="ord_email_wrapper"> 
-                        <ul class="ord_email">
-                            이메일:  
-                            <div class="ord_email_write">
-                                <input type="text" class = "info_text_email" maxlength="20">
-                                @
-                            </div>
-                            <li>
-                                <select class="ord_text_info_email" id="info_email">
-                                    <option value=""> 선택 </option>
-                                    <option value="gmail.com"> gmail.com </option>
-                                    <option value="naver.com"> naver.com </option>
-                                    <option value="daum.net"> daum.net </option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ord_number_wrapper">
-                        <ul class="ord_phone_number">
-                            휴대전화: 
-                            <li>
-                                <select id="info01" class="ord_text_info_number">
-                                    <option value = ""> 선택 </option>
-                                    <option value = "010"> 010 </option>
-                                    <option value = "010"> 011 </option>
-                                    <option value = "010"> 016 </option>
-                                    <option value = "010"> 017 </option>
-                                </select>
-                            </li>
-                            <li>
-                                -
-                                <input type="text" id="info02" class = "ord_info_center_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-                            </li>
-                            <li>
-                                -
-                                <input type="text" id="info03" class = "ord_info_last_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="deliv_info">
-                    <div class="delivery_info"> 02. 배송 정보 </div>
-                    <div class = "dest_choose">
-                        배송지 선택
-                        <div class="choose_imp"> * </div>
-                    </div>
-                    <div class="deliv_name"> 이름: <input type="deliv_text_name" maxlength="25" class="deliv_text_info_name" /> </div>
-
-
-                    <div class="deliv_address_wrapper">
-                        <div class="deliv_address"> 주소: </div>
-                        <div class="deliv_check"> 
-                                <div class="form">
-                                    <div class="deliv_do_fore">
-                                        <input type="radio" name="domestic" checked> 국내
-                                        <input type="radio" name="domestic"> 해외
-                                    </div>
+        <form action="pay.insert.php" method="POST">
+            <section class = "order_info">
+                <table>
+                    <tr class = "table_info">
+                        <td> 주문 정보 </td>
+                        <td class = "import_text"> * 필수 입력 사항 </td>
+                    </tr>
+                </table>
+                <div class = "custom_ord_info">
+                    <div class="ord_info">
+                        <div class="custom_info"> 01. 주문자 정보 </div>
+                        <div class="ord_name"> 이름: <input name="orderer_name" required type="ord_text_name" maxlength="25" class="ord_text_info_name" /> </div>
+                        <div class="ord_email_wrapper"> 
+                            <ul class="ord_email">
+                                이메일:  
+                                <div class="ord_email_write">
+                                    <input name="orderer_email1" required type="text" class = "info_text_email" maxlength="20">
+                                    @
                                 </div>
-                            <div class="deliv_post_code">
-                                <input type="text" class="deliv_text_post_code" id="postcode" placeholder="우편번호" readonly />
-                                <div class="deliv_search_code">
-                                    <button type="button" class="deliv_search_post_code" onclick=""> 우편번호 </button>
-                                </div>
-                            </div>
-                            <div class="deliv_road_name">
-                                <input type="text" class="deliv_search_road_name" id="address" placeholder="주소" readonly />
-                            </div>
-                            <div class="deliv_detail_post">
-                                <input type="text" class="deliv_detail_address" placeholder="상세 주소 입력" required />
-                            </div>
+                                <li>
+                                    <select class="ord_text_info_email" id="info_email" name="orderer_email2">
+                                        <option value=""> 선택 </option>
+                                        <option value="gmail.com"> gmail.com </option>
+                                        <option value="naver.com"> naver.com </option>
+                                        <option value="daum.net"> daum.net </option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ord_number_wrapper">
+                            <ul class="ord_phone_number">
+                                휴대전화: 
+                                <li>
+                                    <select id="info01" class="ord_text_info_number" name="orderer_phone1">
+                                        <option value = ""> 선택 </option>
+                                        <option value = "010"> 010 </option>
+                                        <option value = "010"> 011 </option>
+                                        <option value = "010"> 016 </option>
+                                        <option value = "010"> 017 </option>
+                                    </select>
+                                </li>
+                                <li>
+                                    -
+                                    <input name="orderer_phone2" required type="text" id="info02" class = "ord_info_center_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                                </li>
+                                <li>
+                                    -
+                                    <input name="orderer_phone3" required type="text" id="info03" class = "ord_info_last_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="deliv_number_wrapper">
-                        <ul class="deliv_phone_number">
-                            휴대전화: 
-                            <li>
-                                <select id="info001" class="deliv_text_info_number">
-                                    <option value = ""> 선택 </option>
-                                    <option value = "010"> 010 </option>
-                                    <option value = "010"> 011 </option>
-                                    <option value = "010"> 016 </option>
-                                    <option value = "010"> 017 </option>
-                                </select>
-                            </li>
-                            <li>
-                                -
-                                <input type="text" id="info002" class = "deliv_info_center_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-                            </li>
-                            <li>
-                                -
-                                <input type="text" id="info003" class = "deliv_info_last_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-                            </li>
-                        </ul>
+                    <div class="deliv_info">
+                        <div class="delivery_info"> 02. 배송 정보 </div>
+                        <div class = "dest_choose">
+                            배송지 선택
+                            <div class="choose_imp"> * </div>
+                        </div>
+                        <div class="deliv_name"> 받는분: <input name="Recipient_name" required type="deliv_text_name" maxlength="25" class="deliv_text_info_name" /> </div>
+
+
+                        <div class="deliv_address_wrapper">
+                            <div class="deliv_address"> 주소: </div>
+                            <div class="deliv_check"> 
+                                    <div class="form">
+                                        <div class="deliv_do_fore">
+                                            <input type="radio" name="domestic" checked> 국내
+                                            <input type="radio" name="overseas"> 해외
+                                        </div>
+                                    </div>
+                                <div class="deliv_post_code">
+                                    <input name="zip_code" type="text" class="deliv_text_post_code" id="postcode" placeholder="우편번호" readonly />
+                                    <div class="deliv_search_code">
+                                        <button type="button" class="deliv_search_post_code" onclick=""> 우편번호 </button>
+                                    </div>
+                                </div>
+                                <div class="deliv_road_name">
+                                    <input name="address1" type="text" class="deliv_search_road_name" id="address" placeholder="주소" readonly />
+                                </div>
+                                <div class="deliv_detail_post">
+                                    <input name="address2" type="text" class="deliv_detail_address" placeholder="상세 주소 입력" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deliv_number_wrapper">
+                            <ul class="deliv_phone_number">
+                                휴대전화: 
+                                <li>
+                                    <select name="Recipient_phone1" id="info001" class="deliv_text_info_number">
+                                        <option value = ""> 선택 </option>
+                                        <option value = "010"> 010 </option>
+                                        <option value = "010"> 011 </option>
+                                        <option value = "010"> 016 </option>
+                                        <option value = "010"> 017 </option>
+                                    </select>
+                                </li>
+                                <li>
+                                    -
+                                    <input name="Recipient_phone2" required type="text" id="info002" class = "deliv_info_center_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                                </li>
+                                <li>
+                                    -
+                                    <input name="Recipient_phone3" required type="text" id="info003" class = "deliv_info_last_number" size="4" onkeypress="onlyNumber();" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="deliv_message"> 배송 메시지: <input name="message" type="deliv_text_message" maxlength="30" class="deliv_text_info_message" /> </div>
                     </div>
-                    <div class="deliv_message"> 배송 메시지: <input type="deliv_text_message" maxlength="30" class="deliv_text_info_message" /> </div>
                 </div>
-            </div>
-        </section>
-        <section class="order_buttons">
-            <button class="order_total"> 주문하기 </button>
-        </section>
+            </section>
+            <section class="order_buttons">
+                <button class="order_total"> 주문하기 </button>
+            </section>
+        </form>
+        
+        
     </main>
 
     <?php require_once("inc/fast_move.php"); ?>

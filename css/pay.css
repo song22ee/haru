@@ -46,7 +46,8 @@
 .pay_list table .table_header {
   width: 100%;
   height: 40px;
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(174, 222, 222);
+  box-sizing: border-box;
 }
 .pay_list table tr {
   display: flex;
@@ -55,6 +56,7 @@
   width: 100%;
   height: 150px;
   border: 1px solid black;
+  box-sizing: border-box;
 }
 .pay_list table tr .check {
   width: 70px;
@@ -86,8 +88,8 @@
 .order_info table .table_info {
   width: 100%;
   height: 40px;
-  background-color: rgb(227, 227, 227);
-  padding: 0 45px 0 30px;
+  background-color: rgb(174, 222, 222);
+  padding: 0 45px 0 45px;
   box-sizing: border-box;
 }
 .order_info table .table_info .import_text {
@@ -98,7 +100,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: 250px;
   border: 1px solid black;
   justify-content: space-between;
 }
@@ -107,6 +109,296 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.custom_ord_info {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  padding: 40px 0 40px 40px;
+}
+.custom_ord_info .ord_info {
+  width: 500px;
+  height: 367px;
+  line-height: 35px;
+  box-sizing: border-box;
+}
+.custom_ord_info .ord_info .custom_info {
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  font-size: 15px;
+  padding-top: 5px;
+}
+.custom_ord_info .ord_info .ord_name {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.custom_ord_info .ord_info .ord_name .ord_text_info_name {
+  border: 0;
+  border-bottom: solid;
+  border-width: 0.5px;
+  min-width: 150px;
+  margin-left: 47px;
+  outline: none;
+}
+.custom_ord_info .ord_info .ord_email_wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+.custom_ord_info .ord_info .ord_email_wrapper .ord_email {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding-bottom: 5px;
+  display: flex;
+  font-weight: bold;
+}
+.custom_ord_info .ord_info .ord_email_wrapper .ord_email .ord_email_write {
+  margin-left: 39px;
+}
+.custom_ord_info .ord_info .ord_email_wrapper .ord_email .ord_email_write .info_text_email {
+  width: 130px;
+  box-sizing: border-box;
+  font-size: 12px;
+  outline: none;
+  margin-right: 5px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  border-width: 0.5px;
+}
+.custom_ord_info .ord_info .ord_email_wrapper .ord_email .ord_text_info_email {
+  border: 0;
+  border-bottom: 1px solid #000000;
+  border-width: 0.5px;
+  min-width: 80px;
+  margin-left: 5px;
+  outline: none;
+}
+.custom_ord_info .ord_info .ord_number_wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+}
+.custom_ord_info .ord_info .ord_number_wrapper .ord_phone_number {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 12px;
+  padding-bottom: 5px;
+  display: flex;
+  font-weight: bold;
+}
+.custom_ord_info .ord_info .ord_number_wrapper .ord_phone_number .ord_text_info_number {
+  border-width: 0.5px;
+  min-width: 80px;
+  margin-left: 26px;
+  outline: none;
+  padding-bottom: 3px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  margin-right: 12px;
+}
+.custom_ord_info .ord_info .ord_number_wrapper .ord_phone_number .ord_info_center_number {
+  border: 0;
+  border-width: 0.5px;
+  min-width: 75px;
+  margin-left: 12px;
+  margin-right: 12px;
+  outline: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000000;
+}
+.custom_ord_info .ord_info .ord_number_wrapper .ord_phone_number .ord_info_last_number {
+  border: 0;
+  border-width: 0.5px;
+  min-width: 75px;
+  margin-left: 12px;
+  outline: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000000;
+}
+.custom_ord_info .deliv_info {
+  width: 500px;
+  height: 367px;
+  line-height: 35px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.custom_ord_info .deliv_info .delivery_info {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 15px;
+  padding-top: 5px;
+  display: flex;
+}
+.custom_ord_info .deliv_info .dest_choose {
+  margin-left: 40px;
+  font-size: 12px;
+  display: flex;
+}
+.custom_ord_info .deliv_info .dest_choose .choose_imp {
+  color: red;
+}
+.custom_ord_info .deliv_info .deliv_name {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.custom_ord_info .deliv_info .deliv_name .deliv_text_info_name {
+  border: 0;
+  border-bottom: solid;
+  border-width: 0.5px;
+  min-width: 150px;
+  margin-left: 47px;
+  outline: none;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper {
+  display: flex;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_address {
+  margin-top: 5px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 12px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_check {
+  margin-left: 52px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_check .form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 46px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_check .form .deliv_do_fore {
+  width: 150px;
+  font-size: 13px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_post_code {
+  width: 100%;
+  display: flex;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_post_code .deliv_text_post_code {
+  width: 130px;
+  height: 25px;
+  box-sizing: border-box;
+  font-size: 12px;
+  outline: none;
+  margin-right: 5px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  border-width: 0.5px;
+  margin-top: 7px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_post_code .deliv_search_code {
+  padding-left: 10px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_post_code .deliv_search_code .deliv_search_post_code {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: white;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_road_name .deliv_search_road_name {
+  width: 130px;
+  height: 25px;
+  box-sizing: border-box;
+  font-size: 12px;
+  outline: none;
+  margin-right: 5px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  border-width: 0.5px;
+  min-width: 220px;
+}
+.custom_ord_info .deliv_info .deliv_address_wrapper .deliv_detail_post .deliv_detail_address {
+  width: 300px;
+  height: 25px;
+  box-sizing: border-box;
+  font-size: 12px;
+  outline: none;
+  margin-right: 5px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  border-width: 0.5px;
+}
+.custom_ord_info .deliv_info .deliv_number_wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 5px;
+}
+.custom_ord_info .deliv_info .deliv_number_wrapper .deliv_phone_number {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 12px;
+  padding-bottom: 5px;
+  display: flex;
+  font-weight: bold;
+}
+.custom_ord_info .deliv_info .deliv_number_wrapper .deliv_phone_number .deliv_text_info_number {
+  border-width: 0.5px;
+  min-width: 80px;
+  margin-left: 26px;
+  margin-right: 12px;
+  outline: none;
+  padding-bottom: 3px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+}
+.custom_ord_info .deliv_info .deliv_number_wrapper .deliv_phone_number .deliv_info_center_number {
+  border: 0;
+  border-width: 0.5px;
+  min-width: 75px;
+  margin-left: 12px;
+  margin-right: 12px;
+  outline: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000000;
+}
+.custom_ord_info .deliv_info .deliv_number_wrapper .deliv_phone_number .deliv_info_last_number {
+  border: 0;
+  border-width: 0.5px;
+  min-width: 75px;
+  margin-left: 12px;
+  outline: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000000;
+}
+.custom_ord_info .deliv_info .deliv_message {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.custom_ord_info .deliv_info .deliv_message .deliv_text_info_message {
+  border: 0;
+  border-bottom: solid;
+  border-width: 0.5px;
+  min-width: 300px;
+  margin-left: 5px;
+  outline: none;
 }
 
 .order_buttons {
@@ -122,5 +414,6 @@
   margin: 0 10px;
 }
 .order_buttons .order_total {
-  background-color: rgb(103, 194, 255);
+  background-color: rgb(174, 222, 222);
+  border: 1px solid #000000;
 }/*# sourceMappingURL=pay.css.map */

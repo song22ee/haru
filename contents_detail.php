@@ -26,6 +26,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
     <main class="main_wrapper contents_detail">
         <form class="top" action="cart_insert.php?content_code=<?php echo "$content_code"?>" name="contents_form" method="POST" >
             <section class="top_left">
+                <div class="category_info"><?php print_r($result[0]["category_large"])?> > <?php print_r($result[0]["category_small"])?></div>
                 <div class="main_img"><img src="<?php print_r($result[0]["content_img"])?>" alt=""/></div>
                 <div class="imgs">
                     <div class="img"><img src="<?php print_r($result[0]["content_img1"])?>" alt=""/></div>
@@ -58,7 +59,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                         <div class="review_count">999+ 리뷰</div>
                     </div>
                     <div class="row">
-                        <span class="price_original">70,000</span>
+                        <span class="price_original"><?php print_r($result[0]["content_cost"])?></span>
                     </div>
                     <div class="row">
                         <span class="sale_percent"><?php print_r($result[0]["discount_rate"])?>%</span>

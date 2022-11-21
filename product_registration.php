@@ -63,7 +63,7 @@
                                     <div class="product_board_three">
                                         <div class="product_code"> 상품코드 : <input type="text" name="product_code" class="text_product_code"></div>
                                         <div class="product_name"> 상품명 : <input type="text" name="product_name" class="text_product_name"></div>
-                                        <div class="product_cost"> 상품 원가 : <input type="text" name="product_cost" class="text_product_cost">원</div>
+                                        <div class="product_cost"> 상품 원가 : <input type="text" name="content_cost" class="text_product_cost">원</div>
                                         <div class="product_price"> 상품 가격 : <input type="text" name="product_price" class="text_product_price">원</div>
                                     </div>
                                     <div class="product_board_two">

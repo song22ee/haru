@@ -31,6 +31,11 @@
 					height: 100%;
 					border-radius: 15px;
 					background-color: antiquewhite;
+					img {
+						width: 100%;
+						border-radius: 15px;
+						height: 100%;
+					}
 				}
 			}
 		}
@@ -59,6 +64,7 @@
 					}
 					.price_original {
 						font-size: 12px;
+						text-decoration-line: line-through; //취소선
 					}
 					.sale_percent {
 						font-size: 25px;
@@ -78,13 +84,39 @@
 				height: auto;
 				display: flex;
 				flex-direction: column;
+				.choice_title {
+					font-weight: 700;
+					color: #6c6c6c;
+					margin: 15px 0;
+				}
 
-				button {
+				.choice_color {
 					height: 90px;
-					background-color: #cccccc;
 					border: none;
 					margin-bottom: 15px;
 					font-size: 20px;
+					display: flex;
+					.color {
+						height: 90px;
+						width: 90px;
+						background-color: #ffb55e;
+						margin-right: 10px;
+					}
+				}
+				.choice_size {
+					height: 90px;
+					border: none;
+					margin-bottom: 15px;
+					font-size: 20px;
+					display: flex;
+					.size {
+						height: 90px;
+						width: 90px;
+						background-color: #bcbcbc;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
 				}
 			}
 			.total_price_wrapper {

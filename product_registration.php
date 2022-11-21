@@ -38,79 +38,96 @@
             <section class="contents">
                 
                 <article class="scroller">
-                    <form action="contents_insert.php" method="POST" name="contents_insert_form">
+                    <form action="contents_insert.php" method="POST">
                         <section class="board product">
                             <div class="point_img">
-                                <div class="point_title"> 대표 이미지 </div>
-                                <div class="point_img_contents">
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"><input type="text" name="product_img" value="img/contents/content10.jpg"></div>
-                                    </div>
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"></div>
-                                    </div>
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"></div>
-                                    </div>
-                                    <div class="point_img_content">
-                                        <div class="point_img_wrapper"></div>
-                                    </div>
+                                <div class="img_insert_header">
+                                    <div class="point_title"> 대표 이미지 </div>
+                                </div>
+                                <section class="img_thumbnail">
+                                    <input class="input_css" name="content_img" type="text" placeholder="썸네일에 들어갈 이미지주소를 입력해주세요." value="img/contents/content1.jpg"/>
+                                </section>
+                                <div class="img_insert_header">
+                                    <div class="point_title"> 추가 이미지 </div>
+                                </div>
+                                <section class="img_more">
+                                    <input class="input_css" type="text" name="content_img1" placeholder="추가할 이미지 1">
+                                    <input class="input_css" type="text" name="content_img2" placeholder="추가할 이미지 2">
+                                    <input class="input_css" type="text" name="content_img3" placeholder="추가할 이미지 3">
+                                    <input class="input_css" type="text" name="content_img4" placeholder="추가할 이미지 4">
+                                </section>
+                                <div class="img_insert_header">
+                                    <div class="point_title"> 상품 정보 </div>
                                 </div>
                                 <div class="product_detail">
                                     <div class="product_board_three">
-                                        <div class="product_code"> 상품코드 : <input type="text" name="product_code"></div>
-                                        <div class="product_name"> 상품명 : <input type="text" name="product_name"></div>
-                                        <!-- <div class="product_cost"> 상품 원가 : <input type="text" name="product_cost"> </div> -->
-                                        <div class="product_price"> 상품 가격 : <input type="text" name="product_price"></div>
+                                        <div class="product_code"> 상품코드 : <input type="text" name="product_code" class="text_product_code"></div>
+                                        <div class="product_name"> 상품명 : <input type="text" name="product_name" class="text_product_name"></div>
+                                        <div class="product_cost"> 상품 원가 : <input type="text" name="product_cost" class="text_product_cost">원</div>
+                                        <div class="product_price"> 상품 가격 : <input type="text" name="product_price" class="text_product_price">원</div>
                                     </div>
                                     <div class="product_board_two">
-                                        <div class="product_category"> 상품 카테고리 : </div>
-                                        <div class="product_discount_rate"> 할인율 : <input type="text" name="product_discount_rate"></div>
-                                        <div class="is_deliv_today"> 오늘배송 : <input type="text" name="is_deliv_today" placeholder="Y 혹은 N 입력" ></div>
+                                        <div class="product_category"> 
+                                            상품 대분류 :
+                                            <select name="category_large" onchange="Category_Change(this)">
+                                                <option value="no_select"> 선택해주세요. </option>
+                                                <option name="outer" value="outer"> 아우터 </option>
+                                                <option name="top" value="top"> 상의 </option>
+                                                <option name="traning" value="traning"> 트레이닝 </option>
+                                                <option name="basic" value="basic"> 베이직 </option>
+                                                <option name="one_piece" value="one_piece"> 원피스 </option>
+                                                <option name="skirt" value="skirt"> 스커트 </option>
+                                                <option name="pants" value="pants"> 팬츠 </option>
+                                                <option name="bag" value="bag"> 가방 </option>
+                                                <option name="shoes" value="shoes"> 신발 </option>
+                                                <option name="accessory" value="accessory"> 액세서리 </option>
+                                            </select>
+                                        </div>
+                                        <div class="product_category"> 
+                                            상품 소분류 :
+                                            <select id="category_small" name="category_small">
+                                                <option value="no_select">선택해주세요.</option>
+                                            </select>
+                                        </div>
+                                        <div class="product_discount_rate"> 할인율 : <input type="text" name="product_discount_rate"class="text_product_discount" /> %</div>
+                                        <div class="is_deliv_today"> 오늘배송 :
+                                            <select name="is_deliv_today">
+                                                <option> N </option>
+                                                <option> Y </option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product_sign_up_col_title"> 상품 색상 등록 </div>
+                                <div class="img_insert_header">
+                                    <div class="point_title"> 상품 색상 등록 </div>
+                                </div>
+                                
                                 <div class="pro_sign_up_colors">
-                                    <div class="pro_sign_up_color">
-                                        <div class="product_color_wrapper"> color1 </div>
-                                    </div>
-                                    <div class="pro_sign_up_color">
-                                        <div class="product_color_wrapper"> color2 </div>
-                                    </div>
-                                    <div class="pro_sign_up_color">
-                                        <div class="product_color_wrapper"> color3 </div>
-                                    </div>
-                                    <div class="pro_sign_up_color">
-                                        <div class="product_color_wrapper"> color4 </div>
-                                    </div>
+                                    <input class="input_color_css content_color1" type="color" name="content_color1" value="#fffff">
+                                    <input class="input_color_css" type="color" name="content_color2">
+                                    <input class="input_color_css" type="color" name="content_color3">
+                                    <input class="input_color_css" type="color" name="content_color4">
                                 </div>
-                                <div class="product_sign_up_size_title"> 상품 사이즈 등록 </div>
-                                <div class="pro_sign_up_sizes">
-                                    <div class="pro_sign_up_size">
-                                        <div class="product_size_wrapper"> S </div>
-                                    </div>
-                                    <div class="pro_sign_up_size">
-                                        <div class="product_size_wrapper"> M </div>
-                                    </div>
-                                    <div class="pro_sign_up_size">
-                                        <div class="product_size_wrapper"> L </div>
-                                    </div>
-                                    <div class="pro_sign_up_size">
-                                        <div class="product_size_wrapper"> XL </div>
-                                    </div>
+                                
+                                    
+                                <div class="submit_wrapper">
+                                        <label class="input-submit-button" for="input-submit">
+                                            확인
+                                        </label>
+                                        <input type="submit" id="input-submit" style="display: none;">
                                 </div>
-                                <div class="product_detail_explain_title" > 상품 상세 설명 페이지 <input type="file"> </div>
                             </div>
-                            <button>완료</button>
                         </section>
-                        
+                    </section>
                     </form>
                     
                 </article>
             </section>
-            </section>
+            
         </div>
     </main>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

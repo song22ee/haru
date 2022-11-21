@@ -20,7 +20,7 @@
                 }else{
                 ?>
                 <li class="util_nav01">
-                    <a href="#"><span>마이페이지</span></a>
+                    <a href="my_page.php"><span>마이페이지</span></a>
                 </li>
                 <li class="util_nav02">
                     <a href="#"><span>고객센터</span></a>
@@ -61,10 +61,13 @@
                     <span class="cart_nav_title">장바구니</span>
                 </div>
                 </a>
-                <div class="my_page_nav">
+                <a href="my_page.php">
+                    <div class="my_page_nav">
                     <i class="far fa-user fa-1x"></i>
                     <span class="my_page_nav_title">마이페이지</span>
                 </div>
+                </a>
+                
                 <div class="hot_issue_wrapper">
                     <div class="hot_issue_under_line">
                         <div class="hot_issue">

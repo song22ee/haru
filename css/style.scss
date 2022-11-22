@@ -16,6 +16,7 @@
 @import url(inc/view_more_menu.css);
 @import url(inc/search.css);
 @import url(inc/table.css); //장바구니 테이블, 주문서 테이블
+@import url(inc/my-page.css);
 
 // login
 @import url(login.css);
@@ -48,7 +49,7 @@ body {
 		// background-color: aqua;
 	}
 	.main_wrapper {
-		width: calc(100vw - 30px);
+		width: 1100px;
 		height: auto;
 		// background-color: antiquewhite;
 		.view_more_wrapper {

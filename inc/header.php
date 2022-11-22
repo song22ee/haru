@@ -20,7 +20,7 @@
                 }else{
                 ?>
                 <li class="util_nav01">
-                    <a href="my_page.php"><span>마이페이지</span></a>
+                    <a href="my_page_order.php"><span>마이페이지</span></a>
                 </li>
                 <li class="util_nav02">
                     <a href="#"><span>고객센터</span></a>

@@ -28,7 +28,7 @@
   box-sizing: border-box;
   width: 200px;
   height: 70px;
-  background: rgb(174, 222, 222);
+  background: rgb(213, 236, 255);
   border-bottom: 1px solid #000000;
   border-right: solid;
   border-width: 0.5px;
@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: flex-start;
   padding-left: 35px;
-  background: rgb(174, 222, 222);
+  background: rgb(213, 236, 255);
   border: solid;
   border-width: 0.5px;
 }
@@ -67,10 +67,10 @@
   width: 111px;
   height: 43px;
   font-size: 15px;
-  color: #dbdbdb;
-  background: rgb(0, 117, 117);
+  color: #ffffff;
+  background: rgb(0, 122, 222);
   border-radius: 40px;
-  border: none;
+  border: 1px solid #838383;
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_display header .logout:hover {
@@ -175,6 +175,42 @@
   border: solid;
   border-width: 0.5px;
 }
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper {
+  font-size: 13px;
+  display: flex;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper .event_co_one {
+  margin-top: 10px;
+  margin-right: 3px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper .event_co_one .participate {
+  width: 71px;
+  height: 28px;
+  border: solid;
+  border-width: 0.5px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper .event_co_one .sale_event {
+  width: 71px;
+  height: 28px;
+  border: solid;
+  border-width: 0.5px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper .event_co_two {
+  margin-top: 10px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper .event_co_two .event_registration {
+  width: 71px;
+  height: 28px;
+  border: solid;
+  border-width: 0.5px;
+  background: rgb(164, 225, 255);
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .event_co_wrapper .event_co_two .event_check {
+  width: 71px;
+  height: 28px;
+  border: solid;
+  border-width: 0.5px;
+}
 #manager_body .manager_wrapper .main_display .contents .contents_header .search {
   width: 504px;
   height: 35px;
@@ -188,6 +224,19 @@
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .search_event {
+  width: 504px;
+  height: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .search_inquiry {
+  width: 504px;
+  height: 35px;
+  margin-left: 180px;
+  margin-top: 10px;
 }
 #manager_body .manager_wrapper .main_display .contents .contents_header .regist {
   width: 87px;
@@ -216,6 +265,21 @@
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_display .contents .contents_header .regist_product:hover {
+  background: rgb(77, 77, 77);
+  color: #fff;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .regist_event {
+  width: 87px;
+  height: 27px;
+  background: rgb(255, 217, 29);
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+  margin-right: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .regist_event:hover {
   background: rgb(77, 77, 77);
   color: #fff;
 }
@@ -249,6 +313,21 @@
   background: rgb(77, 77, 77);
   color: #fff;
 }
+#manager_body .manager_wrapper .main_display .contents .contents_header .delete_event {
+  width: 87px;
+  height: 27px;
+  background: #d9d9d9;
+  border-radius: 8px;
+  border: solid;
+  border-width: 0.5px;
+  margin-right: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#manager_body .manager_wrapper .main_display .contents .contents_header .delete_event:hover {
+  background: rgb(77, 77, 77);
+  color: #fff;
+}
 #manager_body .manager_wrapper .main_display .contents .board {
   width: 693px;
   height: 408px;
@@ -264,19 +343,19 @@
   display: flex;
   width: 669px;
   height: 38px;
-  background: rgb(174, 222, 222);
+  background: rgb(213, 236, 255);
   border: solid;
   border-width: 0.5px;
   align-items: center;
   margin: 0.7px;
 }
 #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(2) {
-  background: rgb(94, 172, 255);
+  background: rgb(119, 201, 255);
 }
 #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(4),
 #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(5),
 #manager_body .manager_wrapper .main_display .contents .board .message:nth-child(6) {
-  background: rgb(255, 165, 47);
+  background: rgb(138, 185, 255);
 }
 #manager_body .manager_wrapper .main_display .contents .board.notice {
   width: 870px;
@@ -347,12 +426,12 @@
 #manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.title {
   width: 351px;
 }
-#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.writer,
-#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.writer {
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.code,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.code {
   width: 122px;
 }
-#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.views,
-#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.views {
+#manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.deliv,
+#manager_body .manager_wrapper .main_display .contents .board.product .table_row .table_col.deliv {
   width: 122px;
 }
 #manager_body .manager_wrapper .main_display .contents .board.product .table_header .table_col.date,
@@ -364,6 +443,107 @@
 }
 #manager_body .manager_wrapper .main_display .contents .board.product .table_row {
   border-bottom: 1px solid rgb(218, 218, 218);
+}
+#manager_body .manager_wrapper .main_display .contents .board.event {
+  width: 870px;
+  height: 408px;
+  border: 2px solid black;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row {
+  width: 100%;
+  height: 48px;
+  display: flex;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header .table_col,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row .table_col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header .table_col.class,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row .table_col.class {
+  width: 100px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header .table_col.title,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row .table_col.title {
+  width: 351px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header .table_col.writer,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row .table_col.writer {
+  width: 122px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header .table_col.views,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row .table_col.views {
+  width: 122px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header .table_col.date,
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row .table_col.date {
+  width: 176px;
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_header {
+  border-bottom: 1px solid rgb(33, 33, 33);
+}
+#manager_body .manager_wrapper .main_display .contents .board.event .table_row {
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry {
+  width: 870px;
+  height: 408px;
+  padding-top: 0;
+  border: 2px solid black;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row {
+  width: 100%;
+  height: 48px;
+  display: flex;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header .table_col,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row .table_col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header .table_col.class,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row .table_col.class {
+  width: 79px;
+  height: 100%;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header .table_col.title,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row .table_col.title {
+  width: 372px;
+  height: 100%;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header .table_col.writer,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row .table_col.writer {
+  width: 122px;
+  height: 100%;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header .table_col.views,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row .table_col.views {
+  width: 122px;
+  height: 100%;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header .table_col.date,
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row .table_col.date {
+  width: 176px;
+  height: 100%;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row:nth-child(2),
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row:nth-child(3),
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row:nth-child(4) {
+  background: rgb(221, 240, 255);
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_header {
+  border-bottom: 1px solid rgb(33, 33, 33);
+  height: 100%;
+}
+#manager_body .manager_wrapper .main_display .contents .board.inquiry .table_row {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  height: 100%;
 }
 #manager_body .manager_wrapper .main_registration {
   width: calc(100% - 200px);
@@ -424,11 +604,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(174, 222, 222);
+  background: rgb(213, 236, 255);
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_img_content_plus:hover {
-  background: rgb(0, 117, 117);
+  background: rgb(74, 173, 255);
   color: #fff;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .img_insert_header .point_img_content_plus input {
@@ -438,7 +618,7 @@
   width: 300px;
   height: 25px;
   border: 0;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   min-width: 190px;
   margin-bottom: 10px;
   outline: none;
@@ -464,7 +644,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_three {
   width: 350px;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   margin-right: 10px;
   padding: 10px;
   line-height: 43px;
@@ -475,7 +655,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_three .product_code .text_product_code {
   border: 0;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   border-bottom: solid;
   border-width: 0.5px;
   min-width: 190px;
@@ -488,7 +668,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_three .product_name .text_product_name {
   border: 0;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   border-bottom: solid;
   border-width: 0.5px;
   min-width: 190px;
@@ -501,7 +681,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_three .product_cost .text_product_cost {
   border: 0;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   border-bottom: solid;
   border-width: 0.5px;
   min-width: 150px;
@@ -514,7 +694,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_three .product_price .text_product_price {
   border: 0;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   border-bottom: solid;
   border-width: 0.5px;
   min-width: 150px;
@@ -524,7 +704,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_two {
   width: 350px;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   margin-right: 10px;
   padding: 10px;
   line-height: 43px;
@@ -533,7 +713,7 @@
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_two select {
   width: 150px;
   padding: 5px;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   border: 1px solid #999;
   border-radius: 0px;
 }
@@ -545,7 +725,7 @@
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail .product_board_two .product_discount_rate .text_product_discount {
   border: 0;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   border-bottom: solid;
   border-width: 0.5px;
   min-width: 150px;
@@ -580,11 +760,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(174, 222, 222);
+  background: rgb(213, 236, 255);
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_colors .pro_sign_up_color_plus .product_color_plus:hover {
-  background: rgb(0, 117, 117);
+  background: rgb(74, 173, 255);
   color: #fff;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_sign_up_size_title {
@@ -626,11 +806,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(174, 222, 222);
+  background: rgb(213, 236, 255);
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .pro_sign_up_sizes .pro_sign_up_size_plus .product_size_plus:hover {
-  background: rgb(0, 117, 117);
+  background: rgb(74, 173, 255);
   color: #fff;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail_explain_title {
@@ -641,14 +821,14 @@
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail_explain_title .input-file-button {
   margin-left: 25px;
   padding: 6px 20px;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   color: rgb(0, 0, 0);
   border: 1px solid black;
   font-size: 10px;
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .product_detail_explain_title .input-file-button:hover {
-  background: rgb(0, 117, 117);
+  background: rgb(74, 173, 255);
   color: rgb(255, 255, 255);
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .submit_wrapper {
@@ -657,13 +837,13 @@
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .submit_wrapper .input-submit-button {
   margin-left: 300px;
   padding: 6px 100px;
-  background-color: rgb(174, 222, 222);
+  background-color: rgb(213, 236, 255);
   color: rgb(0, 0, 0);
   border: 1px solid black;
   font-size: 10px;
   cursor: pointer;
 }
 #manager_body .manager_wrapper .main_registration .scroller .board.product .point_img .submit_wrapper .input-submit-button:hover {
-  background: rgb(0, 117, 117);
-  color: white;
+  background: rgb(0, 122, 222);
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=manager.css.map */

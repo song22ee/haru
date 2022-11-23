@@ -34,14 +34,13 @@
                 <table>
                 <?php foreach($result as $key1=>$value){?>
                     <?php $order_contents = json_decode($value["order_contents"]);?>
-                    <!-- <div class="order_info_header">
-                        <div class="order_date"><span>2022.09.29</span></div>
-                        <div class="order_id"><span>주문번호 : <?php echo $result[$key1]['order_id']?></span></div>
-                    </div> -->
-                    <div>trait_exists</div>
+                    <tr class="order_info_header">
+                        <td class="order_date"><span>2022.09.29</span></td>
+                        <td class="order_id"><span>주문번호 : <?php echo $result[$key1]['order_id']?></span></td>
+                    </tr>
                     <?php foreach($order_contents as $key2=>$order_content){?>
                         <?php $order_info =db_select("select * from contents where content_code= ?", array($order_contents[$key2]->content_code)); ?>
-                        <!-- <tr>
+                        <tr class="order_content" >
                             <td>
                                 <div class="order_status"><span>주문완료</span></div>
 
@@ -56,14 +55,27 @@
                                 <?php echo $order_info[0]['content_price']?>원
                             </td>
                             <td>1개</td>
-                            <td>0000원</td>
-                            <td>0000원</td>
+                            <td>2,500원</td>
+                            <td><?php echo $order_info[0]['content_price']?>원</td>
                             
                         </tr>
-                        <div>test</div> -->
-                        <div>test</div>
                         
                     <?php } ?>
+                    <tr class="order_receipt">
+                        <td class="title font_weight">상품금액</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="total_title">
+                            <span class="font_size">상품합계</span>
+                            <span class="font_size">배송비 합계</span>
+                        </td>
+                        <td>
+                            <span class="font_size">0000원</span>
+                            <span class="font_size">2,500원</span>
+                        </td>
+                    </tr>
                 <?php } ?>
             </table>
             </section>

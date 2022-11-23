@@ -54,9 +54,14 @@
   height: 50px;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
+  box-sizing: border-box;
+  padding-left: 15px;
 }
-.table.pay .order_info_header span {
+.table.pay .order_info_header td {
+  width: auto;
+  height: auto;
+}
+.table.pay .order_info_header td span {
   font-size: 14px;
   font-weight: 700;
 }
@@ -69,6 +74,9 @@
 }
 .table.pay tr {
   height: 110px;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid black;
 }
 .table.pay td {
   font-size: 13px;
@@ -84,5 +92,23 @@
 }
 .table.pay .order_status span {
   font-size: 12px;
+  font-weight: 700;
+}
+.table.pay .order_receipt {
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 70px;
+  margin-bottom: 40px;
+}
+.table.pay .order_receipt .total_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.table.pay .order_receipt .font_size {
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+.table.pay .order_receipt .font_weight {
   font-weight: 700;
 }/*# sourceMappingURL=my-page.css.map */

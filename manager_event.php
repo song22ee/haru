@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <input type="text" class="search_event">
-                    <a href=""><button class="regist_event"> 등록 </button></a>
+                    <a href="event_registration.php"><button class="regist_event"> 등록 </button></a>
                     <a href=""><button class="delete_event"> 삭제 </button></a>
                 </section>
                 <section class="board event" style="overflow-y: scroll;">

@@ -1,5 +1,4 @@
-<?php require_once("pay.insert_select.php");?>
-
+<?php require_once("inc/session.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +26,6 @@
         <section class="table">
             <table>
                 <tr class="table_header">
-                    <td class="check"><input type="checkbox"></td>
                     <td>이미지</td>
                     <td>상품정보</td>
                     <td>가격</td>
@@ -35,17 +33,15 @@
                     <td>배송비</td>
                     <td>합계</td>
                 </tr>
-                <?php foreach($contents_code as $r){?>
-                    <?php $result =db_select("select * from contents where content_code= ?", array($r));?>
-                <tr>
-                    <td class="check"><input type="checkbox"></td>
-                    <td><div class="img_wrapper"><img src="<?php echo $result[0]['content_img']?>" alt=""/></div></td>
-                    <td><?php echo $result[0]['content_name']?></td>
-                    <td><?php echo $result[0]['content_price']?>원</td>
-                    <td>1개</td>
-                    <td>0000원</td>
-                    <td>0000원</td>
-                </tr>
+                <?php foreach($_SESSION['shopping_cart'] as $r){?>
+                    <tr>
+                        <td><div class="img_wrapper"><img src="<?php echo $r[0]['content_img']?>" alt=""/></div></td>
+                        <td><?php echo $r[0]['content_name']?></td>
+                        <td><?php echo $r[0]['content_price']?>원</td>
+                        <td>1개</td>
+                        <td>0000원</td>
+                        <td>0000원</td>
+                    </tr>
                 <?php } ?>
             </table>
         </section>

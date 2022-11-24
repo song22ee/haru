@@ -23,7 +23,7 @@
                 <button>전체 상품 삭제하기</button>
             </div>
         </section>
-        <form action="pay.insert_select.php" method="POST">
+        <form action="cart_select.submit.php" method="POST">
             <section class="table">
                 <table>
                     <tr class="table_header">
@@ -35,7 +35,7 @@
                         <td>배송비</td>
                         <td>합계</td>
                     </tr>
-                    <!-- $count는 체크박스의 고유 번호를 주기 위해 만든 변수 -->
+                    <!-- $count는 체크박스와 상품코드 name에 고유 번호를 주기 위해 만든 변수 -->
                     <?php $count=1; ?> 
                     <?php foreach($result as $r){?>
                         <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
@@ -51,6 +51,8 @@
                         <td>0000원</td>
                         <td>0000원</td>
                     </tr>
+                    <?php require_once("inc/session.php"); ?>
+                    <?php $_SESSION['cart_count']=$count ?>
                     <?php $count++; ?>
                     <?php } ?>
                 </table>

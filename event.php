@@ -21,11 +21,11 @@
         </div>
         <div class="event_title_wrapper">
             <a href="">
-                <div class="join_event">
-                    <span class="join_event_title"> 참여형 이벤트 </span>
+                <div class="join_event" style="background-color:  rgb(0, 122, 222);">
+                    <span class="join_event_title" style = "color: white;"> 참여형 이벤트 </span>
                 </div>
             </a>
-            <a href="">
+            <a href="event_sale.php">
                 <div class="sale_event">
                     <span class="sale_event_title"> 세일 이벤트 </span>
                 </div>

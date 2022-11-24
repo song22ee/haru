@@ -17,15 +17,15 @@
                 <div class="menu" > 홈 </div>
             </a>
             <a href="manager_notice.php">
-                <div class="menu" style="background-color:  rgb(15, 162, 162);"> 공지사항 관리 </div>
+                <div class="menu" style="background-color:  rgb(74 173 255);"> 공지사항 관리 </div>
             </a>
             <a href="manager_product.php">
                 <div class="menu"> 상품 관리 </div>
             </a>
-            <a href="">
+            <a href="manager_event.php">
                 <div class="menu"> 이벤트 관리 </div>
             </a>
-            <a href="">
+            <a href="manager_inquiry.php">
                 <div class="menu"> 고객 문의 관리 </div>
             </a>
         </div>

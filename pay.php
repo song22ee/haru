@@ -20,7 +20,9 @@
         <section class="pay_header">
             <span class="pay_title"> 주문/결제 </span>
             <div class="back_buttons">
+
                 <a href="cart.php"><button>< 이전 페이지</button>  </a>
+
             </div>
         </section>
         <section class="table">
@@ -157,6 +159,7 @@
                         <div class="deliv_message"> 배송 메시지: <input name="message" type="deliv_text_message" maxlength="30" class="deliv_text_info_message" /> </div>
                     </div>
                 </div>
+
             </section>
             <section class="order_buttons">
                 <button class="order_total"> 주문하기 </button>
@@ -164,6 +167,7 @@
         </form>
         
         
+
     </main>
 
     <?php require_once("inc/fast_move.php"); ?>

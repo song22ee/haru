@@ -22,6 +22,14 @@
   height: 150px;
   border: 1px solid black;
 }
+.table table tr .content_info {
+  flex-direction: column;
+}
+.table table tr .content_info input {
+  text-align: center;
+  outline: none;
+  margin-bottom: 10px;
+}
 .table table tr .check {
   width: 70px;
 }

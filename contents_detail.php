@@ -93,6 +93,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                 </div>
             </section>
         </form>
+        <section class="review_section"></section>
     </main>
     <?php require_once("inc/fast_move.php"); ?>
 

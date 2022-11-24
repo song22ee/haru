@@ -22,6 +22,14 @@
 			width: 100%;
 			height: 150px;
 			border: 1px solid black;
+			.content_info {
+				flex-direction: column;
+				input {
+					text-align: center;
+					outline: none;
+					margin-bottom: 10px;
+				}
+			}
 			.check {
 				width: 70px;
 			}

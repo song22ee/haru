@@ -23,35 +23,45 @@
                 <button>전체 상품 삭제하기</button>
             </div>
         </section>
-        <section class="table">
-            <table>
-                <tr class="table_header">
-                    <td class="check"><input type="checkbox"></td>
-                    <td>이미지</td>
-                    <td>상품정보</td>
-                    <td>가격</td>
-                    <td>수량</td>
-                    <td>배송비</td>
-                    <td>합계</td>
-                </tr>
-                <?php foreach($result as $r){?>
-                    <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
-                <tr>
-                    <td class="check"><input type="checkbox"></td>
-                    <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
-                    <td><?php echo $a[0]['content_name']?></td>
-                    <td><?php echo $a[0]['content_price']?>원</td>
-                    <td>1개</td>
-                    <td>0000원</td>
-                    <td>0000원</td>
-                </tr>
-                <?php } ?>
-            </table>
-        </section>
-        <section class="purchase_buttons">
-            <a href="pay.php"><button class="purchase_total" >전체 상품 주문하기</button></a>
-            <button>선택 상품 주문하기</button>
-        </section>
+        <form action="pay.insert_select.php" method="POST">
+            <section class="table">
+                <table>
+                    <tr class="table_header">
+                        <td class="check"><input type="checkbox"></td>
+                        <td>이미지</td>
+                        <td>상품정보</td>
+                        <td>가격</td>
+                        <td>수량</td>
+                        <td>배송비</td>
+                        <td>합계</td>
+                    </tr>
+                    <!-- $count는 체크박스의 고유 번호를 주기 위해 만든 변수 -->
+                    <?php $count=1; ?> 
+                    <?php foreach($result as $r){?>
+                        <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
+                    <tr>
+                        <td class="check"><input type="checkbox" name="<?php echo "check_box".$count ?>"></td>
+                        <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
+                        <td class="content_info">
+                            <input type="text" name="<?php echo "content_code".$count ?>" value="<?php echo $a[0]['content_code']?>"/>
+                            <?php echo $a[0]['content_name']?>
+                        </td>
+                        <td><?php echo $a[0]['content_price']?>원</td>
+                        <td>1개</td>
+                        <td>0000원</td>
+                        <td>0000원</td>
+                    </tr>
+                    <?php $count++; ?>
+                    <?php } ?>
+                </table>
+            </section>
+            <section class="purchase_buttons">
+                <a href="pay.php"><button type="button" class="purchase_total" >전체 상품 주문하기</button></a>
+                <button>선택 상품 주문하기</button>
+            </section>
+        </form>
+        
+        
         
     </main>
 

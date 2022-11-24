@@ -1,0 +1,114 @@
+.main_wrapper.my-page {
+  height: auto;
+  display: flex;
+}
+.main_wrapper.my-page .menus {
+  width: 15%;
+  height: 100%;
+  border: 1px solid black;
+}
+.main_wrapper.my-page .menus .my-page_title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+}
+.main_wrapper.my-page .menus .navs {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main_wrapper.my-page .menus .navs .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(207, 207, 207);
+  border-bottom: 1px solid black;
+}
+.main_wrapper.my-page .view {
+  width: 85%;
+  height: auto;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.main_wrapper.my-page .view .order_title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.table.pay {
+  margin: 30px 0;
+  width: 100%;
+}
+.table.pay .order_info_header {
+  display: flex;
+  border-top: 2px solid black;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.table.pay .order_info_header td {
+  width: auto;
+  height: auto;
+}
+.table.pay .order_info_header td span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.table.pay .order_info_header .order_date {
+  padding-right: 15px;
+  border-right: 2px solid black;
+}
+.table.pay .order_info_header .order_id {
+  padding-left: 15px;
+}
+.table.pay tr {
+  height: 110px;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid black;
+}
+.table.pay td {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.table.pay .img_wrapper {
+  width: 70px;
+  height: 70px;
+}
+.table.pay .table_header {
+  height: 30px;
+}
+.table.pay .order_status span {
+  font-size: 12px;
+  font-weight: 700;
+}
+.table.pay .order_receipt {
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 70px;
+  margin-bottom: 40px;
+}
+.table.pay .order_receipt .total_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.table.pay .order_receipt .font_size {
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+.table.pay .order_receipt .font_weight {
+  font-weight: 700;
+}/*# sourceMappingURL=my-page.css.map */

@@ -10,6 +10,8 @@
 @import url(inc/reset.css);
 @import url(inc/view_more_menu.css);
 @import url(inc/search.css);
+@import url(inc/table.css);
+@import url(inc/my-page.css);
 @import url(login.css);
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
@@ -37,7 +39,7 @@ body #header_wrapper {
   height: auto;
 }
 body .main_wrapper {
-  width: calc(100vw - 30px);
+  width: 1100px;
   height: auto;
 }
 body .main_wrapper .view_more_wrapper {

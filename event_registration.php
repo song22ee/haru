@@ -19,10 +19,10 @@
                 <div class="menu"> 공지사항 관리 </div>
             </a>
             <a href="manager_product.php">
-                <div class="menu" style="background-color:  rgb(74 173 255);"> 상품 관리 </div>
+                <div class="menu"> 상품 관리 </div>
             </a>
             <a href="manager_event.php">
-                <div class="menu"> 이벤트 관리 </div>
+                <div class="menu" style="background-color:  rgb(74 173 255);"> 이벤트 관리 </div>
             </a>
             <a href="manager_inquiry.php">
                 <div class="menu"> 고객 문의 관리 </div>
@@ -32,7 +32,7 @@
         <div class="main_registration">
             <header>
                 <div class="title_and_registration">
-                    <span class="title">상품 등록</span>
+                    <span class="title">이벤트 등록</span>
                 </div>
             </header>
             <section class="contents">
@@ -46,15 +46,6 @@
                                 </div>
                                 <section class="img_thumbnail">
                                     <input class="input_css" name="content_img" type="text" placeholder="썸네일에 들어갈 이미지주소를 입력해주세요." value="img/contents/content1.jpg"/>
-                                </section>
-                                <div class="img_insert_header">
-                                    <div class="point_title"> 추가 이미지 </div>
-                                </div>
-                                <section class="img_more">
-                                    <input class="input_css" type="text" name="content_img1" placeholder="추가할 이미지 1">
-                                    <input class="input_css" type="text" name="content_img2" placeholder="추가할 이미지 2">
-                                    <input class="input_css" type="text" name="content_img3" placeholder="추가할 이미지 3">
-                                    <input class="input_css" type="text" name="content_img4" placeholder="추가할 이미지 4">
                                 </section>
                                 <div class="img_insert_header">
                                     <div class="point_title"> 상품 정보 </div>
@@ -97,18 +88,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="img_insert_header">
-                                    <div class="point_title"> 상품 색상 등록 </div>
-                                </div>
-                                
-                                <div class="pro_sign_up_colors">
-                                    <input class="input_color_css content_color1" type="color" name="content_color1" value="#fffff">
-                                    <input class="input_color_css" type="color" name="content_color2">
-                                    <input class="input_color_css" type="color" name="content_color3">
-                                    <input class="input_color_css" type="color" name="content_color4">
-                                </div>
-                                
+                                </div>                              
                                     
                                 <div class="submit_wrapper">
                                         <label class="input-submit-button" for="input-submit">

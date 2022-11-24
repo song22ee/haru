@@ -19,7 +19,9 @@
         <section class="pay_header">
             <span class="pay_title"> 주문/결제 </span>
             <div class="back_buttons">
-                <button> < 이전 페이지 </button>
+                <a href="cart.php">
+                    <button> < 이전 페이지 </button>
+                </a>
             </div>
         </section>
         <section class="pay_list">
@@ -154,7 +156,11 @@
             </div>
         </section>
         <section class="order_buttons">
-            <button class="order_total"> 주문하기 </button>
+            <a href="pay_complete.php">
+                <button class="order_total">
+                    주문하기
+                </button>
+            </a>
         </section>
     </main>
 

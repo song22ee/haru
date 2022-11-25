@@ -9,37 +9,34 @@
     require_once("inc/session.php");
     
     $cart_count=$_SESSION['cart_count']; //장바구니에 들어있는 상품 개수
-    $contents_code=[]; //이곳에 장바구니에 선택했던 상품코드들을 넣을것임.
+    $content=[]; //선택된 상품의 정보(content_code, content_amount)가 담긴 배열
+    $shopping_cart=[]; //선택된 상품들을 모아놓은 배열(배열인 $content가 1개이상 담겨져 있음)
     $count=1;
 
     while($cart_count > 0){
-        //해당 고유번호를 가지고 있는 상품코드가 보내졌다면, 동시에 해당고유번호의 체크박스가 체크되어 있다면
-        if ( isset($_POST['content_code'.$count]) == true && isset($_POST['check_box'.$count]) ){
-            $contents_code[]=$_POST['content_code'.$count]; //상품코드들을 넣을 배열에 해당 상품코드를 넣는다.
+        //해당고유번호의 체크박스가 체크되어 있다면
+        if ( isset($_POST['check_box'.$count]) ){
+            $content['content_code']=$_POST['content_code'.$count]; //상품코드들을 넣을 배열에 해당 상품코드를 넣는다.
+            $content['content_amount']=$_POST['content_amount'.$count];
+            $shopping_cart[]=$content;
         }
         $count++;
         $cart_count--;
     }
 
-    // var_dump($contents_code); //체크한 상품들의 상품코드들이 들어있는 배열완성.
+    var_dump($shopping_cart); //체크한 상품들의 상품코드들이 들어있는 배열완성. 
+    unset($_SESSION['shopping_cart']); //기존에 들었던거 없애기
+    $_SESSION['shopping_cart']=$shopping_cart; //세션변수에 저장.
 
     require_once("inc/db.php");
     
-    $shopping_cart=[]; //그 해당 상품코드에 대한 상품정보들을 담을곳.
-
-    foreach($contents_code as $r){ //$contents_code안의 개수만큼 반복문 진행.
+    foreach($shopping_cart as $r){ 
         //해당 상품코드에 대한 상품정보 불러오기
-        $result =db_select("select * from contents where content_code= ?", array($r));
-        // var_dump($result);
+        $result =db_select("select * from contents where content_code= ?", array($r['content_code']));
+        var_dump($result);
         echo "<br/>";
-        $shopping_cart[]=$result[0]; //상품정보 넣기
+
     }
-    
-    //체크한 상품들의 상품정보들이 들어있는 배열 완성. 세션변수에 저장.
-    unset($_SESSION['shopping_cart']); //기존에 들었던거 없애기
-    $_SESSION['shopping_cart']=$shopping_cart; 
-    var_dump($_SESSION['shopping_cart']);
-    
 
     header("Location: pay_select.php");
 

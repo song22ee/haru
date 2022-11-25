@@ -43,11 +43,14 @@
                         <td class="check"><input type="checkbox" name="<?php echo "check_box".$count ?>"></td>
                         <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
                         <td class="content_info">
-                            <input type="text" name="<?php echo "content_code".$count ?>" value="<?php echo $a[0]['content_code']?>"/>
+                            <input type="hidden" name="<?php echo "content_code".$count ?>" value="<?php echo $a[0]['content_code']?>"/>
                             <?php echo $a[0]['content_name']?>
                         </td>
                         <td><?php echo $a[0]['content_price']?>원</td>
-                        <td><?php echo $r['content_amount']?>개</td>
+                        <td class="content_info">
+                            <input type="hidden" name="<?php echo "content_amount".$count?>" value="<?php echo $r['content_amount']?>"/>
+                            <?php echo $r['content_amount']?>개
+                        </td>
                         <td>0000원</td>
                         <td>0000원</td>
                     </tr>

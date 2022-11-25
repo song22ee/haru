@@ -1,4 +1,8 @@
-<?php require_once("inc/session.php"); ?>
+<?php 
+    require_once("inc/session.php"); 
+    require_once("inc/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,15 +38,19 @@
                     <td>합계</td>
                 </tr>
                 <?php foreach($_SESSION['shopping_cart'] as $r){?>
+                    <?php $result =db_select("select * from contents where content_code= ?", array($r['content_code']));?>
                     <tr>
-                        <td><div class="img_wrapper"><img src="<?php echo $r['content_img']?>" alt=""/></div></td>
+                        <td><div class="img_wrapper"><img src="<?php echo $result[0]['content_img']?>" alt=""/></div></td>
                         <td class="content_info">
-                            <input type="text" value="<?php echo $r['content_code']?>"/>
-                            <?php echo $r['content_name']?>
+                            <input type="hidden" value="<?php echo $result[0]['content_code']?>"/>
+                            <?php echo $result[0]['content_name']?>
                         </td>
-                        <td><?php echo $r['content_price']?>원</td>
-                        <td>1개</td>
-                        <td>0000원</td>
+                        <td><?php echo $result[0]['content_price']?>원</td>
+                        <td class="content_info">
+                            <input type="hidden" name="<?php echo "content_amount"?>" value="<?php echo $r['content_amount']?>"/>
+                            <?php echo $r['content_amount']?>개
+                        </td>
+                        <td>2,500원</td>
                         <td>0000원</td>
                     </tr>
                 <?php } ?>

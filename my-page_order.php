@@ -54,7 +54,7 @@
                             <td>
                                 <?php echo $order_info[0]['content_price']?>원
                             </td>
-                            <td>1개</td>
+                            <td><?php echo $order_contents[$key2]->content_amount;?></td>
                             <td>2,500원</td>
                             <td><?php echo $order_info[0]['content_price']?>원</td>
                             

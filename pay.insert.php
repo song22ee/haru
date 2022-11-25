@@ -1,16 +1,16 @@
 <?php
     require_once("inc/session.php"); 
     var_dump($_SESSION['shopping_cart']);
-    $content_info=[]; //상품코드와 상품 수량을 넣을 배열
-    $content_cart=[];
+    // $content_info=[]; //상품코드와 상품 수량을 넣을 배열
+    // $content_cart=[];
 
-    foreach($_SESSION['shopping_cart'] as $r){
-        $content_info['content_code']=$r['content_code'];
-        // $content_codes['content_amount']=$r[''];
-        $content_cart[]=$content_info;
-    }
+    // foreach($_SESSION['shopping_cart'] as $r){
+    //     $content_info['content_code']=$r['content_code'];
+    //     // $content_codes['content_amount']=$r[''];
+    //     $content_cart[]=$content_info;
+    // }
 
-    var_dump($content_cart);
+    // var_dump($content_cart);
     
     $order_id = date("YmdHis");
     $orderer_name   = $_POST["orderer_name"];

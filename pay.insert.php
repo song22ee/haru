@@ -1,6 +1,17 @@
 <?php
-    require_once("cart.import.php");
+    require_once("inc/session.php"); 
+    var_dump($_SESSION['shopping_cart']);
+    $content_info=[]; //상품코드와 상품 수량을 넣을 배열
+    $content_cart=[];
 
+    foreach($_SESSION['shopping_cart'] as $r){
+        $content_info['content_code']=$r['content_code'];
+        // $content_codes['content_amount']=$r[''];
+        $content_cart[]=$content_info;
+    }
+
+    var_dump($content_cart);
+    
     $order_id = date("YmdHis");
     $orderer_name   = $_POST["orderer_name"];
     $orderer_email1 = $_POST["orderer_email1"];
@@ -21,8 +32,9 @@
     $Recipient_phone = $Recipient_phone1."-".$Recipient_phone2."-".$Recipient_phone3;
     $message = $_POST["message"];
     $member_id= $_SESSION['member_id']; 
-    $order_contents = json_encode($result); //주문 컨텐츠 json-> striong으로 저장
+    $order_contents = json_encode($_SESSION['shopping_cart']); //주문 컨텐츠 json-> string으로 저장
 
+    require_once("inc/db.php");
 
 
     // 데이터 저장

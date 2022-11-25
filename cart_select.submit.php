@@ -32,10 +32,11 @@
         $result =db_select("select * from contents where content_code= ?", array($r));
         // var_dump($result);
         echo "<br/>";
-        $shopping_cart[]=$result; //상품정보 넣기
+        $shopping_cart[]=$result[0]; //상품정보 넣기
     }
     
     //체크한 상품들의 상품정보들이 들어있는 배열 완성. 세션변수에 저장.
+    unset($_SESSION['shopping_cart']); //기존에 들었던거 없애기
     $_SESSION['shopping_cart']=$shopping_cart; 
     var_dump($_SESSION['shopping_cart']);
     

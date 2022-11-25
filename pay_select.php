@@ -35,9 +35,12 @@
                 </tr>
                 <?php foreach($_SESSION['shopping_cart'] as $r){?>
                     <tr>
-                        <td><div class="img_wrapper"><img src="<?php echo $r[0]['content_img']?>" alt=""/></div></td>
-                        <td><?php echo $r[0]['content_name']?></td>
-                        <td><?php echo $r[0]['content_price']?>원</td>
+                        <td><div class="img_wrapper"><img src="<?php echo $r['content_img']?>" alt=""/></div></td>
+                        <td class="content_info">
+                            <input type="text" value="<?php echo $r['content_code']?>"/>
+                            <?php echo $r['content_name']?>
+                        </td>
+                        <td><?php echo $r['content_price']?>원</td>
                         <td>1개</td>
                         <td>0000원</td>
                         <td>0000원</td>

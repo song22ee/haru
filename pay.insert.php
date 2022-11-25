@@ -1,14 +1,6 @@
 <?php
     require_once("inc/session.php"); 
     var_dump($_SESSION['shopping_cart']);
-    // $content_info=[]; //상품코드와 상품 수량을 넣을 배열
-    // $content_cart=[];
-
-    // foreach($_SESSION['shopping_cart'] as $r){
-    //     $content_info['content_code']=$r['content_code'];
-    //     // $content_codes['content_amount']=$r[''];
-    //     $content_cart[]=$content_info;
-    // }
 
     // var_dump($content_cart);
     
@@ -58,6 +50,15 @@
             'order_contents' => $order_contents
         )
     );
+
+    //주문한 상품 장바구니 비우기
+    //로직 :
+        // cart db에서, 세션변수에 저장했던 shopping_cart에 들어있는 상품코드와 일치하는 상품을 제거
+    foreach($_SESSION['shopping_cart'] as $r){
+        var_dump($r['content_code']);
+        db_update_delete("delete from cart where content_code= ?" , array($r['content_code']));
+    }
+
 
 echo "
         <script>

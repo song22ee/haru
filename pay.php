@@ -1,5 +1,7 @@
-<?php require_once("cart.import.php");?>
-<!-- <?php var_dump($result) ;?> -->
+<?php 
+    require_once("inc/session.php"); 
+    require_once("inc/db.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,15 +22,12 @@
         <section class="pay_header">
             <span class="pay_title"> 주문/결제 </span>
             <div class="back_buttons">
-
                 <a href="cart.php"><button>< 이전 페이지</button>  </a>
-
             </div>
         </section>
         <section class="table">
             <table>
                 <tr class="table_header">
-                    <td class="check"><input type="checkbox"></td>
                     <td>이미지</td>
                     <td>상품정보</td>
                     <td>가격</td>
@@ -36,18 +35,49 @@
                     <td>배송비</td>
                     <td>합계</td>
                 </tr>
-                <?php foreach($result as $r){?>
-                    <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
-                <tr>
-                    <td class="check"><input type="checkbox"></td>
-                    <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
-                    <td><?php echo $a[0]['content_name']?></td>
-                    <td><?php echo $a[0]['content_price']?>원</td>
-                    <td>1개</td>
-                    <td>0000원</td>
-                    <td>0000원</td>
-                </tr>
+                <?php $total_price=0;  ?>
+                <?php foreach($_SESSION['shopping_cart'] as $r){?>
+                    <?php $result =db_select("select * from contents where content_code= ?", array($r['content_code']));?>
+                    <tr>
+                        <td><div class="img_wrapper"><img src="<?php echo $result[0]['content_img']?>" alt=""/></div></td>
+                        <td class="content_info">
+                            <input type="hidden" value="<?php echo $result[0]['content_code']?>"/>
+                            <?php echo $result[0]['content_name']?>
+                        </td>
+                        <td>
+                            <?php $price=$result[0]['content_price']?>
+                            <?php echo number_format($price)?>원
+                        </td>
+                        <td class="content_info">
+                            <input type="hidden" name="<?php echo "content_amount"?>" value="<?php echo $r['content_amount']?>"/>
+                            <?php $amount=$r['content_amount']?>
+                            <?php echo number_format($amount)?>개
+                        </td>
+                        <td>2,500원</td>
+                        <td>
+                            <?php $total=$price*$amount ?>
+                            <?php echo number_format($total)?>개
+                        </td>
+                    </tr>
+                    <?php $total_price=$total_price+$total?>
                 <?php } ?>
+                <tr class="order_receipt">
+                        <td class="title font_weight">합계</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="total_title">
+                            <span class="font_size">배송비 합계</span>
+                            <span class="font_size">상품합계</span>
+                        </td>
+                        <td>
+                            <span class="font_size">2,500원</span>
+                            <span class="font_size">
+                                <?php echo number_format($total_price)?>원
+                            </span>
+                        </td>
+                    </tr>
             </table>
         </section>
         <form action="pay.insert.php" method="POST">

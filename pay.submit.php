@@ -25,7 +25,6 @@
     }
 
     var_dump($shopping_cart); //체크한 상품들의 상품코드들이 들어있는 배열완성. 
-    unset($_SESSION['shopping_cart']); //기존에 들었던거 없애기
     $_SESSION['shopping_cart']=$shopping_cart; //세션변수에 저장.
 
     require_once("inc/db.php");
@@ -38,6 +37,6 @@
 
     }
 
-    header("Location: pay_select.php");
+    header("Location: pay.php");
 
 ?>

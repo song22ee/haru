@@ -40,6 +40,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				flex-direction: column;
 				.img_wrapper {
 					width: 130px;
 					height: 130px;
@@ -49,6 +50,25 @@
 						height: 100%;
 					}
 				}
+			}
+		}
+		.order_receipt {
+			justify-content: space-between;
+			border-bottom: 1px solid black;
+			height: 70px;
+			margin-bottom: 40px;
+
+			.total_title {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			.font_size {
+				font-size: 12px;
+				padding-bottom: 4px;
+			}
+			.font_weight {
+				font-weight: 700;
 			}
 		}
 	}

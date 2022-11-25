@@ -59,6 +59,8 @@
         db_update_delete("delete from cart where content_code= ?" , array($r['content_code']));
     }
 
+    unset($_SESSION['shopping_cart']); //shopping_cart에 들었던거 없애기
+
 
 echo "
         <script>

@@ -23,7 +23,7 @@
                 <button>전체 상품 삭제하기</button>
             </div>
         </section>
-        <form action="cart_select.submit.php" method="POST">
+        <form action="pay.submit.php" method="POST">
             <section class="table">
                 <table>
                     <tr class="table_header">
@@ -37,6 +37,7 @@
                     </tr>
                     <!-- $count는 체크박스와 상품코드 name에 고유 번호를 주기 위해 만든 변수 -->
                     <?php $count=1; ?> 
+                    <?php $total_price=0;  ?>
                     <?php foreach($result as $r){?>
                         <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
                     <tr>
@@ -46,22 +47,47 @@
                             <input type="hidden" name="<?php echo "content_code".$count ?>" value="<?php echo $a[0]['content_code']?>"/>
                             <?php echo $a[0]['content_name']?>
                         </td>
-                        <td><?php echo $a[0]['content_price']?>원</td>
+                        <td>
+                            <?php echo number_format($a[0]['content_price']);?>원
+                            <?php $price=$a[0]['content_price']; ?>
+                        </td>
                         <td class="content_info">
                             <input type="hidden" name="<?php echo "content_amount".$count?>" value="<?php echo $r['content_amount']?>"/>
                             <?php echo $r['content_amount']?>개
+                            <?php $amount=$r['content_amount']; ?>
                         </td>
-                        <td>0000원</td>
-                        <td>0000원</td>
+                        <td>2,500원</td>
+                        <td>
+                            <?php $total=$price*$amount ?>
+                            <?php echo number_format($total) ?>원
+                        </td>
                     </tr>
+                    <?php $total_price=$total_price+$total?>
                     <?php require_once("inc/session.php"); ?>
                     <?php $_SESSION['cart_count']=$count ?>
                     <?php $count++; ?>
                     <?php } ?>
+                    <tr class="order_receipt">
+                        <td class="title font_weight">합계</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="total_title">
+                            <span class="font_size">배송비 합계</span>
+                            <span class="font_size">상품합계</span>
+                        </td>
+                        <td>
+                            <span class="font_size">2,500원</span>
+                            <span class="font_size">
+                                <?php echo number_format($total_price)?>원
+                            </span>
+                        </td>
+                    </tr>
                 </table>
             </section>
             <section class="purchase_buttons">
-                <a href="pay.php"><button type="button" class="purchase_total" >전체 상품 주문하기</button></a>
+                <button class="purchase_total">전체 상품 주문하기</button></a>
                 <button>선택 상품 주문하기</button>
             </section>
         </form>

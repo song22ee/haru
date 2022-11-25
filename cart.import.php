@@ -8,7 +8,8 @@ require_once("inc/session.php");
 $user_id =$_SESSION['member_id'];
 
 //사용자가 장바구니에 넣은 상품들 코드만 가져오기
-$result =db_select("select content_code from cart where user_id= ?", array($user_id));
+$result =db_select("select * from cart where user_id= ?", array($user_id));
+// print_r($result);
 
 //그 상품코드에 해당하는 상품의 정보 다 가져오기
 // foreach($result as $r){

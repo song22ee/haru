@@ -47,7 +47,7 @@
                             <?php echo $a[0]['content_name']?>
                         </td>
                         <td><?php echo $a[0]['content_price']?>원</td>
-                        <td>1개</td>
+                        <td><?php echo $r['content_amount']?>개</td>
                         <td>0000원</td>
                         <td>0000원</td>
                     </tr>

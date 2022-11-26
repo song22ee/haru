@@ -85,7 +85,50 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                     <span class="total_price_title">총 결제 금액 : </span>
                     <span class="total_price">0원</span>
                 </div>
-                <div class="insert_contents"></div>
+                <div class="insert_contents">
+                    <div class="content">
+                        <section class="option1">
+                            <span class="color">색상</span>
+                            <span>&nbsp; / &nbsp;</span>
+                            <span class="size">사이즈</span>
+                        </section>
+                        <section class="option2">
+                            <input type="text" class="amount">
+                            <div class="buttons">
+                                <button type="button" class="up"><i class="fa-solid fa-caret-up"></i></button>
+                                <button type="button"  class="down"><i class="fa-solid fa-caret-down"></i></button>
+                            </div>
+                        </section>
+                        <section class="option3">
+                            <span class="price">22,500</span>
+                            <span>원</span>
+                        </section>
+                        <section class="option4">
+                            <span>X</span>
+                        </section>
+                    </div>
+                    <div class="content">
+                        <section class="option1">
+                            <span class="color">색상</span>
+                            <span>&nbsp; / &nbsp;</span>
+                            <span class="size">사이즈</span>
+                        </section>
+                        <section class="option2">
+                            <input type="text" class="amount">
+                            <div class="buttons">
+                                <button type="button" class="up"><i class="fa-solid fa-caret-up"></i></button>
+                                <button type="button"  class="down"><i class="fa-solid fa-caret-down"></i></button>
+                            </div>
+                        </section>
+                        <section class="option3">
+                            <span class="price">22,500</span>
+                            <span>원</span>
+                        </section>
+                        <section class="option4">
+                            <span>X</span>
+                        </section>
+                    </div>
+                </div>
                 <div class="buttons purchase">
                     <button class="purchase"><span>구매하기</span></button>
                     <button class="cart" onclick="cart_insert()"><span>장바구니</span> </button>
@@ -101,6 +144,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
 
     <script src="https://kit.fontawesome.com/73fbcb87e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/55083c7425.js" crossorigin="anonymous"></script>
     <script src="js/hot_issue.js"></script>
     <script src="js/app.js"></script>
 </body>

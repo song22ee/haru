@@ -57,3 +57,12 @@ function checkAll() {
 		$('input:checkbox').prop('checked', false);
 	}
 }
+
+//선택한 상품이 없으면 선택하라고 요청하기
+function CheckSelected() {
+	if ($('input:checkbox:checked').length == 0) {
+		alert('상품을 선택해 주세요.');
+	} else {
+		document.cart_form.submit();
+	}
+}

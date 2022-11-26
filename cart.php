@@ -23,7 +23,7 @@
                 <button>전체 상품 삭제하기</button>
             </div>
         </section>
-        <form action="pay.submit.php" method="POST">
+        <form action="pay.submit.php" method="POST" name="cart_form">
             <section class="table">
                 <table>
                     <tr class="table_header">
@@ -88,7 +88,7 @@
             </section>
             <section class="purchase_buttons">
                 <button class="purchase_total" onclick="select_all()">전체 상품 주문하기</button></a>
-                <button>선택 상품 주문하기</button>
+                <button type="button" onclick="CheckSelected()">선택 상품 주문하기</button>
             </section>
         </form>
         

@@ -87,7 +87,7 @@
                 </table>
             </section>
             <section class="purchase_buttons">
-                <button class="purchase_total">전체 상품 주문하기</button></a>
+                <button class="purchase_total" onclick="select_all()">전체 상품 주문하기</button></a>
                 <button>선택 상품 주문하기</button>
             </section>
         </form>
@@ -103,7 +103,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
     <script src="js/member.js"></script>
-    
+    <script src="js/app.js"></script>
 </body>
 
 </html>

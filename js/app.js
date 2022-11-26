@@ -44,6 +44,13 @@ function Category_Change(e) {
 	}
 }
 
-function Test() {
-	// alert(document.querySelector('.content_color1').value);
+//전체 선택시 전체 체크하기
+function select_all() {
+	$('input:checkbox').prop('checked', true);
 }
+
+// if ($('input:checkbox').is(':checked') == true) {
+// 	$('input:checkbox').prop('checked', false);
+// } else if ($('input:checkbox').is(':checked') == false) {
+// 	$('input:checkbox').prop('checked', true);
+// }

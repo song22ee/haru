@@ -44,13 +44,16 @@ function Category_Change(e) {
 	}
 }
 
-//전체 선택시 전체 체크하기
+//전체 상품구매시 전체 체크하기
 function select_all() {
 	$('input:checkbox').prop('checked', true);
 }
 
-// if ($('input:checkbox').is(':checked') == true) {
-// 	$('input:checkbox').prop('checked', false);
-// } else if ($('input:checkbox').is(':checked') == false) {
-// 	$('input:checkbox').prop('checked', true);
-// }
+//전체선택시 전체 체크/ 전체 해제
+function checkAll() {
+	if ($('.check_all').is(':checked') == true) {
+		$('input:checkbox').prop('checked', true);
+	} else {
+		$('input:checkbox').prop('checked', false);
+	}
+}

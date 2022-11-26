@@ -27,7 +27,7 @@
             <section class="table">
                 <table>
                     <tr class="table_header">
-                        <td class="check"><input type="checkbox"></td>
+                        <td class="check"><input class="check_all" type="checkbox" onchange="checkAll()"></td>
                         <td>이미지</td>
                         <td>상품정보</td>
                         <td>가격</td>

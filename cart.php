@@ -41,7 +41,7 @@
                     <?php foreach($result as $r){?>
                         <?php $a =db_select("select * from contents where content_code= ?", array($r["content_code"]));?>
                     <tr>
-                        <td class="check"><input type="checkbox" name="<?php echo "check_box".$count ?>"></td>
+                        <td class="check"><input type="checkbox" onchange="check_all_check()" name="<?php echo "check_box".$count ?>"></td>
                         <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
                         <td class="content_info">
                             <input type="hidden" name="<?php echo "content_code".$count ?>" value="<?php echo $a[0]['content_code']?>"/>

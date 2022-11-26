@@ -58,6 +58,12 @@ function checkAll() {
 	}
 }
 
+//check_all(전체체크 박스)이 체크되어 있을때,
+// 상품체크를 해제하면 check_all도 해제하기
+function check_all_check() {
+	$('.check_all').prop('checked', false);
+}
+
 //선택한 상품이 없으면 선택하라고 요청하기
 function CheckSelected() {
 	if ($('input:checkbox:checked').length == 0) {

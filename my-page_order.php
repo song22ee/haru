@@ -49,8 +49,9 @@
                             <td>
                                 <div class="img_wrapper"><img src="<?php echo $order_info[0]['content_img']?>" alt="" /></div>
                             </td>
-                            <td>
-                                <?php echo $order_info[0]['content_name']?>
+                            <td class="content_info">
+                                <span class="content_options"><?php echo $order_contents[$key2]->content_options;?></span>
+                                <span class="content_name"><?php echo $order_info[0]['content_name']?></span>
                             </td>
                             <td>
                                 <?php $price=$order_info[0]['content_price']?>
@@ -60,7 +61,7 @@
                                 <?php $amount=$order_contents[$key2]->content_amount;?>
                                 <?php echo number_format($amount)?>개
                             </td>
-                            <td>2,500원</td>
+                            <td>무료배송</td>
                             <td>
                                 <?php $total=$price*$amount ?>
                                 <?php echo number_format($total)?>원
@@ -75,13 +76,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class="total_title">
-                            <span class="font_size">배송비 합계</span>
-                            <span class="font_size">상품합계</span>
-                        </td>
                         <td>
-                            <span class="font_size">2,500원</span>
-                            <span class="font_size">
+                            <span class="total_price">
                                 <?php echo number_format($total_price)?>원
                             </span>
                         </td>

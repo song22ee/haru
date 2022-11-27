@@ -54,7 +54,7 @@
                             <?php $amount=$r['content_amount']?>
                             <?php echo number_format($amount)?>개
                         </td>
-                        <td>2,500원</td>
+                        <td>무료배송</td>
                         <td>
                             <?php $total=$price*$amount ?>
                             <?php echo number_format($total)?>개
@@ -68,13 +68,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class="total_title">
-                            <span class="font_size">배송비 합계</span>
-                            <span class="font_size">상품합계</span>
-                        </td>
                         <td>
-                            <span class="font_size">2,500원</span>
-                            <span class="font_size">
+                            <span class="total_price">
                                 <?php echo number_format($total_price)?>원
                             </span>
                         </td>

@@ -71,4 +71,8 @@
 }
 .table table .order_receipt .font_weight {
   font-weight: 700;
+}
+.table table .order_receipt .total_price {
+  font-weight: 700;
+  font-size: 15px;
 }/*# sourceMappingURL=table.css.map */

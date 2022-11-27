@@ -98,7 +98,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                 </div>
                 <div class="total_price_wrapper">
                     <span class="total_price_title">총 결제 금액 : </span>
-                    <span class="total_price">0000원</span>
+                    <span class="total_price">0</span>원
                 </div>
                 <div class="insert_contents">
                     <?php $count=1;?>

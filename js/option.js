@@ -1,4 +1,5 @@
 let ContentPrice = document.querySelector('.price_final'); //=상품금액
+let TotalPrice = document.querySelector('.total_price'); //=총금액
 ContentPrice.innerHTML = ContentPrice.innerHTML.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ','); //콤마찍기
 ContentPrice = ContentPrice.innerHTML.replace(',', ''); //콤마제거
 
@@ -19,6 +20,7 @@ function SelectOption() {
 		Price = Number(ContentPrice) * Number(Option2Amount.val());
 		Price = Price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
 		Option3Price.innerHTML = Price;
+		TotalPrice.innerHTML = Price;
 		document.querySelector('.content').style.display = 'flex';
 		$('input:hidden[name=content_options]').attr('value', CheckedColor + ' / ' + CheckedSize);
 	}
@@ -30,6 +32,7 @@ function AmountChange() {
 	Price = Number(ContentPrice) * Number(Option2Amount.val());
 	Price = Price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
 	Option3Price.innerHTML = Price;
+	TotalPrice.innerHTML = Price;
 }
 
 //X 선택하면 상품옵션 선택 없어짐

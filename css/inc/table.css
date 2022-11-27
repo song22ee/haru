@@ -25,10 +25,14 @@
 .table table tr .content_info {
   flex-direction: column;
 }
-.table table tr .content_info input {
-  text-align: center;
-  outline: none;
+.table table tr .content_info span {
   margin-bottom: 10px;
+  font-size: 14px;
+}
+.table table tr .content_info .content_options {
+  background-color: rgb(214, 214, 214);
+  padding: 5px;
+  border-radius: 10px;
 }
 .table table tr .check {
   width: 70px;

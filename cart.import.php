@@ -7,7 +7,7 @@ require_once("inc/db.php");
 require_once("inc/session.php");
 $user_id =$_SESSION['member_id'];
 
-//사용자가 장바구니에 넣은 상품들 코드만 가져오기
+//사용자가 장바구니에 넣은 상품들 정보 가져오기
 $result =db_select("select * from cart where user_id= ?", array($user_id));
 // print_r($result);
 

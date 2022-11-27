@@ -40,7 +40,7 @@
                                     </div>
                                     <div class="content_price_wrapper">
                                         <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
-                                        <span class="content_price"><?php echo "$r[content_price]"?>원</span>
+                                        <span class="content_price"><?php echo number_format($r['content_price'])?>원</span>
                                     </div>
                                     <div class="delivery_today_mark_wrapper">
                                             <?php if("$r[deliv_today]"==="Y"){ ?>

@@ -18,6 +18,7 @@
         if ( isset($_POST['check_box'.$count]) ){
             $content['content_code']=$_POST['content_code'.$count]; //상품코드들을 넣을 배열에 해당 상품코드를 넣는다.
             $content['content_amount']=$_POST['content_amount'.$count];
+            $content['content_options']=$_POST['content_options'.$count];
             $shopping_cart[]=$content;
         }
         $count++;

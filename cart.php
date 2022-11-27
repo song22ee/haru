@@ -44,8 +44,10 @@
                         <td class="check"><input type="checkbox" onchange="check_all_check()" name="<?php echo "check_box".$count ?>"></td>
                         <td><div class="img_wrapper"><img src="<?php echo $a[0]['content_img']?>" alt=""/></div></td>
                         <td class="content_info">
+                            <span class="content_options"><?php echo $r['content_options']?></span>
                             <input type="hidden" name="<?php echo "content_code".$count ?>" value="<?php echo $a[0]['content_code']?>"/>
-                            <?php echo $a[0]['content_name']?>
+                            <span class="content_name"><?php echo $a[0]['content_name']?></span>
+                            <input type="hidden" name="<?php echo "content_options".$count ?>" value="<?php echo $r['content_options']?>"/>
                         </td>
                         <td>
                             <?php echo number_format($a[0]['content_price']);?>원

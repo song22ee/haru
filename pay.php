@@ -41,8 +41,9 @@
                     <tr>
                         <td><div class="img_wrapper"><img src="<?php echo $result[0]['content_img']?>" alt=""/></div></td>
                         <td class="content_info">
+                            <span class="content_options"><?php echo $r['content_options']?></span>
                             <input type="hidden" value="<?php echo $result[0]['content_code']?>"/>
-                            <?php echo $result[0]['content_name']?>
+                            <span class="content_name"><?php echo $result[0]['content_name']?></span>
                         </td>
                         <td>
                             <?php $price=$result[0]['content_price']?>

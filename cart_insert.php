@@ -1,6 +1,11 @@
 <?php
     $content_code=$_GET["content_code"];
+    $content_options=$_POST["content_options"];
+    $option2_amount=$_POST["option2_amount"];
+    $cart_id=date("YmdHis");
     echo "$content_code";
+    echo "$content_options";
+    echo "$option2_amount";
 
     require_once("inc/db.php");
     
@@ -10,10 +15,14 @@
     $user_id =$_SESSION['member_id'];
 
     // 데이터 저장
-    db_insert("insert into cart (content_code , user_id) values (:content_code, :user_id )",
+    db_insert("insert into cart (cart_id, content_code ,content_options ,content_amount , user_id) values (:cart_id, :content_code, :content_options , :content_amount , :user_id )",
         array(
+            'cart_id' => $cart_id,
             'content_code' => $content_code,
-            'user_id' => $user_id
+            'content_options' => $content_options,
+            'content_amount' => $option2_amount,
+            'user_id' => $user_id,
+
         )
     );
 

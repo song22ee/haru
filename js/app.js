@@ -44,6 +44,31 @@ function Category_Change(e) {
 	}
 }
 
-function Test() {
-	// alert(document.querySelector('.content_color1').value);
+//전체 상품구매시 전체 체크하기
+function select_all() {
+	$('input:checkbox').prop('checked', true);
+}
+
+//전체선택시 전체 체크/ 전체 해제
+function checkAll() {
+	if ($('.check_all').is(':checked') == true) {
+		$('input:checkbox').prop('checked', true);
+	} else {
+		$('input:checkbox').prop('checked', false);
+	}
+}
+
+//check_all(전체체크 박스)이 체크되어 있을때,
+// 상품체크를 해제하면 check_all도 해제하기
+function check_all_check() {
+	$('.check_all').prop('checked', false);
+}
+
+//선택한 상품이 없으면 선택하라고 요청하기
+function CheckSelected() {
+	if ($('input:checkbox:checked').length == 0) {
+		alert('상품을 선택해 주세요.');
+	} else {
+		document.cart_form.submit();
+	}
 }

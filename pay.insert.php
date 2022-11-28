@@ -1,6 +1,9 @@
 <?php
-    require_once("cart.import.php");
+    require_once("inc/session.php"); 
+    var_dump($_SESSION['shopping_cart']);
 
+    // var_dump($content_cart);
+    
     $order_id = date("YmdHis");
     $orderer_name   = $_POST["orderer_name"];
     $orderer_email1 = $_POST["orderer_email1"];
@@ -21,8 +24,9 @@
     $Recipient_phone = $Recipient_phone1."-".$Recipient_phone2."-".$Recipient_phone3;
     $message = $_POST["message"];
     $member_id= $_SESSION['member_id']; 
-    $order_contents = json_encode($result); //주문 컨텐츠 json-> striong으로 저장
+    $order_contents = json_encode($_SESSION['shopping_cart']); //주문 컨텐츠 json-> string으로 저장
 
+    require_once("inc/db.php");
 
 
     // 데이터 저장
@@ -46,6 +50,17 @@
             'order_contents' => $order_contents
         )
     );
+
+    //주문한 상품 장바구니 비우기
+    //로직 :
+        // cart db에서, 세션변수에 저장했던 shopping_cart에 들어있는 상품코드와 일치하는 상품을 제거
+    foreach($_SESSION['shopping_cart'] as $r){
+        var_dump($r['content_code']);
+        db_update_delete("delete from cart where content_code= ?" , array($r['content_code']));
+    }
+
+    unset($_SESSION['shopping_cart']); //shopping_cart에 들었던거 없애기
+
 
 echo "
         <script>

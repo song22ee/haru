@@ -42,6 +42,7 @@
                 <a href=""><button class="logout"> logout </button></a>
             </header>
             <section class="contents">
+
                 <section class="contents_header">
                     <div class="title_and_order">
                         <span class="title">상품 관리</span>
@@ -60,35 +61,39 @@
                     <a href="product_registration.php"><button class="regist_product"> 등록 </button></a>
                     <a href=""><button class="delete_product"> 삭제 </button></a>
                 </section>
-                <section class="board product" style="overflow-y: scroll;">
-                    <div class="table_header">
-                        <div class="table_col class">카테고리</div>
-                        <div class="table_col title">상품명</div>
-                        <div class="table_col code">상품코드</div>
-                        <div class="table_col deliv">오늘배송</div>
-                        <div class="table_col date">날짜</div>
-                    </div>
-                <?php foreach($result as $r){?>
-                    <?php 
-                        //content_code를 이용해 날짜 추출
-                        $content_code= $r['content_code'];
-                        $year = "20".substr($content_code,0,2);
-                        $month = substr($content_code,2,2);
-                        $day = substr($content_code,4,2);
-                        $date = $year.'-'.$month.'-'.$day;
-                        
+                <article class="scroller">
+                    <form action="" method="PRODUCT">
+                        <section class="board product">
+                            <div class="table_header">
+                                <div class="table_col class">카테고리</div>
+                                <div class="table_col title">상품명</div>
+                                <div class="table_col code">상품코드</div>
+                                <div class="table_col deliv">오늘배송</div>
+                                <div class="table_col date">날짜</div>
+                            </div>
+                        <?php foreach($result as $r){?>
+                            <?php 
+                                //content_code를 이용해 날짜 추출
+                                $content_code= $r['content_code'];
+                                $year = "20".substr($content_code,0,2);
+                                $month = substr($content_code,2,2);
+                                $day = substr($content_code,4,2);
+                                $date = $year.'-'.$month.'-'.$day;
+                                
+                                ?>
+                            <div class="table_row">
+                                <div class="table_col class"></div>
+                                <div class="table_col title"><?php echo "$r[content_name]"?></div>
+                                <div class="table_col code"><?php echo "$r[content_code]"?></div>
+                                <div class="table_col deliv"><?php echo "$r[deliv_today]"?></div>
+                                <div class="table_col date"><?php print_r($date);?></div>
+                            </div>
+                        <?php
+                        }
                         ?>
-                    <div class="table_row">
-                        <div class="table_col class"></div>
-                        <div class="table_col title"><?php echo "$r[content_name]"?></div>
-                        <div class="table_col code"><?php echo "$r[content_code]"?></div>
-                        <div class="table_col deliv"><?php echo "$r[deliv_today]"?></div>
-                        <div class="table_col date"><?php print_r($date);?></div>
-                    </div>
-                <?php
-                }
-                ?>
-                </section>
+                        </section>
+                    </form>  
+                </article>
             </section>
         </div>
     </main>

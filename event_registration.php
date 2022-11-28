@@ -39,7 +39,7 @@
                 
                 <article class="scroller">
                     <form action="contents_insert.php" method="POST">
-                        <section class="board product">
+                        <section class="board event">
                             <div class="point_img">
                                 <div class="img_insert_header">
                                     <div class="point_title"> 대표 이미지 </div>
@@ -48,45 +48,26 @@
                                     <input class="input_css" name="content_img" type="text" placeholder="썸네일에 들어갈 이미지주소를 입력해주세요." value="img/contents/content1.jpg"/>
                                 </section>
                                 <div class="img_insert_header">
-                                    <div class="point_title"> 상품 정보 </div>
+                                    <div class="point_title"> 이벤트 정보 </div>
                                 </div>
-                                <div class="product_detail">
-                                    <div class="product_board_three">
-                                        <div class="product_code"> 상품코드 : <input type="text" name="product_code" class="text_product_code"></div>
-                                        <div class="product_name"> 상품명 : <input type="text" name="product_name" class="text_product_name"></div>
-                                        <div class="product_cost"> 상품 원가 : <input type="text" name="content_cost" class="text_product_cost">원</div>
-                                        <div class="product_price"> 상품 가격 : <input type="text" name="product_price" class="text_product_price">원</div>
+                                <div class="event_detail">
+                                    <div class="event_board_reone">
+                                        <div class="event_retitle"> 이벤트 제목 : <input type="text" name="product_code" class="text_event_retitle"></div>
+                                        <form action = "">
+                                            <div class="event_redate"> 이벤트 기간 :
+                                                <label>
+                                                    <input type="date" name="evday" class = "evday_detail"> ~ <input type="date" name="evday" class = "evday_detail">
+                                                </label>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="product_board_two">
-                                        <div class="product_category"> 
-                                            상품 대분류 :
-                                            <select name="category_large" onchange="Category_Change(this)">
-                                                <option value="no_select"> 선택해주세요. </option>
-                                                <option name="outer" value="outer"> 아우터 </option>
-                                                <option name="top" value="top"> 상의 </option>
-                                                <option name="traning" value="traning"> 트레이닝 </option>
-                                                <option name="basic" value="basic"> 베이직 </option>
-                                                <option name="one_piece" value="one_piece"> 원피스 </option>
-                                                <option name="skirt" value="skirt"> 스커트 </option>
-                                                <option name="pants" value="pants"> 팬츠 </option>
-                                                <option name="bag" value="bag"> 가방 </option>
-                                                <option name="shoes" value="shoes"> 신발 </option>
-                                                <option name="accessory" value="accessory"> 액세서리 </option>
-                                            </select>
-                                        </div>
-                                        <div class="product_category"> 
-                                            상품 소분류 :
-                                            <select id="category_small" name="category_small">
-                                                <option value="no_select">선택해주세요.</option>
-                                            </select>
-                                        </div>
-                                        <div class="product_discount_rate"> 할인율 : <input type="text" name="product_discount_rate"class="text_product_discount" /> %</div>
-                                        <div class="is_deliv_today"> 오늘배송 :
-                                            <select name="is_deliv_today">
-                                                <option> N </option>
-                                                <option> Y </option>
-                                            </select>
-                                        </div>
+                                    <div class="event_board_retwo">
+                                        <div class="event_redetail"> 이벤트 상세 페이지 </div>
+                                        <div class="event_redetail_contents"> : <input type="text" name="product_discount_rate"class="text_event_contents" /></div>
+                                        <div class="event_redetail_contents_one"><input type="text" name="product_discount_rate"class="text_event_contents_one" /></div>
+                                        <div class="event_redetail_contents_two"><input type="text" name="product_discount_rate"class="text_event_contents_two" /></div>
+                                        <!-- <div class="product_discount_rate">&nbsp;&nbsp;<input type="text" name="product_discount_rate"class="text_product_discount" /></div>
+                                        <div class="product_discount_rate">&nbsp;&nbsp;<input type="text" name="product_discount_rate"class="text_product_discount" /></div> -->
                                     </div>
                                 </div>                              
                                     

@@ -46,64 +46,68 @@
                     <a href=""><button class="regist"> 등록 </button></a>
                     <a href=""><button class="delete"> 삭제 </button></a>
                 </section>
-                <section class="board notice">
-                    <div class="table_header">
-                        <div class="table_col class">분류</div>
-                        <div class="table_col title">제목</div>
-                        <div class="table_col writer">글쓴이</div>
-                        <div class="table_col views">조회수</div>
-                        <div class="table_col date">날짜</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">1</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">2</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">3</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">4</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">5</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">6</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">7</div>
-                        <div class="table_col title">추석연휴 배송 공지</div>
-                        <div class="table_col writer">abc123</div>
-                        <div class="table_col views">12,522</div>
-                        <div class="table_col date">2022-10-20</div>
-                    </div>
-                </section>
+                <article class="scroller">
+                    <form action="" method="INQUIRY">
+                        <section class="board notice">
+                            <div class="table_header">
+                                <div class="table_col class">분류</div>
+                                <div class="table_col title">제목</div>
+                                <div class="table_col writer">글쓴이</div>
+                                <div class="table_col views">조회수</div>
+                                <div class="table_col date">날짜</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">1</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">2</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">3</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">4</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">5</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">6</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">7</div>
+                                <div class="table_col title">추석연휴 배송 공지</div>
+                                <div class="table_col writer">abc123</div>
+                                <div class="table_col views">12,522</div>
+                                <div class="table_col date">2022-10-20</div>
+                            </div>
+                        </section>
+                    </form>  
+                </article>
             </section>
         </div>
     </main>

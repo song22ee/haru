@@ -60,50 +60,55 @@
                     <a href="event_registration.php"><button class="regist_event"> 등록 </button></a>
                     <a href=""><button class="delete_event"> 삭제 </button></a>
                 </section>
-                <section class="board event" style="overflow-y: scroll;">
-                    <div class="table_header">
-                        <div class="table_col class">카테고리</div>
-                        <div class="table_col title">상품명</div>
-                        <div class="table_col writer">글쓴이</div>
-                        <div class="table_col views">조회수</div>
-                        <div class="table_col date">날짜</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">참여</div>
-                        <div class="table_col title">헌옷 기부하고 새 상품 받자!</div>
-                        <div class="table_col writer">avbs345</div>
-                        <div class="table_col views">3,445</div>
-                        <div class="table_col date">2022-11-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">세일</div>
-                        <div class="table_col title">무료 배송 이벤트</div>
-                        <div class="table_col writer">gwsy296</div>
-                        <div class="table_col views">3,195</div>
-                        <div class="table_col date">2022-11-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">참여</div>
-                        <div class="table_col title">헌옷 기부하고 새 상품 받자!</div>
-                        <div class="table_col writer">wpsx27 </div>
-                        <div class="table_col views">3,426</div>
-                        <div class="table_col date">2022-11-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">참여</div>
-                        <div class="table_col title">헌옷 기부하고 새 상품 받자!</div>
-                        <div class="table_col writer">qzxpo35 </div>
-                        <div class="table_col views">3,419</div>
-                        <div class="table_col date">2022-11-20</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class">세일</div>
-                        <div class="table_col title">무료 배송 이벤트 </div>
-                        <div class="table_col writer">venex45 </div>
-                        <div class="table_col views">3,174</div>
-                        <div class="table_col date">2022-11-20</div>
-                    </div>
-                </section>
+                
+                <article class="scroller">
+                    <form action="" method="EVENT">
+                        <section class="board event">
+                            <div class="table_header">
+                                <div class="table_col class">카테고리</div>
+                                <div class="table_col title">상품명</div>
+                                <div class="table_col writer">글쓴이</div>
+                                <div class="table_col views">조회수</div>
+                                <div class="table_col date">날짜</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">참여</div>
+                                <div class="table_col title">헌옷 기부하고 새 상품 받자!</div>
+                                <div class="table_col writer">avbs345</div>
+                                <div class="table_col views">3,445</div>
+                                <div class="table_col date">2022-11-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">세일</div>
+                                <div class="table_col title">무료 배송 이벤트</div>
+                                <div class="table_col writer">gwsy296</div>
+                                <div class="table_col views">3,195</div>
+                                <div class="table_col date">2022-11-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">참여</div>
+                                <div class="table_col title">헌옷 기부하고 새 상품 받자!</div>
+                                <div class="table_col writer">wpsx27 </div>
+                                <div class="table_col views">3,426</div>
+                                <div class="table_col date">2022-11-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">참여</div>
+                                <div class="table_col title">헌옷 기부하고 새 상품 받자!</div>
+                                <div class="table_col writer">qzxpo35 </div>
+                                <div class="table_col views">3,419</div>
+                                <div class="table_col date">2022-11-20</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class">세일</div>
+                                <div class="table_col title">무료 배송 이벤트 </div>
+                                <div class="table_col writer">venex45 </div>
+                                <div class="table_col views">3,174</div>
+                                <div class="table_col date">2022-11-20</div>
+                            </div>
+                        </section>
+                    </form>  
+                </article>
             </section>
         </div>
     </main>

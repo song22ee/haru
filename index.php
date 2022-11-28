@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>HARU</title>
 </head>
 
@@ -29,6 +30,7 @@
             </div>
             <div class="recommend_main_content_wrapper">
                 <ul class="recommend_main_contents">
+                    <?php echo $_SESSION['mineSession']; ?>
                     <?php foreach($result as $r){?>
                         <a href="contents_detail.php?content_code=<?php echo "$r[content_code]"?>">
                             <li class="recommend_main_content">
@@ -40,7 +42,7 @@
                                     </div>
                                     <div class="content_price_wrapper">
                                         <span class="discount_rate"><?php echo "$r[discount_rate]"?>%</span>
-                                        <span class="content_price"><?php echo "$r[content_price]"?>원</span>
+                                        <span class="content_price"><?php echo number_format($r['content_price'])?>원</span>
                                     </div>
                                     <div class="delivery_today_mark_wrapper">
                                             <?php if("$r[deliv_today]"==="Y"){ ?>
@@ -71,6 +73,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
     <script src="js/member.js"></script>
+    <script src="js/sort.js"></script>
     
 </body>
 

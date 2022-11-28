@@ -45,64 +45,68 @@
                     <div class="notification">3</div>
                     <input type="text" class="search_inquiry">
                 </section>
-                <section class="board inquiry">
-                    <div class="table_header">
-                        <div class="table_col class">분류</div>
-                        <div class="table_col title">제목</div>
-                        <div class="table_col writer">글쓴이</div>
-                        <div class="table_col views">조회수</div>
-                        <div class="table_col date">날짜</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 교환 </div>
-                        <div class="table_col title"> 사이즈 교환 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 반품 </div>
-                        <div class="table_col title"> 반품 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 배송 </div>
-                        <div class="table_col title"> 배송 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 결제 </div>
-                        <div class="table_col title"> 결제 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 교환 </div>
-                        <div class="table_col title"> 색상 교환 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 반품 </div>
-                        <div class="table_col title"> 반품 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_col class"> 결제 </div>
-                        <div class="table_col title"> 결제 문의 </div>
-                        <div class="table_col writer"> avbs345 </div>
-                        <div class="table_col views"> 345 </div>
-                        <div class="table_col date"> 2022-08-26 </div>
-                    </div>
-                </section>
+                <article class="scroller">
+                    <form action="" method="INQUIRY">
+                        <section class="board inquiry">
+                            <div class="table_header">
+                                <div class="table_col class">분류</div>
+                                <div class="table_col title">제목</div>
+                                <div class="table_col writer">글쓴이</div>
+                                <div class="table_col views">조회수</div>
+                                <div class="table_col date">날짜</div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 교환 </div>
+                                <div class="table_col title"> 사이즈 교환 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 반품 </div>
+                                <div class="table_col title"> 반품 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 배송 </div>
+                                <div class="table_col title"> 배송 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 결제 </div>
+                                <div class="table_col title"> 결제 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 교환 </div>
+                                <div class="table_col title"> 색상 교환 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 반품 </div>
+                                <div class="table_col title"> 반품 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="table_col class"> 결제 </div>
+                                <div class="table_col title"> 결제 문의 </div>
+                                <div class="table_col writer"> avbs345 </div>
+                                <div class="table_col views"> 345 </div>
+                                <div class="table_col date"> 2022-08-26 </div>
+                            </div>
+                        </section>
+                    </form>  
+                </article>
             </section>
         </div>
     </main>

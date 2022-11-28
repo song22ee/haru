@@ -93,6 +93,163 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                 </div>
             </section>
         </form>
+        <form class = "center" action="" method="REVIEW">
+            <div class="center_title">
+                <div class ="review_click" id="review"> 리뷰(999+) </div>
+            </div>
+            <div class="review_detail_wrapper">
+                <div class="review_title_one"> 상품 후기 </div> 
+                <div class="review_title_two"> 999+ </div> 
+            </div>
+            <div class="review_buttons write">
+                <button type = "button" class="review_write"> 상품 리뷰 작성하기 </button>
+            </div>
+            <div class="review_photos_wrapper">
+                <div class="rev_pho_all">
+                    <div class="review_photo_one"> 포토(459) </div>
+                </div>
+                <div class="photos_wrapper">
+                    <div class="photos">
+                        <div class="photo"><img src="" alt=""/></div>
+                        <div class="photo"><img src="" alt=""/></div>
+                        <div class="photo"><img src="" alt=""/></div>
+                        <div class="photo"><img src="" alt=""/></div>
+                        <div class="photo"><img src="" alt=""/></div>
+                    </div>
+                </div>
+            </div>
+            <div class="review_gather_wrapper">
+                <div class = "gather_look">
+                    <select name="review_gather" id="review_gather_look">
+                        <option name="latest" value=""> 최신순 </option>
+                        <option name="Recommend" value=""> 추천순 </option>
+                        <option name="ratings" value=""> 평점순 </option>
+                        <option name="photo_review" value=""> 포토리뷰순 </option>
+                    </select>
+                </div>
+                <div class="look_wrapper">
+                    <div class="look">
+                        <section class="look_left">
+                            <div class="row">
+                                <div class="stars_count">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review_star_count"> 5 </div>
+                                </div>
+                                <div class="review_date"> 2022-09-10 </div>
+                                <div class="help">
+                                    <div class="review_help"> 5 </div>
+                                    <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="look_right_first">
+                            <div class="row">
+                                <div class="look_name"> avbs345 </div>
+                                <div class="look_detail">
+                                    <div class="look_detail_one"> 색상이 제가 원하던 색상과 일치해서 안심했어요!</div>
+                                    <div class="look_detail_two"> 게다가 촉감도 너무 부드럽고 재질도 정말... </div>
+                                </div>
+                                <div class="look_good">
+                                    <div class="good"> 도움이 돼요! </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="look_right_last">
+                            <div class="row">
+                                <div class="plus_detail"> 전체보기 > </div>
+                                <div class="plus_comments"> 댓글(3) > </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="look">
+                        <section class="look_left">
+                            <div class="row">
+                                <div class="stars_count">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review_star_count"> 5 </div>
+                                </div>
+                                <div class="review_date"> 2022-10-07 </div>
+                                <div class="help">
+                                    <div class="review_help"> 2 </div>
+                                    <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="look_right_first">
+                            <div class="row">
+                                <div class="look_name"> gwsy296 </div>
+                                <div class="look_detail">
+                                    <div class="look_detail_one"> 빠른 배송 감사합니다! 이런 가격에 이런 재질이라니 </div>
+                                    <div class="look_detail_two"> 촉감도 그렇고 너무 좋아요! </div>
+                                </div>
+                                <div class="look_good">
+                                    <div class="good"> 도움이 돼요! </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="look_right_last">
+                            <div class="row">
+                                <div class="plus_detail"> 전체보기 > </div>
+                                <div class="plus_comments"> 댓글(1) > </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="look">
+                        <section class="look_left">
+                            <div class="row">
+                                <div class="stars_count">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review_star_count"> 5 </div>
+                                </div>
+                                <div class="review_date"> 2022-10-26 </div>
+                                <div class="help">
+                                    <div class="review_help"> 0 </div>
+                                    <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="look_right_first">
+                            <div class="row">
+                                <div class="look_name"> venex45 </div>
+                                <div class="look_detail">
+                                    <div class="look_detail_one"> 예쁘게 잘 입겠습니다 감사합니다~! </div>
+                                </div>
+                                <div class="look_good">
+                                    <div class="good"> 도움이 돼요! </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="look_right_last">
+                            <div class="row">
+                                <div class="plus_detail"> 전체보기 > </div>
+                                <div class="plus_comments"> 댓글(1) > </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="view_review_more_wrapper">
+            <div class="view_rev_more_btn">더보기</div>
+        </div>
     </main>
     <?php require_once("inc/fast_move.php"); ?>
 

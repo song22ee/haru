@@ -91,7 +91,7 @@
                                         </div>
                                         <div class="product_discount_rate"> 할인율 : <input type="text" name="product_discount_rate"class="text_product_discount" /> %</div>
                                         <div class="is_deliv_today"> 오늘배송 :
-                                            <select name="is_deliv_today">
+                                            <select name="is_deliv_today" class = "deliv_today_choice">
                                                 <option> N </option>
                                                 <option> Y </option>
                                             </select>

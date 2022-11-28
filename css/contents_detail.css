@@ -226,6 +226,9 @@
 .main_wrapper.contents_detail .top .top_right .buttons.purchase .like {
   width: 120px;
 }
+.main_wrapper.contents_detail .center {
+  height: auto;
+}
 .main_wrapper.contents_detail .center .center_title {
   width: 100%;
   height: auto;
@@ -332,6 +335,9 @@
   padding: 5px;
   border-radius: 0px;
 }
+.main_wrapper.contents_detail .center .review_gather_wrapper .look_wrapper {
+  height: auto;
+}
 .main_wrapper.contents_detail .center .review_gather_wrapper .look {
   width: 100%;
   height: auto;
@@ -402,11 +408,6 @@
 }
 .main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail {
   height: 50px;
-}
-.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail .look_detail_one {
-  font-size: 13px;
-}
-.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail .look_detail_two {
   font-size: 13px;
 }
 .main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_good {

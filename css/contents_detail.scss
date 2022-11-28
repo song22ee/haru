@@ -220,6 +220,7 @@
 		}
 	}
 	.center {
+		height: auto;
 		.center_title {
 			width: 100%;
 			height: auto;
@@ -328,6 +329,9 @@
 					border-radius: 0px;
 				}
 			}
+			.look_wrapper {
+				height: auto;
+			}
 			.look {
 				width: 100%;
 				height: auto;
@@ -395,12 +399,7 @@
 						}
 						.look_detail {
 							height: 50px;
-							.look_detail_one {
-								font-size: 13px;
-							}
-							.look_detail_two {
-								font-size: 13px;
-							}
+							font-size: 13px;
 						}
 						.look_good {
 							height: 25px;

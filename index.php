@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>HARU</title>
 </head>
 
@@ -29,6 +30,7 @@
             </div>
             <div class="recommend_main_content_wrapper">
                 <ul class="recommend_main_contents">
+                    <?php echo $_SESSION['mineSession']; ?>
                     <?php foreach($result as $r){?>
                         <a href="contents_detail.php?content_code=<?php echo "$r[content_code]"?>">
                             <li class="recommend_main_content">
@@ -71,6 +73,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="js/hot_issue.js"></script>
     <script src="js/member.js"></script>
+    <script src="js/sort.js"></script>
     
 </body>
 

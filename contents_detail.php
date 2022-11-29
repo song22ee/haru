@@ -140,9 +140,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                 <div class="review_title_one"> 상품 후기 </div> 
                 <div class="review_title_two"> <?php echo (count($review)); ?> </div> 
             </div>
-            <div class="review_buttons write">
-                <button type = "button" class="review_write"> 상품 리뷰 작성하기 </button>
-            </div>
+            
             <div class="review_photos_wrapper">
                 <div class="rev_pho_all">
                     <div class="review_photo_one"> 포토(<?php echo (count($photo)); ?>) </div>

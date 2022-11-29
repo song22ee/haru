@@ -262,21 +262,6 @@
 			justify-content: center;
 			align-items: center;
 			padding: 20px 20px;
-			border-bottom: 1px solid #949494;
-			.review_write {
-				width: 60%;
-				height: 26px;
-				font-size: 13px;
-				padding: 3px 3px;
-				border: 0.5px solid #7e7e7e;
-				border-radius: 20px;
-				background-color: rgb(169, 216, 255);
-				cursor: pointer;
-				&:hover {
-					background: rgb(0, 122, 222);
-					color: #fff;
-				}
-			}
 		}
 		.review_photos_wrapper {
 			width: 100%;

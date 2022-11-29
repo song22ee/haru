@@ -44,7 +44,7 @@
                         <tr class="order_content" >
                             <td>
                                 <div class="order_status"><span>주문완료</span></div>
-
+                                <a href="review_write.php" class="review_status"><div class="review_write"> 리뷰 작성하기</div> </a>
                             </td>
                             <td>
                                 <div class="img_wrapper"><img src="<?php echo $order_info[0]['content_img']?>" alt="" /></div>

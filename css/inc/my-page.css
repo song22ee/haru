@@ -48,6 +48,25 @@
   margin: 30px 0;
   width: 100%;
 }
+.table.pay .review_status {
+  margin-top: 10px;
+}
+.table.pay .review_write {
+  width: 100%;
+  font-size: 13px;
+  padding: 3px 5px;
+  border: 0.5px solid #7e7e7e;
+  border-radius: 20px;
+  background-color: rgb(169, 216, 255);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+.table.pay .review_write:hover {
+  background: #4b5882;
+  color: #fff;
+}
 .table.pay .order_info_header {
   display: flex;
   border-top: 2px solid black;

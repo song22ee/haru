@@ -53,11 +53,9 @@
 .table.pay {
 	margin: 30px 0;
 	width: 100%;
-	.review_status {
-		margin-top: 10px;
-	}
 	.review_write {
-		width: 100%;
+		margin-top: 10px;
+		width: 100px;
 		font-size: 13px;
 		padding: 3px 5px;
 		border: 0.5px solid #7e7e7e;
@@ -65,12 +63,23 @@
 		background-color: rgb(169, 216, 255);
 		display: flex;
 		justify-content: center;
-		cursor: pointer;
 		align-items: center;
+		cursor: pointer;
 		&:hover {
 			background: #4b5882;
 			color: #fff;
 		}
+	}
+	.review_complete {
+		color: #929398;
+		margin-top: 10px;
+		width: 100px;
+		font-size: 13px;
+		padding: 3px 5px;
+		border-radius: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.order_info_header {
 		display: flex;

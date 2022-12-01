@@ -44,15 +44,13 @@
                         <form action="review_write.php" method="post">
                             <tr class="order_content" >
                                 <td>
+                                    <input type="hidden" name="order_id" value="<?php echo $result[$key1]['order_id']?>"/>
                                     <div class="order_status"><span>주문완료</span></div>
                                     <?php if( $result[$key1]['review'] == "N"){?>
                                         <button class="review_write"> 리뷰 작성하기</button>
                                     <?php }else {?>
                                         <button disabled="disabled" class="review_complete"> 리뷰 작성완료</button>
                                         <?php } ?>
-                                    
-                                    
-
                                 </td>
                                 <td>
                                     <div class="img_wrapper"><img src="<?php echo $order_info[0]['content_img']?>" alt="" /></div>
@@ -63,6 +61,7 @@
                                     <span class="content_name"><?php echo $order_info[0]['content_name']?></span>
                                     <input type="hidden" name="content_options" value="<?php echo $order_contents[$key2]->content_options;?>">
                                     <input type="hidden" name="content_name" value="<?php echo $order_info[0]['content_name']?>">
+                                    <input type="hidden" name="content_code" value="<?php echo $order_contents[$key2]->content_code?>">
                                 </td>
                                 <td>
                                     <?php $price=$order_info[0]['content_price']?>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .main_wrapper.review_write {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -58,22 +58,12 @@
   font-weight: 700;
   margin-bottom: 15px;
 }
-.main_wrapper.review_write .write_form .form_wrapper .star .stars {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-.main_wrapper.review_write .write_form .form_wrapper .star .stars i {
-  font-size: 20px;
-  margin: 0 3px;
-  color: rgb(217, 217, 217);
-}
 .main_wrapper.review_write .write_form .form_wrapper textarea {
   width: 900px;
   height: 300px;
   margin: 30px 0;
   resize: none;
+  font-size: 20px;
 }
 .main_wrapper.review_write .write_form .form_wrapper .filebox input[type=file] {
   position: absolute;

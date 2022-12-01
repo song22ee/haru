@@ -1,5 +1,5 @@
 .main_wrapper.review_write {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -52,23 +52,14 @@
 					font-weight: 700;
 					margin-bottom: 15px;
 				}
-				.stars {
-					width: 100%;
-					height: auto;
-					display: flex;
-					justify-content: center;
-					i {
-						font-size: 20px;
-						margin: 0 3px;
-						color: rgb(217, 217, 217);
-					}
-				}
 			}
+
 			textarea {
 				width: 900px;
 				height: 300px;
 				margin: 30px 0;
 				resize: none;
+				font-size: 20px;
 			}
 			.filebox input[type='file'] {
 				position: absolute;

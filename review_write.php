@@ -3,6 +3,9 @@ require_once("inc/db.php");
 $content_img=$_POST['content_img'];
 $content_options=$_POST['content_options'];
 $content_name=$_POST['content_name'];
+$content_code=$_POST['content_code'];
+$order_id=$_POST['order_id'];
+
 
 ?>
 
@@ -30,9 +33,9 @@ $content_name=$_POST['content_name'];
                         <tr>
                             <td><div class="img_wrapper"><img src="<?php echo $content_img?>" alt=""/></div></td>
                             <td class="content_info">
-                                <input type="hidden" value=""/>
+                                <input type="hidden" name="order_id" value="<?php echo $order_id?>"/>
                                 <span class="content_name"><?php echo $content_name?></span>
-                                <input type="hidden" name="content_name" value="<?php echo $content_name?>">
+                                <input type="hidden" name="content_code" value="<?php echo $content_code?>">
                             </td>
                             <td class="content_info">
                                 <input type="hidden" name="" value=""/>
@@ -45,11 +48,13 @@ $content_name=$_POST['content_name'];
                 <section class="star">
                     <span class="title">상품 만족도</span>
                     <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <fieldset>
+                            <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
+                            <input type="radio" name="rating" value="4" id="rate2"><label for="rate2">⭐</label>
+                            <input type="radio" name="rating" value="3" id="rate3"><label for="rate3">⭐</label>
+                            <input type="radio" name="rating" value="2" id="rate4"><label for="rate4">⭐</label>
+                            <input type="radio" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
+                        </fieldset>
                     </div>
                 </section>
                 <textarea name="review_contents" class="write_text_area" name="story" placeholder="내용을 입력해주세요"  required></textarea>

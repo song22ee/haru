@@ -38,7 +38,7 @@
             <section class="contents">
                 
                 <article class="scroller">
-                    <form action="contents_insert.php" method="POST">
+                    <form action="manager_event.php" method="POST">
                         <section class="board event">
                             <div class="point_img">
                                 <div class="img_insert_header">
@@ -72,10 +72,10 @@
                                 </div>                              
                                     
                                 <div class="submit_wrapper">
-                                        <label class="input-submit-button" for="input-submit">
-                                            확인
-                                        </label>
-                                        <input type="submit" id="input-submit" style="display: none;">
+                                    <label class="input-submit-button" for="input-submit">
+                                        확인
+                                    </label>
+                                    <input type="submit" id="input-submit" style="display: none;">
                                 </div>
                             </div>
                         </section>

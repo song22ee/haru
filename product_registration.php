@@ -111,10 +111,10 @@
                                 
                                     
                                 <div class="submit_wrapper">
-                                        <label class="input-submit-button" for="input-submit">
+                                    <label class="input-submit-button" for="input-submit">
                                             확인
-                                        </label>
-                                        <input type="submit" id="input-submit" style="display: none;">
+                                    </label>
+                                    <input type="submit" id="input-submit" style="display: none;">
                                 </div>
                             </div>
                         </section>

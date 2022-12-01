@@ -5,6 +5,10 @@ $content_code=$_GET["content_code"];
 
 $result = db_select("select * from contents where content_code= ?", array("$content_code"));
 
+$review =db_select("select * from review where content_code= ? ", array("$content_code"));
+
+$photo_review = db_select("select * from review where content_code= ? and photo IS NOT NULL ", array("content_code")); //사진이 있는 리뷰
+
 ?>
 
 
@@ -130,28 +134,25 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
             </section>
         </form>
 
-        <form class = "center" action="" method="REVIEW">
+        <form class = "center review_view" action="" method="REVIEW">
             <div class="center_title">
-                <div class ="review_click" id="review"> 리뷰(999+) </div>
+                <div class ="review_click" id="review"> 리뷰(<?php echo (count($review)); ?>) </div>
             </div>
             <div class="review_detail_wrapper">
                 <div class="review_title_one"> 상품 후기 </div> 
-                <div class="review_title_two"> 999+ </div> 
+                <div class="review_title_two"> <?php echo (count($review)); ?> </div> 
             </div>
-            <div class="review_buttons write">
-                <button type = "button" class="review_write"> 상품 리뷰 작성하기 </button>
-            </div>
+            
             <div class="review_photos_wrapper">
                 <div class="rev_pho_all">
-                    <div class="review_photo_one"> 포토(459) </div>
+                    <div class="review_photo_one"> 포토(<?php echo (count($photo_review)); ?>) </div>
                 </div>
                 <div class="photos_wrapper">
                     <div class="photos">
-                        <div class="photo"><img src="" alt=""/></div>
-                        <div class="photo"><img src="" alt=""/></div>
-                        <div class="photo"><img src="" alt=""/></div>
-                        <div class="photo"><img src="" alt=""/></div>
-                        <div class="photo"><img src="" alt=""/></div>
+                        <?php foreach($photo_review as $r){?>
+                            <?php var_dump($photo_review) ; ?>
+                            <div class="photo"><img src="" alt=""/></div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -165,122 +166,47 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
                     </select>
                 </div>
                 <div class="look_wrapper">
-                    <div class="look">
-                        <section class="look_left">
-                            <div class="row">
-                                <div class="stars_count">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                    <?php $review_count=1; ?> <!--각각의 리뷰에 고유번호를 주기위한 변수-->
+                    <?php foreach($review as $r){?>
+                        <div class="look review<?php echo $review_count++ ?>">
+                            <section class="look_left">
+                                <div class="row">
+                                    <div class="stars_count">
+                                        <div class="stars">
+                                            <i class="fas fa-star score1"></i>
+                                            <i class="fas fa-star score2"></i>
+                                            <i class="fas fa-star score3"></i>
+                                            <i class="fas fa-star score4"></i>
+                                            <i class="fas fa-star score5"></i>
+                                        </div>
+                                        <div class="review_star_count"><?php echo "$r[star]"?> </div>
                                     </div>
-                                    <div class="review_star_count"> 5 </div>
-                                </div>
-                                <div class="review_date"> 2022-09-10 </div>
-                                <div class="help">
-                                    <div class="review_help"> 5 </div>
-                                    <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="look_right_first">
-                            <div class="row">
-                                <div class="look_name"> avbs345 </div>
-                                <div class="look_detail">
-                                    <div class="look_detail_one"> 색상이 제가 원하던 색상과 일치해서 안심했어요!</div>
-                                    <div class="look_detail_two"> 게다가 촉감도 너무 부드럽고 재질도 정말... </div>
-                                </div>
-                                <div class="look_good">
-                                    <div class="good"> 도움이 돼요! </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="look_right_last">
-                            <div class="row">
-                                <div class="plus_detail"> 전체보기 > </div>
-                                <div class="plus_comments"> 댓글(3) > </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="look">
-                        <section class="look_left">
-                            <div class="row">
-                                <div class="stars_count">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                    <div class="review_date"> 2022-09-10 </div>
+                                    <div class="help">
+                                        <div class="review_help"> 5 </div>
+                                        <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
                                     </div>
-                                    <div class="review_star_count"> 5 </div>
                                 </div>
-                                <div class="review_date"> 2022-10-07 </div>
-                                <div class="help">
-                                    <div class="review_help"> 2 </div>
-                                    <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="look_right_first">
-                            <div class="row">
-                                <div class="look_name"> gwsy296 </div>
-                                <div class="look_detail">
-                                    <div class="look_detail_one"> 빠른 배송 감사합니다! 이런 가격에 이런 재질이라니 </div>
-                                    <div class="look_detail_two"> 촉감도 그렇고 너무 좋아요! </div>
-                                </div>
-                                <div class="look_good">
-                                    <div class="good"> 도움이 돼요! </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="look_right_last">
-                            <div class="row">
-                                <div class="plus_detail"> 전체보기 > </div>
-                                <div class="plus_comments"> 댓글(1) > </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="look">
-                        <section class="look_left">
-                            <div class="row">
-                                <div class="stars_count">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                            </section>
+                            <section class="look_right_first">
+                                <div class="row">
+                                    <div class="look_name"> <?php echo "$r[writer_id]"?> </div>
+                                    <div class="look_detail">
+                                        <?php echo "$r[review_contents]"?>
                                     </div>
-                                    <div class="review_star_count"> 5 </div>
+                                    <div class="look_good">
+                                        <div class="good"> 도움이 돼요! </div>
+                                    </div>
                                 </div>
-                                <div class="review_date"> 2022-10-26 </div>
-                                <div class="help">
-                                    <div class="review_help"> 0 </div>
-                                    <div class="review_help_last"> 명에게 도움이 되었습니다. </div>
+                            </section>
+                            <section class="look_right_last">
+                                <div class="row">
+                                    <div class="plus_detail"> 전체보기 > </div>
+                                    <div class="plus_comments"> 댓글(3) > </div>
                                 </div>
-                            </div>
-                        </section>
-                        <section class="look_right_first">
-                            <div class="row">
-                                <div class="look_name"> venex45 </div>
-                                <div class="look_detail">
-                                    <div class="look_detail_one"> 예쁘게 잘 입겠습니다 감사합니다~! </div>
-                                </div>
-                                <div class="look_good">
-                                    <div class="good"> 도움이 돼요! </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="look_right_last">
-                            <div class="row">
-                                <div class="plus_detail"> 전체보기 > </div>
-                                <div class="plus_comments"> 댓글(1) > </div>
-                            </div>
-                        </section>
-                    </div>
+                            </section>
+                        </div>
+                    <?php }?>
                 </div>
             </div>
         </form>
@@ -299,6 +225,7 @@ $result = db_select("select * from contents where content_code= ?", array("$cont
     <script src="js/hot_issue.js"></script>
     <script src="js/app.js"></script>
     <script src="js/option.js"></script>
+    <script src="js/star.js"></script>
 </body>
 
 </html> 

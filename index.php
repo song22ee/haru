@@ -30,7 +30,6 @@
             </div>
             <div class="recommend_main_content_wrapper">
                 <ul class="recommend_main_contents">
-                    <?php echo $_SESSION['mineSession']; ?>
                     <?php foreach($result as $r){?>
                         <a href="contents_detail.php?content_code=<?php echo "$r[content_code]"?>">
                             <li class="recommend_main_content">

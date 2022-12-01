@@ -19,8 +19,8 @@
         <section class="menus">
             <div class="my-page_title"><span>MY PAGE</span></div>
             <ul class="navs">
-                <li class="nav"><span>회원정보 수정</span></li>
-                <li class="nav" style="background-color: rgb(255, 139, 139);"><span>주문배송</span></li>
+                <a href="my-page_member_pwd.php"><li class="nav" style="width: 165px;"><span>회원정보 수정</span></li></a>
+                <a href="my-page_order.php"><li class="nav" style="background-color: rgb(255, 139, 139); width: 165px;"><span>주문배송</span></li></a>
                 <li class="nav"><span>쿠폰/적립금</span></li>
                 <li class="nav"><span>교환/반품</span></li>
                 <li class="nav"><span>좋아요</span></li>

@@ -99,6 +99,7 @@
 .main_wrapper.sign_up .join_box .member_form .member_form_col .form input {
   border: none;
   border-bottom: 1px solid black;
+  outline: none;
 }
 .main_wrapper.sign_up .join_box .member_form .member_form_col.check_box {
   width: 35%;

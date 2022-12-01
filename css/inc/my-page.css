@@ -43,6 +43,93 @@
   text-align: center;
   font-weight: 700;
 }
+.main_wrapper.my-page .view .member_pwd_title {
+  text-align: center;
+  font-weight: 700;
+}
+.main_wrapper.my-page .join_box {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #dcdcdc;
+  padding: 30px 30px;
+  margin-top: 30px;
+}
+.main_wrapper.my-page .join_box .member_form {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .member_form_row {
+  height: auto;
+  width: 100%;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .member_form_row.row1 {
+  margin-bottom: 50px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .ref {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .form {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  position: relative;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .form .col1 {
+  font-size: 13px;
+  float: left;
+  width: 150px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .form .col2 {
+  float: left;
+  width: 400px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .form input {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .form .input_text {
+  width: 130px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col .form.email .col2 {
+  font-size: 13px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col.check_box {
+  width: 40%;
+  height: 130px;
+}
+.main_wrapper.my-page .join_box .member_form .member_form_col.check_box .col2 {
+  width: 130px;
+}
+.main_wrapper.my-page section {
+  margin-top: 30px;
+}
+.main_wrapper.my-page section button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  border: 2px solid rgb(207, 207, 207);
+  font-size: 15px;
+  font-weight: 700;
+}
+.main_wrapper.my-page section .button_join {
+  background: rgb(207, 207, 207);
+  color: white;
+}
+.main_wrapper.my-page section .button_cancel {
+  color: #8a8a8a;
+}
 
 .table.pay {
   margin: 30px 0;
@@ -139,4 +226,64 @@
 }
 .table.pay .order_receipt .font_weight {
   font-weight: 700;
+}
+
+.table.member {
+  margin: 30px 0;
+  width: 100%;
+}
+.table.member .form {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  position: relative;
+}
+.table.member .form .pwd_col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 34px;
+  float: left;
+  font-size: 13px;
+  border: 1px solid black;
+  background-color: rgb(207, 207, 207);
+}
+.table.member .form .pwd_col2 {
+  width: 400px;
+  float: left;
+}
+.table.member .form input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main_wrapper.my-page.member_info .view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_wrapper.my-page.member_info .view .join_box .member_form .member_form_col.check_box {
+  margin-left: 30px;
+  border: 2px solid #dcdcdc;
+  padding-top: 10px;
+}
+.main_wrapper.my-page.member_info .view .join_box .member_form .member_form_col.check_box .ref {
+  margin-left: 5px;
+}
+.main_wrapper.my-page.member_info .view .join_box .member_form .member_form_col.check_box .form {
+  height: 38px;
+  margin-left: 15px;
+}
+.main_wrapper.my-page.member_info .view .join_box .member_form .member_form_col.check_box .form .col1 {
+  font-size: 11px;
+}
+.main_wrapper.my-page.member_info .view .join_box .member_form .member_form_col.check_box .form .col2 {
+  font-size: 11px;
 }/*# sourceMappingURL=my-page.css.map */

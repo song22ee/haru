@@ -143,7 +143,7 @@
                                     <div class="form">
                                         <div class="deliv_do_fore">
                                             <input type="radio" name="domestic" checked> 국내
-                                            <input type="radio" name="overseas"> 해외
+                                            <input type="radio" name="domestic"> 해외
                                         </div>
                                     </div>
                                 <div class="deliv_post_code">

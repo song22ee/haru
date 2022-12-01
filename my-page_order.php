@@ -41,33 +41,45 @@
                     </tr>
                     <?php foreach($order_contents as $key2=>$order_content){?>
                         <?php $order_info =db_select("select * from contents where content_code= ?", array($order_contents[$key2]->content_code)); ?>
-                        <tr class="order_content" >
-                            <td>
-                                <div class="order_status"><span>주문완료</span></div>
-
-                            </td>
-                            <td>
-                                <div class="img_wrapper"><img src="<?php echo $order_info[0]['content_img']?>" alt="" /></div>
-                            </td>
-                            <td class="content_info">
-                                <span class="content_options"><?php echo $order_contents[$key2]->content_options;?></span>
-                                <span class="content_name"><?php echo $order_info[0]['content_name']?></span>
-                            </td>
-                            <td>
-                                <?php $price=$order_info[0]['content_price']?>
-                                <?php echo number_format($price)?>원
-                            </td>
-                            <td>
-                                <?php $amount=$order_contents[$key2]->content_amount;?>
-                                <?php echo number_format($amount)?>개
-                            </td>
-                            <td>무료배송</td>
-                            <td>
-                                <?php $total=$price*$amount ?>
-                                <?php echo number_format($total)?>원
-                            </td>
-                            <?php $total_price=$total_price+$total?>
-                        </tr>
+                        <form action="review_write.php" method="post">
+                            <tr class="order_content" >
+                                <td>
+                                    <input type="hidden" name="order_id" value="<?php echo $result[$key1]['order_id']?>"/>
+                                    <div class="order_status"><span>주문완료</span></div>
+                                    <?php if( $result[$key1]['review'] == "N"){?>
+                                        <button class="review_write"> 리뷰 작성하기</button>
+                                    <?php }else {?>
+                                        <button disabled="disabled" class="review_complete"> 리뷰 작성완료</button>
+                                        <?php } ?>
+                                </td>
+                                <td>
+                                    <div class="img_wrapper"><img src="<?php echo $order_info[0]['content_img']?>" alt="" /></div>
+                                    <input type="hidden" name="content_img" value="<?php echo $order_info[0]['content_img']?>">
+                                </td>
+                                <td class="content_info">
+                                    <span class="content_options"><?php echo $order_contents[$key2]->content_options;?></span>
+                                    <span class="content_name"><?php echo $order_info[0]['content_name']?></span>
+                                    <input type="hidden" name="content_options" value="<?php echo $order_contents[$key2]->content_options;?>">
+                                    <input type="hidden" name="content_name" value="<?php echo $order_info[0]['content_name']?>">
+                                    <input type="hidden" name="content_code" value="<?php echo $order_contents[$key2]->content_code?>">
+                                </td>
+                                <td>
+                                    <?php $price=$order_info[0]['content_price']?>
+                                    <?php echo number_format($price)?>원
+                                </td>
+                                <td>
+                                    <?php $amount=$order_contents[$key2]->content_amount;?>
+                                    <?php echo number_format($amount)?>개
+                                </td>
+                                <td>무료배송</td>
+                                <td>
+                                    <?php $total=$price*$amount ?>
+                                    <?php echo number_format($total)?>원
+                                </td>
+                                <?php $total_price=$total_price+$total?>
+                            </tr>
+                        </form>
+                        
                         
                     <?php } ?>
                     <tr class="order_receipt">

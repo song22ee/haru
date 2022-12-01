@@ -226,6 +226,9 @@
 .main_wrapper.contents_detail .top .top_right .buttons.purchase .like {
   width: 120px;
 }
+.main_wrapper.contents_detail .center {
+  height: auto;
+}
 .main_wrapper.contents_detail .center .center_title {
   width: 100%;
   height: auto;
@@ -266,21 +269,6 @@
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
-  border-bottom: 1px solid #949494;
-}
-.main_wrapper.contents_detail .center .review_buttons.write .review_write {
-  width: 60%;
-  height: 26px;
-  font-size: 13px;
-  padding: 3px 3px;
-  border: 0.5px solid #7e7e7e;
-  border-radius: 20px;
-  background-color: rgb(169, 216, 255);
-  cursor: pointer;
-}
-.main_wrapper.contents_detail .center .review_buttons.write .review_write:hover {
-  background: rgb(0, 122, 222);
-  color: #fff;
 }
 .main_wrapper.contents_detail .center .review_photos_wrapper {
   width: 100%;
@@ -331,6 +319,9 @@
   width: 150px;
   padding: 5px;
   border-radius: 0px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look_wrapper {
+  height: auto;
 }
 .main_wrapper.contents_detail .center .review_gather_wrapper .look {
   width: 100%;
@@ -402,11 +393,6 @@
 }
 .main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail {
   height: 50px;
-}
-.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail .look_detail_one {
-  font-size: 13px;
-}
-.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail .look_detail_two {
   font-size: 13px;
 }
 .main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_good {
